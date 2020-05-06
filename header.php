@@ -19,7 +19,6 @@
 	<link href="https://fonts.googleapis.com/css?family=Raleway:500i,600,700|Roboto:300,400,500,700,900&display=swap" rel="stylesheet">
 
 	<?php wp_head(); ?>
-Test deploy 2
 	<!-- Input Phone -->
 	<script>
 	/*
