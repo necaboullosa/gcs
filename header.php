@@ -18,7 +18,6 @@
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 	<link href="https://fonts.googleapis.com/css?family=Raleway:500i,600,700|Roboto:300,400,500,700,900&display=swap" rel="stylesheet">
 
-test
 	<?php wp_head(); ?>
 
 	<!-- Input Phone -->
