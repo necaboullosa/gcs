@@ -2157,7 +2157,7 @@ blockquote {
 
 .flip_cards .flip-card {
 	max-width: 22%;
-	margin-bottom: 32px;
+	margin: 0 auto 32px auto;
 }
 
 .flip-card {
