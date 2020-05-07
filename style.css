@@ -1556,7 +1556,9 @@ font-size: 0.69347826086rem;
 
 
 
-
+.blurb_type_2_container .blurb {
+	max-width: 22%;
+}
 
 .blurbs {
 	display: flex;
@@ -2089,6 +2091,10 @@ blockquote {
 	margin-bottom: 54px;
 }
 
+.usp img {
+	max-height: 70px;
+}
+
 
 
 /* text image */
@@ -2339,6 +2345,10 @@ blockquote {
 	text-decoration:none;
 	width:100%;
 	}
+	.blurb_type_2_container .blurb {
+		max-width: 45%;
+	}
+
 	} 
 
 
@@ -2527,6 +2537,10 @@ blockquote {
 
 		.blurb {
 			margin-bottom: 1em;
+		}
+
+		.blurb_type_2_container .blurb {
+			max-width: 45%;
 		}
 	  
 	}

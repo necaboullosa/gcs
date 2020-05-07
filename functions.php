@@ -237,5 +237,9 @@ function hide_editor() {
      
     if($template_file == 'flexible-content.php'){ // edit the template name
         remove_post_type_support('page', 'editor');
+	}
+	
+	if($template_file == 'home-page.php'){ // edit the template name
+        remove_post_type_support('page', 'editor');
     }
 }
