@@ -13,12 +13,11 @@ get_header();
 
 <div class="hero-page">
 
-    <div class="  <?php
+<div class="  <?php
 $enable_header_form = get_field('enable_header_form');
-if($enable_header_form) { ?>
-        hero-container
-
-<?php } else { echo 'hero-page-container'; }?> container">
+if($enable_header_form) { 
+        echo 'hero-container '; 
+ } else { echo 'hero-page-container '; }?> container">
         <div class="text">
             <h1 class="sm-red-line"><?php the_field('header'); ?></h1>
             <p>
