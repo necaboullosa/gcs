@@ -2176,6 +2176,7 @@ blockquote {
 
   .flip-card-front img {
 	max-height: 100PX;
+    max-width: 100px;
   }
 
   .flip-card .blurb-header {
@@ -2188,6 +2189,7 @@ blockquote {
 
   .flip-card .more {
 	  margin-top: 3em;
+	  max-width: 50px;
   }
   
   .flip-card-inner {
@@ -2218,6 +2220,11 @@ blockquote {
   .flip-card-front {
 
 	color: black;
+
+	display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
   }
   
   .flip-card-back {
@@ -2542,6 +2549,10 @@ blockquote {
 		.blurb_type_2_container .blurb {
 			max-width: 45%;
 		}
+
+		.flip_cards .flip-card {
+			max-width: 30%;
+		}
 	  
 	}
 
@@ -2630,6 +2641,10 @@ blockquote {
 		}
 		.footer-widgets div{
 			width: 90%;
+		}
+
+		.flip_cards .flip-card {
+			max-width: 45%;
 		}
 
 		
