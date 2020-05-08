@@ -7,8 +7,8 @@ get_header();
 
         <div class="hero-container container">
             <div class="text">
-                <h1 class="sm-red-line">Local experts in European residency and citizenship by investment<br> programs</h1>
-                <p>Giving everyone the opportunity to thrive, no matter where they call home</p>
+                <h1 class="sm-red-line"><?php the_field('header'); ?></h1>
+                <p><?php the_field('sub_header'); ?></p>
             </div>
             <div class="form ac-form">
                 <?php echo do_shortcode('[activecampaign form=59]'); ?>
