@@ -2544,6 +2544,7 @@ blockquote {
 
 		.blurb {
 			margin-bottom: 1em;
+			padding: 10px;
 		}
 
 		.blurb_type_2_container .blurb {
