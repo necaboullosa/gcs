@@ -201,9 +201,9 @@ if($enable_header_form) { ?>
        
        
                        <div class="image-container space">
-                            <?php if(get_field('cta_url')) { ?><a href="<?php the_field('cta_url');?>"> <?php }?>
+                            <?php if(get_sub_field('cta_url')) { ?><a href="<?php the_sub_field('cta_url');?>"> <?php }?>
                            <img data-aos="fade-left" src="<?php $image_1 = get_sub_field('image_1'); echo $image_1; ?>" alt="">
-                           <?php if(get_field('cta_url')) { ?></a> <?php }?>
+                           <?php if(get_sub_field('cta_url')) { ?></a> <?php }?>
 
                        </div>
        
