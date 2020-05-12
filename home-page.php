@@ -7,8 +7,8 @@ get_header();
 
         <div class="hero-container container">
             <div class="text">
-                <h1 class="sm-red-line"><?php the_field('header'); ?></h1>
-                <p><?php the_field('sub_header'); ?></p>
+                <h1 class="sm-red-line"><?php the_field('home_header'); ?></h1>
+                <p><?php the_field('home_sub_header'); ?></p>
             </div>
             <div class="form ac-form">
                 <?php echo do_shortcode('[activecampaign form=59]'); ?>
