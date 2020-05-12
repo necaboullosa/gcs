@@ -244,3 +244,20 @@ function hide_editor() {
         remove_post_type_support('page', 'editor');
     }
 }
+
+
+function tinymce_buttons($buttons)
+ {
+    return array(
+      'bold', 'italic', 'underline', 'bullist', 'numlist', 'blockquote', 'justifyleft', 'justifycenter', 'justifyright', 'justifyfull', 'link', 'unlink', 'anchor', 'wp_more', 'wp_fullscreen', 'wp_adv'
+    );
+ }
+add_filter('mce_buttons','tinymce_buttons');
+
+function tinymce_buttons_2($buttons)
+ {
+    return array(
+      'formatselect', 'pastetext', 'pasteword', 'sub', 'sup', 'charmap', 'hr', 'removeformat', 'undo', 'redo', 'code'
+    );
+ }
+add_filter('mce_buttons_2','tinymce_buttons_2');

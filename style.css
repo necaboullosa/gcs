@@ -568,6 +568,16 @@ table {
 	width: 100%;
 }
 
+td {
+    text-align: left !important;
+    padding: .857em .587em !important;
+}
+
+table td {
+   border: 1px solid #eee !important;
+}
+
+
 /*--------------------------------------------------------------
 # Forms
 --------------------------------------------------------------*/
