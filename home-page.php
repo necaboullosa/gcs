@@ -54,10 +54,29 @@ get_header();
             <div class="bottom-card">
                 <div class="flags">
                     <div class="flag tooltip">
-                        /* repeater */
-                        <?php the_field('home_residency-countries'); ?>
-                        <img src="<?php echo get_template_directory_uri(); ?>/img/flags/SPAIN.png" alt="">
-                        <span class="tooltiptext">Spain</span>
+                        <?php 
+
+                        if( have_rows('home_residency-countries') ):
+
+                        // loop through the rows of data
+                            while ( have_rows('home_residency-countries') ) : the_row();
+
+                            // display a sub field value
+                            ?>
+
+                                <img src="<?php the_sub_field('flag'); ?>" alt="">
+                                <span class="tooltiptext"><?php the_sub_field('tooltip'); ?></span>
+
+                            <?php
+
+                            endwhile;
+
+
+
+                        endif;
+
+                        ?>
+                        
 
                     </div>
 
@@ -79,12 +98,36 @@ get_header();
             </div>
             <div class="bottom-card">
                 <div class="flags">
-                    <div class="flag tooltip">
-                        <img src="<?php echo get_template_directory_uri(); ?>/img/flags/SPAIN.png" alt="">
-                        <span class="tooltiptext">Spain</span>
 
-                    </div>
-                    /* repeater */
+                        <?php 
+                        /* repeater */
+
+                        if( have_rows('home_residency-countries') ):
+
+                        // loop through the rows of data
+                            while ( have_rows('home_residency-countries') ) : the_row();
+
+                            // display a sub field value
+                            ?>
+                                <div class="flag tooltip">
+                                    <img src="<?php the_sub_field('flag'); ?>" alt="">
+                                    <span class="tooltiptext"><?php the_sub_field('tooltip'); ?></span>
+
+                                </div>
+
+                               
+
+                            <?php
+
+                            endwhile;
+
+
+
+                        endif;
+
+                        ?>
+
+                    
 
                     <?php the_field('home_citizenship-countries'); ?>
                 </div>
