@@ -102,10 +102,10 @@ get_header();
                         <?php 
                         /* repeater */
 
-                        if( have_rows('home_residency-countries') ):
+                        if( have_rows('home_citizenship-countries') ):
 
                         // loop through the rows of data
-                            while ( have_rows('home_residency-countries') ) : the_row();
+                            while ( have_rows('home_citizenship-countries') ) : the_row();
 
                             // display a sub field value
                             ?>
