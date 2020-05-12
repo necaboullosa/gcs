@@ -675,8 +675,8 @@ get_header();
             <div class="map-section container">
                 <div class="text">
                     <h3 class="section-sub-header ">WHERE WE OPERATE</h3>
-                    <h2 class="section-header sm-red-line"><?php the_sub_field('home_where_we_operate-header'); ?></h2>
-                    <p class="sm-text"><?php the_sub_field('home_where_we_operate-text'); ?></p>
+                    <h2 class="section-header sm-red-line"><?php the_field('home_where_we_operate-header'); ?></h2>
+                    <p class="sm-text"><?php the_field('home_where_we_operate-text'); ?></p>
                     <a href="/countries/">
                         <div class="button">LIST ALL COUNTRIES <img src="<?php echo get_template_directory_uri(); ?>/img/arrow-button.png"></div>
                     </a>
@@ -684,7 +684,7 @@ get_header();
                 </div>
 
                 <div class="map">
-                    <img src="<?php the_sub_field('home_where_we_operate_-_map'); ?>" alt="">
+                    <img src="<?php the_field('home_where_we_operate_-_map'); ?>" alt="">
                 </div>
 
             </div>
