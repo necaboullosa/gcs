@@ -22,14 +22,13 @@ get_header();
     <div class="optimists-outer" data-aos="fade-up">
         <div class="optimists container">
             <div class="photo ">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/who-we-are.png" alt="">
+                <img src="<?php the_field('home_intro-image'); ?>" alt="">
 
             </div>
             <div class="text">
-                <h2 class="section-header sm-red-line">We are optimists who love to work together</h2>
-                <p><strong>Global Citizen Solutions</strong> is a multidisciplinary firm that offers professional solutions for residency and citizenship by investment in Europe.</p>
-                <p>We help investors from all over the world obtain access to greater opportunities for themselves and their families, as well as increased financial and personal security.</p>
-                <a href="#">
+                <h2 class="section-header sm-red-line"><?php the_field('home_intro-header'); ?></h2>
+                <?php the_field('home_intro-text'); ?>
+                <a href="<?php the_field('home_intro-button_url'); ?>">
                     <div class="button">Get in touch <img src="<?php echo get_template_directory_uri(); ?>/img/arrow-button.png"></div>
                 </a>
 
@@ -43,26 +42,27 @@ get_header();
 
     <div class="services container scroll-animations " data-aos="fade-up">
         <div class="text" data-aos="fade-right">
-            <h2 class="section-header sm-red-line">We oﬀer a service tailored to your speciﬁc needs and requirements</h2>
-            <p>Our team of local experts with years of experience will guarantee you can find the investment you’re looking for.</p>
-            <p><i>We’ll assist you from start to ﬁnish, ensuring you have the insight and knowledge you need to succeed.</i></p>
+            <h2 class="section-header sm-red-line"><?php the_field('home_services-header'); ?></h2>
+            <?php the_field('home_services-text'); ?>
         </div>
         <div class="residency animated txt-center" data-aos="fade-up">
             <div class="top-card">
                 <img src="<?php echo get_template_directory_uri(); ?>/img/services-residency.png" alt="">
                 <h3 class="sm-red-line txt-center">Residency Programs</h3>
-                <p>European residency is a priority for those who want to safeguard against future instability and can open up a world of opportunities for investors and their families.</p>
+                <?php the_field('home_residency-text'); ?>
             </div>
             <div class="bottom-card">
                 <div class="flags">
                     <div class="flag tooltip">
+                        /* repeater */
+                        <?php the_field('home_residency-countries'); ?>
                         <img src="<?php echo get_template_directory_uri(); ?>/img/flags/SPAIN.png" alt="">
                         <span class="tooltiptext">Spain</span>
 
                     </div>
 
                 </div>
-                <a href="/residency/">
+                <a href="<?php the_field('home_residency-url'); ?>">
                     <div class="button">Compare Programs <img src="<?php echo get_template_directory_uri(); ?>/img/arrow-button.png"></div>
                 </a>
 
@@ -74,8 +74,8 @@ get_header();
 
                 <img src="<?php echo get_template_directory_uri(); ?>/img/services-citizenship.png" alt="">
                 <h3 class="sm-red-line txt-center">Citizenship Programs</h3>
-                <p>Second citizenship is an asset to any international investor. It can bring a wider set of advantages and rights that investment in residency.</p>
-                <p>Find out more about the specific requirements and timeframes of each citizenship by investment</p>
+                <?php the_field('home_citizenship-text'); ?>
+
             </div>
             <div class="bottom-card">
                 <div class="flags">
@@ -84,44 +84,12 @@ get_header();
                         <span class="tooltiptext">Spain</span>
 
                     </div>
-                    <div class="flag tooltip">
-                        <img src="<?php echo get_template_directory_uri(); ?>/img/flags/SPAIN.png" alt="">
-                        <span class="tooltiptext">Spain</span>
+                    /* repeater */
 
-                    </div>
-                    <div class="flag tooltip">
-                        <img src="<?php echo get_template_directory_uri(); ?>/img/flags/SPAIN.png" alt="">
-                        <span class="tooltiptext">Spain</span>
-
-                    </div>
-                    <div class="flag tooltip">
-                        <img src="<?php echo get_template_directory_uri(); ?>/img/flags/SPAIN.png" alt="">
-                        <span class="tooltiptext">Spain</span>
-
-                    </div>
-                    <div class="flag tooltip">
-                        <img src="<?php echo get_template_directory_uri(); ?>/img/flags/SPAIN.png" alt="">
-                        <span class="tooltiptext">Spain</span>
-
-                    </div>
-                    <div class="flag tooltip">
-                        <img src="<?php echo get_template_directory_uri(); ?>/img/flags/SPAIN.png" alt="">
-                        <span class="tooltiptext">Spain</span>
-
-                    </div>
-                    <div class="flag tooltip">
-                        <img src="<?php echo get_template_directory_uri(); ?>/img/flags/SPAIN.png" alt="">
-                        <span class="tooltiptext">Spain</span>
-
-                    </div>
-                    <div class="flag tooltip">
-                        <img src="<?php echo get_template_directory_uri(); ?>/img/flags/SPAIN.png" alt="">
-                        <span class="tooltiptext">Spain</span>
-
-                    </div>
+                    <?php the_field('home_citizenship-countries'); ?>
                 </div>
 
-                    <a href="/citizenship/">
+                    <a href="<?php the_field('home_citizenship-url'); ?>">
                         <div class="button">Compare Programs <img src="<?php echo get_template_directory_uri(); ?>/img/arrow-button.png"></div>
                     </a>
                 </div>
@@ -707,8 +675,8 @@ get_header();
             <div class="map-section container">
                 <div class="text">
                     <h3 class="section-sub-header ">WHERE WE OPERATE</h3>
-                    <h2 class="section-header sm-red-line">We help our clients<br> ﬁnd residency and citizenship solutions</h2>
-                    <p class="sm-text">The Global Citizen Solutions is in a number of different countries all over Europe.</p>
+                    <h2 class="section-header sm-red-line"><?php the_sub_field('home_where_we_operate-header'); ?></h2>
+                    <p class="sm-text"><?php the_sub_field('home_where_we_operate-text'); ?></p>
                     <a href="/countries/">
                         <div class="button">LIST ALL COUNTRIES <img src="<?php echo get_template_directory_uri(); ?>/img/arrow-button.png"></div>
                     </a>
@@ -716,7 +684,7 @@ get_header();
                 </div>
 
                 <div class="map">
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/MAP.png" alt="">
+                    <img src="<?php the_sub_field('home_where_we_operate_-_map'); ?>" alt="">
                 </div>
 
             </div>
