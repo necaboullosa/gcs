@@ -772,8 +772,8 @@ get_header();
 
             <div class="commitment commitment-home container">
                 <div class="patricia">
-                    <h2 class="section-header sm-red-line">Our commitment to you</h2>
-                    <p>At Global Citizen Solutions, we work solely on your behalf. We are dedicated to providing a specialized service to each of our clients with the knowledge that comes with years of expertise, as well as access to a proprietary database of market information. We give the insight and data analysis to allow our clients to make investments with confidence.</p>
+                    <h2 class="section-header sm-red-line"><?php the_field('our_commitment-header', 'option'); ?></h2>
+                    <p><?php the_field('our_commitment-text', 'option'); ?></p>
 
                     <div class="ceo">
                         <div class="photo-container">
