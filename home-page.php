@@ -129,7 +129,6 @@ get_header();
 
                     
 
-                    <?php the_field('home_citizenship-countries'); ?>
                 </div>
 
                     <a href="<?php the_field('home_citizenship-url'); ?>">
