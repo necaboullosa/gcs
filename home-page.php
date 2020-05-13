@@ -63,9 +63,10 @@ get_header();
 
                             // display a sub field value
                             ?>
-
+                            <div class="flag tooltip">
                                 <img src="<?php the_sub_field('flag'); ?>" alt="">
                                 <span class="tooltiptext"><?php the_sub_field('tooltip'); ?></span>
+                            </div>
 
                             <?php
 
