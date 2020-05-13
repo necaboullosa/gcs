@@ -1243,7 +1243,7 @@ div[class^="_form"] label, .ac-form label {
     background-color: #e0013f;
 }
 
-.ac-form input::placeholder, .ac-form textarea::placeholder  {
+.ac-form input::placeholder, .ac-form textarea::placeholder,  div[class^="_form"] input::placeholder,  div[class^="_form"] textarea::placeholder  {
 	color: rgb(24, 105, 185);
 }
 
