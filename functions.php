@@ -2986,7 +2986,7 @@ if( function_exists('acf_add_local_field_group') ):
 						'prepend' => '',
 						'append' => '',
 						'maxlength' => '',
-					),
+					), 
 					array(
 						'key' => 'field_5ebab06b6eb8c',
 						'label' => 'Review - Text',
