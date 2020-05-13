@@ -82,7 +82,6 @@
 	
   AOS.init();
 
-  var $ = jQuery;
 
 </script>
 
