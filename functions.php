@@ -560,6 +560,8 @@ if( function_exists('acf_add_local_field_group') ):
 					'operator' => '==',
 					'value' => 'page',
 				),
+			),
+			array(
 				array(
 					'param' => 'post_template',
 					'operator' => '==',
@@ -1134,10 +1136,6 @@ if( function_exists('acf_add_local_field_group') ):
 											48 => '48',
 											49 => '49',
 											50 => '50',
-											51 => '51',
-											52 => '52',
-											53 => '53',
-											54 => '54',
 										),
 										'default_value' => array(
 										),
@@ -1300,10 +1298,6 @@ if( function_exists('acf_add_local_field_group') ):
 											48 => '48',
 											49 => '49',
 											50 => '50',
-											51 => '51',
-											52 => '52',
-											53 => '53',
-											54 => '54',
 										),
 										'default_value' => array(
 										),
@@ -1466,10 +1460,6 @@ if( function_exists('acf_add_local_field_group') ):
 											48 => '48',
 											49 => '49',
 											50 => '50',
-											51 => '51',
-											52 => '52',
-											53 => '53',
-											54 => '54',
 										),
 										'default_value' => array(
 										),
@@ -1632,10 +1622,6 @@ if( function_exists('acf_add_local_field_group') ):
 											48 => '48',
 											49 => '49',
 											50 => '50',
-											51 => '51',
-											52 => '52',
-											53 => '53',
-											54 => '54',
 										),
 										'default_value' => array(
 										),
@@ -1798,10 +1784,6 @@ if( function_exists('acf_add_local_field_group') ):
 											48 => '48',
 											49 => '49',
 											50 => '50',
-											51 => '51',
-											52 => '52',
-											53 => '53',
-											54 => '54',
 										),
 										'default_value' => array(
 										),
