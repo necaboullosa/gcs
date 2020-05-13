@@ -688,7 +688,7 @@ if($enable_our_commitment) { ?>
                                             <img src="<?php echo get_template_directory_uri(); ?>/img/patricia.png">
                                         </div>
                                         <div class="signature-container">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/img/signature.png">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/img/signature-BG-blue.png">
                                         </div>
                                     </div>
                                 </div>
