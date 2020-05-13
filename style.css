@@ -1247,14 +1247,17 @@ object {
 #masthead {
 	position: fixed;
 	width: 100%;
-	text-transform: uppercase;
 	color: #1955a6;
 	z-index: 100;
 }
 
+#main-menu {
+	text-transform: uppercase;
+
+}
+
 #masthead a, #masthead a:visited {
 
-	text-transform: uppercase;
 	color: #1955a6;
 }
 
