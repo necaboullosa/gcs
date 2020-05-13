@@ -1253,6 +1253,10 @@ div[class^="_form"] label, .ac-form label {
     background-color: #e0013f !important;
 }
 
+._checkbox-radio input {
+	border: 1px solid white;
+}
+
 
 .ac-form textarea {
 	border: 1px solid white;
