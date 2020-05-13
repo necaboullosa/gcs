@@ -53,7 +53,7 @@ get_header();
             </div>
             <div class="bottom-card">
                 <div class="flags">
-                    <div class="flag tooltip">
+                    
                         <?php 
 
                         if( have_rows('home_residency-countries') ):
@@ -79,7 +79,6 @@ get_header();
                         ?>
                         
 
-                    </div>
 
                 </div>
                 <a href="<?php the_field('home_residency-url'); ?>">
