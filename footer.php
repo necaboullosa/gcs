@@ -32,6 +32,7 @@
 					</ul>
 				</div>
 				<div class="menu">
+					<img class="hidden" src="<?php echo get_template_directory_uri(); ?>/img/footer-offices.png">
 					<ul class="footer-list">
 						<li><a href="#">About Us</a></li>
 						<li><a href="#">Blog & News</a></li>
@@ -41,6 +42,8 @@
 					</ul>
 				</div>
 				<div class="categories">
+					<img class="hidden" src="<?php echo get_template_directory_uri(); ?>/img/footer-offices.png">
+
 					<ul class="footer-list">
 						<li><a href="#">Golden Visa Portugal</a></li>
 						<li><a href="#">Golden Visa Spain</a></li>
@@ -50,6 +53,8 @@
 					</ul>
 				</div>
 				<div class="social">
+					<img class="hidden" src="<?php echo get_template_directory_uri(); ?>/img/footer-offices.png">
+
 					<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/footer-linked.png"> <span>Connect with us on LinkedIn</span></a>
 					<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/footer-fb.png"> <span>Find us on Facebook</span></a>
 					<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/footer-ig.png"> <span>Find us on Instagram</span></a>
