@@ -453,7 +453,7 @@ header'); if($header) { ?><h6 class="blurbs-header txt-center sm-red-line space"
                                 ?>
                                 <div class="post">
                                 <a href="<?php the_permalink(); ?>">
-                                <img class="thumbnail" src="<?php the_post_thumbnail_url('medium'); ?>">
+                                <img class="thumbnail" src="<?php the_post_thumbnail_url('large'); ?>">
                                 <div class="text">
 
                                 
