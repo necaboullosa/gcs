@@ -1238,10 +1238,6 @@ div[class^="_form"] label, .ac-form label {
     cursor: pointer;
 }
 
-._checkbox-radio > input:checked {
-    border: 1px solid #e0013f;
-    background-color: #e0013f;
-}
 
 .ac-form input::placeholder, .ac-form textarea::placeholder,  div[class^="_form"] input::placeholder,  div[class^="_form"] textarea::placeholder  {
 	color: rgb(24, 105, 185);
@@ -1249,6 +1245,12 @@ div[class^="_form"] label, .ac-form label {
 
 .commitment-page .ac-form input::placeholder, .commitment-page .ac-form textarea::placeholder  {
 	color: rgb(18, 121, 188);
+}
+
+
+._checkbox-radio > input:checked {
+    border: 1px solid #e0013f !important;
+    background-color: #e0013f !important;
 }
 
 
