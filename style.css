@@ -2057,6 +2057,10 @@ blockquote {
 	text-decoration: none;
 }
 
+.the-loop .thumbnail {
+	min-height: 220px;
+}
+
 
 .the-loop img {
 	width: 100%;
