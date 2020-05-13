@@ -473,6 +473,7 @@ header'); if($header) { ?><h6 class="blurbs-header txt-center sm-red-line space"
                     load more
                     <?php echo apply_filters( 'the_content', '[ajax_load_more container_type="div" post_type="post" tag__not_in="6" pause="true"]'); ?>
                     load more
+            
 
             <!-- END Blog posts loop -->
 
