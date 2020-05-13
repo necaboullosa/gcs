@@ -470,13 +470,9 @@ header'); if($header) { ?><h6 class="blurbs-header txt-center sm-red-line space"
                             wp_reset_query();
                     ?>
                     </div>
-                    <?php 
-                    
-                    echo apply_filters( 'the_content', '[ajax_load_more container_type="div" posts_per_page="6" css_classes="the-loop"  offset="6" pause="true" scroll="false" button_label="Older Entries"]');  ?>
-               
-
-
-            
+                    load more
+                    <?php echo apply_filters( 'the_content', '[ajax_load_more container_type="div" posts_per_page="6" css_classes="the-loop"  offset="6" pause="true" scroll="false" button_label="Older Entries"]'); ?>
+                    load more
 
             <!-- END Blog posts loop -->
 
