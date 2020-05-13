@@ -1878,6 +1878,10 @@ footer .menu, footer .categories,  footer .social {
 	font-weight: 700;;
 }
 
+.wpml-ls-item {
+	text-transform: uppercase;
+}
+
 _::-webkit-full-page-media, _:future, :root .teal {
 
 	display: none; 
