@@ -69,7 +69,7 @@ if($enable_header_form) { ?>
                 
                 if($enable_button) {
                     ?>
-                    <a href="<?php $button_url = get_field('intro-button_url'); echo $button_url; ?>">
+                    <a href="<?php $button_url = get_field('intro_button_url'); echo $button_url; ?>">
                         <div class="button"><?php $button_text = get_field('intro-button_text'); echo $button_text; ?> <img src="<?php echo get_template_directory_uri(); ?>/img/arrow-button.png"></div>
                     </a>
 
