@@ -1254,7 +1254,7 @@ div[class^="_form"] label, .ac-form label {
 }
 
 ._checkbox-radio input {
-	border: 1px solid white;
+	border: 1px solid white !important;
 }
 
 
