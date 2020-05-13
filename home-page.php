@@ -802,28 +802,22 @@ get_header();
                             <div class="carousel-list">
 
                                 <div class="review carousel-item item1 active">
-                                    <p class="quote-header">“GCS provided, quickly and efficiently, all the assistance I needed.”</p>
-                                    <span class="author">Paulo - </span> <img src="<?php echo get_template_directory_uri(); ?>/img/commitment-flag-us.png"> <span class="country">USA</span>
-                                    <p class="">GCS provided, quickly and efficiently, all the assistance I needed, from acquiring the necessary national documents to finding the right property and closing the deal. As I live outside of Europe, I had a very limited time to complete the whole process. GCS support was critical for successful completion. I truly recommend the company, great and competent people.</p>
+                                    <!--<p class="quote-header">“GCS provided, quickly and efficiently, all the assistance I needed.”</p> -->
+                                    <span class="author">Rod & Jay - </span> <img src="<?php echo get_template_directory_uri(); ?>/img/commitment-flag-us.png"> <span class="country">USA</span>
+                                    <p class="">GCS was very helpful and competent at every step and with a can-do attitude. We are now in Lisbon part of the year and always in touch. Thank you.</p>
                                 </div>
 
                                 <div class="review carousel-item item2 ">
-                                    <p class="quote-header"> 2 “GCS provided, quickly and efficiently, all the assistance I needed.”</p>
-                                    <span class="author">Paulo - </span> <img src="<?php echo get_template_directory_uri(); ?>/img/commitment-flag-us.png"> <span class="country">USA</span>
-                                    <p class="">GCS provided, quickly and efficiently, all the assistance I needed, from acquiring the necessary national documents to finding the right property and closing the deal. As I live outside of Europe, I had a very limited time to complete the whole process. GCS support was critical for successful completion. I truly recommend the company, great and competent people.</p>
+                                    <span class="author">Joan & Chen - </span> <img src="<?php echo get_template_directory_uri(); ?>/img/commitment-flag-us.png"> <span class="country">USA</span>
+                                    <p class="">Thank you for being so patient and open with us. We appreciate you helping us navigate the different investments as we could not make up our minds. We couldn’t be happier and got our visa swiftly too. </p>
                                 </div>
 
                                 <div class="review carousel-item item3 ">
-                                    <p class="quote-header">3 “GCS provided, quickly and efficiently, all the assistance I needed.”</p>
-                                    <span class="author">Paulo - </span> <img src="<?php echo get_template_directory_uri(); ?>/img/commitment-flag-us.png"> <span class="country">USA</span>
-                                    <p class="">GCS provided, quickly and efficiently, all the assistance I needed, from acquiring the necessary national documents to finding the right property and closing the deal. As I live outside of Europe, I had a very limited time to complete the whole process. GCS support was critical for successful completion. I truly recommend the company, great and competent people.</p>
+                                    <span class="author">Yuri & Lena - </span> <img src="<?php echo get_template_directory_uri(); ?>/img/commitment-flag-us.png"> <span class="country">USA</span>
+                                    <p class="">I am happy to recommend the team at Global Citizen Solutions. They are knowledgeable and responsive and delivered what was promised.</p>
                                 </div>
 
-                                <div class="review carousel-item item4 ">
-                                    <p class="quote-header">4 “GCS provided, quickly and efficiently, all the assistance I needed.”</p>
-                                    <span class="author">Paulo - </span> <img src="<?php echo get_template_directory_uri(); ?>/img/commitment-flag-us.png"> <span class="country">USA</span>
-                                    <p class="">GCS provided, quickly and efficiently, all the assistance I needed, from acquiring the necessary national documents to finding the right property and closing the deal. As I live outside of Europe, I had a very limited time to complete the whole process. GCS support was critical for successful completion. I truly recommend the company, great and competent people.</p>
-                                </div>
+                                
 
                             </div>
 
@@ -832,7 +826,7 @@ get_header();
                                     <div class="dot active" onclick="ChangeSlide(1)"></div>
                                     <div class="dot" onclick="ChangeSlide(2)"></div>
                                     <div class="dot" onclick="ChangeSlide(3)"></div>
-                                    <div class="dot" onclick="ChangeSlide(4)"></div>
+                                  
 
                                 </div>
                             </div>
