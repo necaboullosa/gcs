@@ -1978,7 +1978,7 @@ _::-webkit-full-page-media, _:future, :root .teal {
   .wrapper .carousel .container .carousel-list .active {
 	align-self: center;
 	display: block;
-	max-height: 360px;
+	max-height: 260px;
   }
   .wrapper .carousel .container .carousel-indicator {
 	width: 100%;
