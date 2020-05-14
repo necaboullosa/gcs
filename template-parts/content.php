@@ -38,7 +38,13 @@
 			<div class="entry-meta">
 				<p><?php
 				    gcs_posted_on();
-                    ?>
+                    ?> - <?php $u_time = get_the_time('U'); 
+                    $u_modified_time = get_the_modified_time('U'); 
+                    if ($u_modified_time >= $u_time + 86400) { 
+                    echo "Updated: "; 
+                    the_modified_time('F j, Y'); 
+                    
+                     }  ?>
                 </p>
 			</div> 
         </div>
