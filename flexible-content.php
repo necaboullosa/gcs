@@ -636,7 +636,7 @@ header'); if($header) { ?><h6 class="blurbs-header txt-center sm-red-line space"
                      ?>
 
                     
-                    <h2 class="section-header space <?php if($image_center) { echo 'txt-center';} ?> sm-red-line"> <?php the_sub_field('header'); ?> </h2>
+                <?php $image_header = get_sub_field('header'); if($image_header) {?> <h2 class="section-header space <?php if($image_center) { echo 'txt-center';} ?> sm-red-line"> <?php the_sub_field('header'); ?> </h2><?php } ?>
                     
 
 
