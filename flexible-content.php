@@ -639,7 +639,7 @@ header'); if($header) { ?><h6 class="blurbs-header txt-center sm-red-line space"
 
                     <?php 
 
-                    $img_url = get_sub_field('link');
+                    $link = get_sub_field('link');
                     $image_url = get_sub_field('image_url'); 
                     if($link) {
                         echo '<a href="' . $link . '">';
