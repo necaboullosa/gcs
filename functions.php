@@ -207,10 +207,16 @@ if( function_exists('acf_add_options_page') ) {
 
 
 
-function custom_excerpt_length( $length ) {
-	return 20;
-}
-add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
+add_filter('wp_trim_excerpt', function($text){    
+	$max_length = 140;
+ 
+	if(mb_strlen($text, 'UTF-8') > $max_length){
+	  $split_pos = mb_strpos(wordwrap($text, $max_length), "\n", 0, 'UTF-8');
+	  $text = mb_substr($text, 0, $split_pos, 'UTF-8');
+	}
+ 
+	return $text . ' ... ';
+ });
 
 add_filter( 'manage_posts_columns', 'revealid_add_id_column', 5 );
 add_action( 'manage_posts_custom_column', 'revealid_id_column_content', 5, 2 );

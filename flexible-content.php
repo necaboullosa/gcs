@@ -462,7 +462,7 @@ header'); if($header) { ?><h6 class="blurbs-header txt-center sm-red-line space"
                                         <?php
                                         
                                             the_excerpt();
-                                         ?>
+                                         ?> 
                                         <div class="button">Read more <img src="<?php echo get_template_directory_uri(); ?>/img/arrow-button.png"></div>
 
                                         </div>
