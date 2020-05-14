@@ -1142,7 +1142,7 @@ object {
 	margin-top: 50px;
 }
 
-.post div[class^="_form"], .popmake-content div[class^="_form"] {
+.post div[class^="_form"], .popmake-content div[class^="_form"] .entry-content div[class^="_form"] {
 	background-color: rgb(24, 105, 185);
 	padding: 20px;
 	color: white;
@@ -1173,7 +1173,7 @@ div[class^="_form"] a {
 	padding: 0px;
 }
 
-._form-title {
+.popmake-content div[class^="_form"] ._form-title {
 	padding: 0px;
 }
 
