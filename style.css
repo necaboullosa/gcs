@@ -1805,6 +1805,11 @@ padding: 120px 0px;
 	padding-left: 1em;
 }
 
+.review .small-flag {
+	max-width: 20px;
+	height: auto;
+}
+
 .quote-header {
 	color: #007ac1;
 	font-family: 'Roboto', sans-serif;
