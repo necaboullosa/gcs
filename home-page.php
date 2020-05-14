@@ -682,29 +682,29 @@ get_header();
 
             <div class="blurbs" data-aos="fade-up">
                 <div class="blurb">
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/blurb-education.png" alt="">
+                    <img src="<?php  echo get_template_directory_uri() . '/img/icons/GCS-ICONS-17.png'; ?>" alt="">
+                    <span>Local banking introduction</span>
+                </div>
+                <div class="separator-container">
+                    <div class="separator"></div>
+                </div>
+                <div class="blurb">
+                    <img src="<?php  echo get_template_directory_uri() . '/img/icons/GCS-ICONS-10.png'; ?>" alt="">
+                    <span>Relocation services</span>
+                </div>
+                <div class="separator-container">
+                    <div class="separator"></div>
+                </div>
+                <div class="blurb">
+                    <img src="<?php  echo get_template_directory_uri() . '/img/icons/GCS-ICONS-17.png'; ?>" alt="">
                     <span>Education consultancy</span>
                 </div>
                 <div class="separator-container">
                     <div class="separator"></div>
                 </div>
                 <div class="blurb">
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/blurb-concierge.png" alt="">
-                    <span>Education consultancy</span>
-                </div>
-                <div class="separator-container">
-                    <div class="separator"></div>
-                </div>
-                <div class="blurb">
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/blurb-banking.png" alt="">
-                    <span>Education consultancy</span>
-                </div>
-                <div class="separator-container">
-                    <div class="separator"></div>
-                </div>
-                <div class="blurb">
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/blurb-relocation.png" alt="">
-                    <span>Education consultancy</span>
+                    <img src="<?php  echo get_template_directory_uri() . '/img/icons/GCS-ICONS-26.png'; ?>" alt="">
+                    <span>Concierge service</span>
                 </div>
 
             </div>
