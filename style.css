@@ -1199,6 +1199,7 @@ div[class^="_form"] label, .ac-form label, .entry-content div[class^="_form"] la
 
 .ac-form ._checkbox-radio {
 	font-size: 0.6304347826rem;
+	color: white;
 }
 
  .ac-form ._html-code a {
