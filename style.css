@@ -1464,6 +1464,7 @@ font-size: 0.69347826086rem;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+	border-radius: 20px;
 }
 
 .hero-container {
