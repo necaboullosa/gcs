@@ -2180,6 +2180,7 @@ blockquote {
 	flex-direction: column;
 	align-items: center;
 	margin-bottom: 54px;
+	margin: 0 auto 54px auto;
 }
 
 .usp img {
