@@ -1193,6 +1193,7 @@ div[class^="_form"] a {
 
 div[class^="_form"] label, .ac-form label, .entry-content div[class^="_form"] label {
 	font-size: 0.75652173913rem;
+	color: white !important;
 }
 
 
@@ -1202,9 +1203,7 @@ div[class^="_form"] label, .ac-form label, .entry-content div[class^="_form"] la
 	
 }
 
-._checkbox-radio label {
-	color: white !important;
-}
+
 
  .ac-form ._html-code a {
 	margin-left: 10px;
