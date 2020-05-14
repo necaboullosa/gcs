@@ -452,17 +452,18 @@ header'); if($header) { ?><h6 class="blurbs-header txt-center sm-red-line space"
                                 $post_query->the_post();
                                 ?>
                                 <div class="post">
-                                <a href="<?php the_permalink(); ?>">
-                                <img class="thumbnail" src="<?php the_post_thumbnail_url('large'); ?>">
-                                <div class="text">
-
-                                
-                                    <h5><?php the_title(); ?></h5>
-                                    <?php the_excerpt(); ?>
-                                    <div class="button">Read more <img src="<?php echo get_template_directory_uri(); ?>/img/arrow-button.png"></div>
-
+                                    <a href="<?php the_permalink(); ?>">
+                                    <div class="thumbnail-container" style="background-image: url('<?php the_post_thumbnail_url('medium'); ?>'); height: 220px;">
                                     </div>
-                                </a>
+                                    <div class="text">
+
+                                    
+                                        <h5><?php the_title(); ?></h5>
+                                        <?php the_excerpt(); ?>
+                                        <div class="button">Read more <img src="<?php echo get_template_directory_uri(); ?>/img/arrow-button.png"></div>
+
+                                        </div>
+                                    </a>
                                 </div>
                                 <?php
                                 }

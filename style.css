@@ -1149,6 +1149,13 @@ object {
 
 }
 
+div[class^="_form"] a {
+	margin-left: 10px;
+	color: #00b4c5;
+	font-size: .6304347826rem;
+}
+
+
 .post div[class^="_form"] ._full_width, .popmake-content div[class^="_form"] ._full_width {
 	padding: 0px;
 }
@@ -2097,6 +2104,12 @@ blockquote {
 
 .the-loop .thumbnail {
 	min-height: 220px;
+}
+
+.the-loop .thumbnail-container {
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+	background-size: cover;
 }
 
 

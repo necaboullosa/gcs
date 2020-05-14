@@ -207,10 +207,10 @@ if( function_exists('acf_add_options_page') ) {
 
 
 
-function wpdocs_custom_excerpt_length( $length ) {
-    return 40;
+function custom_excerpt_length( $length ) {
+	return 20;
 }
-add_filter( 'excerpt_length', 'wpdocs_custom_excerpt_length', 999 );
+add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
 
 add_filter( 'manage_posts_columns', 'revealid_add_id_column', 5 );
 add_action( 'manage_posts_custom_column', 'revealid_id_column_content', 5, 2 );
