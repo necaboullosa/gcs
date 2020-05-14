@@ -802,18 +802,22 @@ get_header();
                             <div class="carousel-list">
 
                                 <div class="review carousel-item item1 active">
-                                    <!--<p class="quote-header">“GCS provided, quickly and efficiently, all the assistance I needed.”</p> -->
-                                    <span class="author">Rod & Jay - </span> <img src="<?php echo get_template_directory_uri(); ?>/img/commitment-flag-us.png"> <span class="country">USA</span>
+                                    <p class="quote-header">“GCS provided, quickly and efficiently, all the assistance I needed.”</p> 
+                                    <span class="author">Rod & Jay - </span> <img src="<?php echo get_template_directory_uri(); ?>/img/flags-small/usa.svg"> <span class="country">USA</span>
                                     <p class="">GCS was very helpful and competent at every step and with a can-do attitude. We are now in Lisbon part of the year and always in touch. Thank you.</p>
                                 </div>
 
                                 <div class="review carousel-item item2 ">
-                                    <span class="author">Joan & Chen - </span> <img src="<?php echo get_template_directory_uri(); ?>/img/commitment-flag-us.png"> <span class="country">USA</span>
+                                    <p class="quote-header">“Thank you for being so patient and open with us.”</p> 
+
+                                    <span class="author">Joan & Chen - </span> <img src="<?php echo get_template_directory_uri(); ?>/img/flags-small/russia.svg"> <span class="country">USA</span>
                                     <p class="">Thank you for being so patient and open with us. We appreciate you helping us navigate the different investments as we could not make up our minds. We couldn’t be happier and got our visa swiftly too. </p>
                                 </div>
 
                                 <div class="review carousel-item item3 ">
-                                    <span class="author">Yuri & Lena - </span> <img src="<?php echo get_template_directory_uri(); ?>/img/commitment-flag-us.png"> <span class="country">USA</span>
+                                <p class="quote-header">“I am happy to recommend the team at Global Citizen Solutions.”</p> 
+
+                                    <span class="author">Yuri & Lena - </span> <img src="<?php echo get_template_directory_uri(); ?>/img/flags-small/hk.svg"> <span class="country">USA</span>
                                     <p class="">I am happy to recommend the team at Global Citizen Solutions. They are knowledgeable and responsive and delivered what was promised.</p>
                                 </div>
 
