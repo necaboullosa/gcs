@@ -1651,7 +1651,8 @@ font-size: 0.69347826086rem;
 	align-items: center;
 	min-height: 120px;
 	max-width: 20%;
-    text-align: center;
+	text-align: center;
+	margin: 0 auto;
 }
 
 .blurb img {
@@ -2341,7 +2342,7 @@ blockquote {
 	  max-width: 32%;
 	  border-radius: 20px;
 	  border: 1px solid rgb( 23, 107, 182);
-	  margin-bottom: 21.6px;
+	  margin: 0 auto 21.6px auto;
   }
 
   .country img {
