@@ -1153,6 +1153,7 @@ div[class^="_form"] a {
 	margin-left: 10px;
 	color: #00b4c5;
 	font-size: .6304347826rem;
+	margin-bottom: 10px;
 }
 
 
@@ -1169,6 +1170,10 @@ div[class^="_form"] a {
 	font-size: 2.6rem;
 	line-height: 2.6rem;
 	margin-bottom: 0.83em;
+	padding: 0px;
+}
+
+._form-title {
 	padding: 0px;
 }
 
