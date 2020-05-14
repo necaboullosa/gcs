@@ -1157,7 +1157,7 @@ div[class^="_form"] a {
 }
 
 
-.post div[class^="_form"] ._full_width, .popmake-content div[class^="_form"] ._full_width {
+.post div[class^="_form"] ._full_width, .popmake-content div[class^="_form"] ._full_width, .entry-content div[class^="_form"] ._full_width {
 	padding: 0px;
 }
 
@@ -1173,7 +1173,7 @@ div[class^="_form"] a {
 	padding: 0px;
 }
 
-.popmake-content div[class^="_form"] ._form-title {
+.popmake-content div[class^="_form"] ._form-title, .entry-content div[class^="_form"] ._form-title {
 	padding: 0px;
 }
 
@@ -1191,7 +1191,7 @@ div[class^="_form"] a {
 	color: white !important;
 }
 
-div[class^="_form"] label, .ac-form label {
+div[class^="_form"] label, .ac-form label, .entry-content div[class^="_form"] label {
 	font-size: 0.75652173913rem;
 }
 
