@@ -135,11 +135,18 @@ a {
 }
 
 
-.entry-content a {
+.entry-content a, .entry-content a:visited {
 		font-weight: 400;
 		text-decoration: underline;
 		color: #2a3e71;
 	
+}
+
+
+.entry-content a:hover {
+
+	color: #00b4c5;
+
 }
 
 /**
@@ -1220,7 +1227,10 @@ div[class^="_form"] label, .ac-form label, .entry-content div[class^="_form"] la
 	color: white;
 }
 
-
+#property_calculator {
+	width: 100%;
+    min-height: 1000px;	
+}
 
 
 
