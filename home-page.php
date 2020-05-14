@@ -696,14 +696,14 @@ get_header();
                     <div class="separator"></div>
                 </div>
                 <div class="blurb">
-                    <img src="<?php  echo get_template_directory_uri() . '/img/icons/GCS-ICONS-17.png'; ?>" alt="">
+                    <img src="<?php  echo get_template_directory_uri() . '/img/icons/GCS-ICONS-26.png'; ?>" alt="">
                     <span>Education consultancy</span>
                 </div>
                 <div class="separator-container">
                     <div class="separator"></div>
                 </div>
                 <div class="blurb">
-                    <img src="<?php  echo get_template_directory_uri() . '/img/icons/GCS-ICONS-26.png'; ?>" alt="">
+                    <img src="<?php  echo get_template_directory_uri() . '/img/icons/GCS-ICONS-39.png'; ?>" alt="">
                     <span>Concierge service</span>
                 </div>
 
