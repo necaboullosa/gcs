@@ -305,9 +305,8 @@ header'); if($header) { ?><h6 class="blurbs-header txt-center sm-red-line space"
                                     
                                     global $i;
                                     $i++;
-
-                                    /* if( ($i != 4) and ($i != 5) and ($i != 8)) */
-                                    if( ($i != 4)  and ($i != 8)) {
+                                    
+                                    if( ($i != 4) and ($i != 5) and ($i != 8)) {
                                       ?>
                                         <div class="separator-container">
                                             <div class="separator"></div>
