@@ -683,28 +683,53 @@ get_header();
             <div class="blurbs" data-aos="fade-up">
                 <div class="blurb">
                     <img src="<?php  echo get_template_directory_uri() . '/img/icons/GCS-ICONS-17.png'; ?>" alt="">
-                    <span>Local banking introduction</span>
+                    <span>
+                        <?php if(ICL_LANGUAGE_CODE=='en'); ?>
+                            Local banking introduction
+                        <?php elseif(ICL_LANGUAGE_CODE=='pt'); ?>
+                            Apresentação a consultores bancários locais
+                        <?php endif; ?>
+                    </span>
                 </div>
                 <div class="separator-container">
                     <div class="separator"></div>
                 </div>
                 <div class="blurb">
                     <img src="<?php  echo get_template_directory_uri() . '/img/icons/GCS-ICONS-10.png'; ?>" alt="">
-                    <span>Relocation services</span>
+                    <span>
+                        <?php if(ICL_LANGUAGE_CODE=='en'); ?>
+                            Relocation Services
+                        <?php elseif(ICL_LANGUAGE_CODE=='pt'); ?>
+                            Recolocação profissional
+                        <?php endif; ?>
+                    </span>
                 </div>
                 <div class="separator-container">
                     <div class="separator"></div>
                 </div>
                 <div class="blurb">
                     <img src="<?php  echo get_template_directory_uri() . '/img/icons/GCS-ICONS-26.png'; ?>" alt="">
-                    <span>Education consultancy</span>
+                    <span>
+                        <?php if(ICL_LANGUAGE_CODE=='en'); ?>
+                            Education consultancy
+                        <?php elseif(ICL_LANGUAGE_CODE=='pt'); ?>
+                            Consultoria educacional
+                        <?php endif; ?>
+                    </span>
+                    
                 </div>
                 <div class="separator-container">
                     <div class="separator"></div>
                 </div>
                 <div class="blurb">
                     <img src="<?php  echo get_template_directory_uri() . '/img/icons/GCS-ICONS-39.png'; ?>" alt="">
-                    <span>Concierge service</span>
+                    <span>
+                        <?php if(ICL_LANGUAGE_CODE=='en'); ?>
+                            Concierge service
+                        <?php elseif(ICL_LANGUAGE_CODE=='pt'); ?>
+                            Concierge
+                        <?php endif; ?>
+                    </span>
                 </div>
 
             </div>
