@@ -707,7 +707,7 @@ if($enable_our_commitment) { ?>
                                     <div class="form ac-form">
                                         <?php 
                                         
-                                        $our_commitment_form = get_field('our_commitment-form');
+                                        $our_commitment_form = get_field('our_commitment-form2');
                                         if(!$our_commitment_form) {
                                             $our_commitment_form = get_field('our_commitment-form', 'option');
                                         }
