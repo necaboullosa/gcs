@@ -688,7 +688,7 @@ get_header();
                             ?>
                                 Local banking introduction
                         <?php }
-                        if(ICL_LANGUAGE_CODE=='pt');  {
+                        if(ICL_LANGUAGE_CODE=='pt-pt');  {
                             ?>
                             Apresentação a consultores bancários locais
 
@@ -706,7 +706,7 @@ get_header();
                     <span>
                         <?php if(ICL_LANGUAGE_CODE=='en'); { ?>
                             Relocation Services
-                            <?php } if(ICL_LANGUAGE_CODE=='pt'); { ?>
+                            <?php } if(ICL_LANGUAGE_CODE=='pt-pt'); { ?>
                             Recolocação profissional
                             <?php
                         } ?>
@@ -720,7 +720,7 @@ get_header();
                     <span>
                         <?php if(ICL_LANGUAGE_CODE=='en'); { ?>
                             Education consultancy
-                            <?php }  if(ICL_LANGUAGE_CODE=='pt'); { ?>
+                            <?php }  if(ICL_LANGUAGE_CODE=='pt-pt'); { ?>
                             Consultoria educacional
                             <?php
                         } ?>
@@ -735,7 +735,7 @@ get_header();
                     <span>
                         <?php if(ICL_LANGUAGE_CODE=='en'); { ?>
                             Concierge service
-                            <?php } if(ICL_LANGUAGE_CODE=='pt'); { ?>
+                            <?php } if(ICL_LANGUAGE_CODE=='pt-pt'); { ?>
                             Concierge
                             <?php
                         } ?>
