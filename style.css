@@ -2178,7 +2178,7 @@ blockquote {
 }
 
 .country h5 {
-	min-height: auto;
+	min-height: auto !important;
 }
 
 .usps {
