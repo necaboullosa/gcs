@@ -814,7 +814,7 @@ get_header();
                     <h2 class="section-header sm-red-line"><?php the_field('home_where_we_operate-header'); ?></h2>
                     <p class="sm-text"><?php the_field('home_where_we_operate-text'); ?></p>
                     <a href="/countries/">
-                        <div class="button">LIST ALL COUNTRIES <img src="<?php echo get_template_directory_uri(); ?>/img/arrow-button.png"></div>
+                        <div class="button">LIST OF COUNTRIES <img src="<?php echo get_template_directory_uri(); ?>/img/arrow-button.png"></div>
                     </a>
 
                 </div>
