@@ -2197,9 +2197,12 @@ blockquote {
 }
 
 .usp img {
-	max-height: 70px;
+	max-height: 90px;
 }
 
+.usp h5 {
+	color: #007ac1;
+}
 
 
 /* text image */
