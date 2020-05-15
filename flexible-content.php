@@ -36,7 +36,13 @@ if($enable_header_form) { ?>
 
 </style>
         <div class="form ac-form">
-                <?php echo do_shortcode('[activecampaign form=59]'); ?>
+            
+                <?php $our_commitment_form = get_field('our_commitment-form');
+                                        if(!$our_commitment_form) {
+                                            $our_commitment_form = get_field('our_commitment-form', 'option');
+                                        }
+
+                                        echo do_shortcode($our_commitment_form);?>
             </div>
 
 <?php }?>
@@ -700,7 +706,11 @@ if($enable_our_commitment) { ?>
                                 <div class="wrapper">
                                     <div class="form ac-form">
                                         <?php 
-                                        $our_commitment_form = get_field('our_commitment-form', 'option');
+                                        
+                                        $our_commitment_form = get_field('our_commitment-form');
+                                        if(!$our_commitment_form) {
+                                            $our_commitment_form = get_field('our_commitment-form', 'option');
+                                        }
 
                                         echo do_shortcode($our_commitment_form); ?>
                                     </div>
