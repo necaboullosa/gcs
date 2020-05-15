@@ -127,6 +127,8 @@ if($enable_header_form) { ?>
                 if(!$image_on_the_right) {
                     ?>
                 <div class="image-container">
+                    <?php $sub_header = get_sub_field('sub_header'); if($sub_header) {?>  <h3 class="section-sub-header hidden-sub-header"><?php echo $sub_header; }?></h3>
+
                     <img class="img-stack-top-left stack-bottom" data-aos="fade-right" src="<?php $image_1 = get_sub_field('image_1'); echo $image_1; ?>" alt="">
 
                 </div>
@@ -161,6 +163,8 @@ if($enable_header_form) { ?>
                 if($image_on_the_right) {
                     ?>
                 <div class="image-container">
+                    <?php $sub_header = get_sub_field('sub_header'); if($sub_header) {?>  <h3 class="section-sub-header hidden-sub-header"><?php echo $sub_header; }?></h3>
+
                     <img class="img-stack-top-left stack-bottom" data-aos="fade-left" src="<?php $image_1 = get_sub_field('image_1'); echo $image_1; ?>" alt="">
 
                 </div>

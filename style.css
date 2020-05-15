@@ -2771,8 +2771,15 @@ blockquote {
 		visibility: hidden; 
 	}
 
+	.hidden-sub-header {
+		visibility: hidden;
+	}
+
 	@media (max-width: 700px ) {
 		.hidden {
+			display: none;
+		}
+		.hidden-sub-header {
 			display: none;
 		}
 	}

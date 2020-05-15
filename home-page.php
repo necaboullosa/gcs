@@ -41,14 +41,22 @@ get_header();
                 <h2 class="section-header sm-red-line"><?php the_field('home_intro-header'); ?></h2>
                 <?php the_field('home_intro-text'); ?>
                 <a href="<?php the_field('home_intro-button_url'); ?>">
-                    <div class="button">Get in touch <img src="<?php echo get_template_directory_uri(); ?>/img/arrow-button.png"></div>
+                    <div class="button"><?php if(ICL_LANGUAGE_CODE=='en'): ?>
+                        ABOUT US
+                        <?php elseif(ICL_LANGUAGE_CODE=='pt-pt'): ?>
+                            Quem Somos
+                        <?php endif; ?> <img src="<?php echo get_template_directory_uri(); ?>/img/arrow-button.png"></div>
                 </a>
 
             </div>
         </div>
     </div>
     <div class="container" data-aos="fade-up">
-        <h3 class="section-sub-header ">SERVICES</h3>
+        <h3 class="section-sub-header "><?php if(ICL_LANGUAGE_CODE=='en'): ?>
+            SERVICES
+                        <?php elseif(ICL_LANGUAGE_CODE=='pt-pt'): ?>
+                            SERVIÇOS
+                        <?php endif; ?></h3>
 
     </div>
 
@@ -60,7 +68,13 @@ get_header();
         <div class="residency animated txt-center" data-aos="fade-up">
             <div class="top-card">
                 <img src="<?php echo get_template_directory_uri(); ?>/img/services-residency.png" alt="">
-                <h3 class="sm-red-line txt-center">Residency Programs</h3>
+                <h3 class="sm-red-line txt-center"><?php if(ICL_LANGUAGE_CODE=='en'): ?>
+                    Residency Programs
+                        <?php elseif(ICL_LANGUAGE_CODE=='pt-pt'): ?>
+                            Programas de Residência
+
+                        <?php endif; ?>
+</h3>
                 <?php the_field('home_residency-text'); ?>
             </div>
             <div class="bottom-card">
@@ -93,7 +107,14 @@ get_header();
                     </div>
 
                 <a href="<?php the_field('home_residency-url'); ?>">
-                    <div class="button">Compare Programs <img src="<?php echo get_template_directory_uri(); ?>/img/arrow-button.png"></div>
+                    <div class="button"><?php if(ICL_LANGUAGE_CODE=='en'): ?>
+                        Compare Programs
+                        <?php elseif(ICL_LANGUAGE_CODE=='pt-pt'): ?>
+                            Compare programas
+
+
+
+                        <?php endif; ?> <img src="<?php echo get_template_directory_uri(); ?>/img/arrow-button.png"></div>
                 </a>
 
             </div>
@@ -103,7 +124,13 @@ get_header();
             <div class="top-card">
 
                 <img src="<?php echo get_template_directory_uri(); ?>/img/services-citizenship.png" alt="">
-                <h3 class="sm-red-line txt-center">Citizenship Programs</h3>
+                <h3 class="sm-red-line txt-center"><?php if(ICL_LANGUAGE_CODE=='en'): ?>
+                    Citizenship Programs
+                        <?php elseif(ICL_LANGUAGE_CODE=='pt-pt'): ?>
+                            Programas de Cidadania
+
+
+                        <?php endif; ?></h3>
                 <?php the_field('home_citizenship-text'); ?>
 
             </div>
@@ -143,7 +170,14 @@ get_header();
                 </div>
 
                     <a href="<?php the_field('home_citizenship-url'); ?>">
-                        <div class="button">Compare Programs <img src="<?php echo get_template_directory_uri(); ?>/img/arrow-button.png"></div>
+                        <div class="button"><?php if(ICL_LANGUAGE_CODE=='en'): ?>
+                        Compare Programs
+                        <?php elseif(ICL_LANGUAGE_CODE=='pt-pt'): ?>
+                            Compare programas
+
+
+
+                        <?php endif; ?> <img src="<?php echo get_template_directory_uri(); ?>/img/arrow-button.png"></div>
                     </a>
                 </div>
 
@@ -375,7 +409,15 @@ get_header();
                   <?php elseif( get_row_layout() == 'as_seen_on' ): ?>
                     
 
-                    <h2 class="section-header txt-center sm-red-line as-seen-header" data-aos="fade-up">As seen on</h2>
+                    <h2 class="section-header txt-center sm-red-line as-seen-header" data-aos="fade-up"><?php if(ICL_LANGUAGE_CODE=='en'): ?>
+                        As seen on
+                        <?php elseif(ICL_LANGUAGE_CODE=='pt-pt'): ?>
+                            Como se ve en
+
+
+
+
+                        <?php endif; ?></h2>
                         <div class="as-seen-outer" data-aos="fade-up">
                             <div class="as-seen container">
                                 <div class="source">
@@ -453,7 +495,15 @@ get_header();
                                 
                                     <h5><?php the_title(); ?></h5>
                                     <?php the_excerpt(); ?>
-                                    <div class="button">Read more <img src="<?php echo get_template_directory_uri(); ?>/img/arrow-button.png"></div>
+                                    <div class="button"><?php if(ICL_LANGUAGE_CODE=='en'): ?>
+                        Read More
+                        <?php elseif(ICL_LANGUAGE_CODE=='pt-pt'): ?>
+                            Lee mas   
+
+
+
+
+                        <?php endif; ?><img src="<?php echo get_template_directory_uri(); ?>/img/arrow-button.png"></div>
 
                                     </div>
                                 </a>
