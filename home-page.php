@@ -804,7 +804,7 @@ get_header();
             </div>
         </div>
 
-        <p class="txt-center blurbs-sub-header " data-aos="fade-up">Additionally, we have a wide network of local partners through which we can recommend trusted local professionals.</p>
+        <p class="txt-center blurbs-sub-header " data-aos="fade-up">Additionally, we have a wide network of local partners through which we can recommend trusted professionals.</p>
 
         <div class="map-section-container" data-aos="fade-up">
 
