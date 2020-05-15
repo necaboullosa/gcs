@@ -2802,3 +2802,10 @@ blockquote {
 	.pum-theme-7582 .pum-container, .pum-theme-enterprise-blue .pum-container {
 		padding: 0px !important;
 	}
+
+
+
+	.blurb_type_2_container .blurb-heder {
+		color: #1955a6 !important;
+		font-size: 1rem !important;
+	}
