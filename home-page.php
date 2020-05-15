@@ -684,16 +684,13 @@ get_header();
                 <div class="blurb">
                     <img src="<?php  echo get_template_directory_uri() . '/img/icons/GCS-ICONS-17.png'; ?>" alt="">
                     <span>
-                        <?php if(ICL_LANGUAGE_CODE=='en'); {
-                            ?>
-                                Local banking introduction
-                        <?php }
-                        if(ICL_LANGUAGE_CODE=='pt-pt');  {
-                            ?>
+                        <?php if(ICL_LANGUAGE_CODE=='en'): ?>
+                            Local banking introduction
+                        <?php elseif(ICL_LANGUAGE_CODE=='pt'): ?>
                             Apresentação a consultores bancários locais
+                        <?php endif; ?>
 
-                            <?php
-                        } ?>
+                        
                     
                         
                     </span>
@@ -704,12 +701,12 @@ get_header();
                 <div class="blurb">
                     <img src="<?php  echo get_template_directory_uri() . '/img/icons/GCS-ICONS-10.png'; ?>" alt="">
                     <span>
-                        <?php if(ICL_LANGUAGE_CODE=='en'); { ?>
+                        <?php if(ICL_LANGUAGE_CODE=='en'): ?>
                             Relocation Services
-                            <?php } if(ICL_LANGUAGE_CODE=='pt-pt'); { ?>
+                        <?php elseif(ICL_LANGUAGE_CODE=='pt'): ?>
                             Recolocação profissional
-                            <?php
-                        } ?>
+                        <?php endif; ?>
+                       
                     </span>
                 </div>
                 <div class="separator-container">
@@ -718,12 +715,12 @@ get_header();
                 <div class="blurb">
                     <img src="<?php  echo get_template_directory_uri() . '/img/icons/GCS-ICONS-26.png'; ?>" alt="">
                     <span>
-                        <?php if(ICL_LANGUAGE_CODE=='en'); { ?>
-                            Education consultancy
-                            <?php }  if(ICL_LANGUAGE_CODE=='pt-pt'); { ?>
+                    <?php if(ICL_LANGUAGE_CODE=='en'): ?>
+                        Education consultancy
+                        <?php elseif(ICL_LANGUAGE_CODE=='pt'): ?>
                             Consultoria educacional
-                            <?php
-                        } ?>
+                        <?php endif; ?>
+                       
                     </span>
                     
                 </div>
@@ -733,12 +730,12 @@ get_header();
                 <div class="blurb">
                     <img src="<?php  echo get_template_directory_uri() . '/img/icons/GCS-ICONS-39.png'; ?>" alt="">
                     <span>
-                        <?php if(ICL_LANGUAGE_CODE=='en'); { ?>
-                            Concierge service
-                            <?php } if(ICL_LANGUAGE_CODE=='pt-pt'); { ?>
+                    <?php if(ICL_LANGUAGE_CODE=='en'): ?>
+                        Concierge service
+                        <?php elseif(ICL_LANGUAGE_CODE=='pt'): ?>
                             Concierge
-                            <?php
-                        } ?>
+                        <?php endif; ?>
+                        
                     </span>
                 </div>
 
