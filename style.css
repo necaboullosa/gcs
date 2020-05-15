@@ -1081,6 +1081,7 @@ object {
 	color: #808080;
 	font-weight: 400;
 	font-size: 1.54rem;
+	margin: 0px;
 }
 
 
@@ -1456,6 +1457,10 @@ font-size: 0.69347826086rem;
 	font-family: 'Roboto', sans-serif;
 	font-weight: 600;
 	color: #007ac1;
+}
+
+.page-template-home-page .text_image   p, .page-template-home-page  .text_image  span, .page-template-home-page .blurb {
+	color: #808080;
 }
 .residency, .citizenship {
 	max-width: 340px;
@@ -2067,7 +2072,7 @@ _::-webkit-full-page-media, _:future, :root .teal {
     font-family: 'Roboto', sans-serif !important;
 	font-size: 1rem !important;
 	font-weight: 400;
-	color:rgb(102, 102, 102);
+	color:#808080;
 	
 }
 

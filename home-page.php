@@ -11,12 +11,19 @@ get_header();
                 <p><?php the_field('home_sub_header'); ?></p>
             </div>
             <div class="form ac-form">
-            <?php $our_commitment_form = get_field('our_commitment-form');
-                                        if(!$our_commitment_form) {
-                                            $our_commitment_form = get_field('our_commitment-form', 'option');
-                                        }
+            <?php
+            $our_commitment_form = get_field('our_commitment-form2');
+            the_field('our_commitment-form2');
+            if($our_commitment_form) {
+                echo apply_filters( 'the_content', $our_commitment_form);
+            
+            } else {
+                $our_commitment_form = get_field('our_commitment-form', 'option');
+                echo apply_filters( 'the_content', $our_commitment_form);
 
-                                        echo do_shortcode($our_commitment_form);?>
+            }
+            
+           ?>
             </div>
         </div>
         <div class="teal">

@@ -166,4 +166,4 @@ echo $url; ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/header-
 	
 	</header><!-- #masthead -->
 
-	<div id="content" class="site-content">
+	<div id="content" class="site-content ">

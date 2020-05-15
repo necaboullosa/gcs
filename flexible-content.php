@@ -6,7 +6,7 @@ get_header();
 <style>
 .hero-page {
             background-image: url('<?php $featured_img_url = get_the_post_thumbnail_url(get_the_ID(),'full'); echo $featured_img_url;?>');           
-			background-color: #d3d3d3;
+			background-color: #aaa;
 			background-blend-mode: multiply;
 }
 </style>
