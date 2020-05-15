@@ -699,7 +699,10 @@ if($enable_our_commitment) { ?>
 
                                 <div class="wrapper">
                                     <div class="form ac-form">
-                                        <?php echo do_shortcode('[activecampaign form=59]'); ?>
+                                        <?php 
+                                        $our_commitment_form = get_field('our_commitment-form', 'option');
+
+                                        echo do_shortcode($our_commitment_form); ?>
                                     </div>
                                 </div>
 
