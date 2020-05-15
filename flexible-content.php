@@ -569,7 +569,7 @@ header'); if($header) { ?><h6 class="blurbs-header txt-center sm-red-line space"
 
                                         <h5><?php the_title(); ?></h5>
                                         <a href="<?php the_permalink(); ?>">
-                                            <div class="button">Click to read <img src="<?php echo get_template_directory_uri(); ?>/img/arrow-button.png"></div>
+                                            <div class="button">READ MORE <img src="<?php echo get_template_directory_uri(); ?>/img/arrow-button.png"></div>
                                         </a>
 
                                     </div>

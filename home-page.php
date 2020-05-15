@@ -12,8 +12,8 @@ get_header();
             </div>
             <div class="form ac-form">
             <?php
-            $our_commitment_form = get_field('our_commitment-form2');
-            the_field('our_commitment-form2');
+            $our_commitment_form = get_field('our_commitment-form');
+            
             if($our_commitment_form) {
                 echo apply_filters( 'the_content', $our_commitment_form);
             
@@ -779,7 +779,7 @@ get_header();
         <div class="guides-outer container" data-aos="fade-up">
 
             <h3 class="section-sub-header txt-center">Local experts</h3>
-            <h2 class="section-header txt-center sm-red-line">Check out our Ultimate Guides for Citizenship by Investiment</h2>
+            <h2 class="section-header txt-center sm-red-line">Check out our Ultimate Guides for Citizenship and Residency by Investment</h2>
 
             <div class="guides">
             <?php

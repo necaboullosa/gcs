@@ -100,7 +100,7 @@ var b=a.data(this,"plugin_intlTelInput");b instanceof p&&"function"==typeof b[c]
 
 			background-image: url('<?php echo get_template_directory_uri(); ?>/img/hero.jpg');
 
-			background-color: #d3d3d3;
+			background-color: #aaa;
 
 			background-blend-mode: multiply;
 

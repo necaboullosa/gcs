@@ -1817,7 +1817,9 @@ padding: 120px 0px;
 
 .quote-header {
 	color: #007ac1;
-	font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 0px;
+    font-weight: 600;
 	 
 }
 
@@ -2047,7 +2049,8 @@ _::-webkit-full-page-media, _:future, :root .teal {
 
 .entry-content h3, .entry-content h3 span {
     font-size: 2rem !important;
-    color: #00b4c5 !important;
+	color: #00b4c5 !important;
+	margin: 0px;
 }
 
 
