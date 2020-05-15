@@ -270,7 +270,6 @@ add_filter('mce_buttons_2','tinymce_buttons_2');
 
 
 
-
 if( function_exists('acf_add_local_field_group') ):
 
 	acf_add_local_field_group(array(
@@ -376,11 +375,30 @@ if( function_exists('acf_add_local_field_group') ):
 					'class' => '',
 					'id' => '',
 				),
-				'default_value' => 0,
 				'message' => '',
+				'default_value' => 0,
 				'ui' => 0,
 				'ui_on_text' => '',
 				'ui_off_text' => '',
+			),
+			array(
+				'key' => 'field_5ebe66d005059',
+				'label' => 'Override global form (Shortcode)',
+				'name' => 'our_commitment-form',
+				'type' => 'text',
+				'instructions' => '',
+				'required' => 0,
+				'conditional_logic' => 0,
+				'wrapper' => array(
+					'width' => '',
+					'class' => '',
+					'id' => '',
+				),
+				'default_value' => '[activecampaign form=59]',
+				'placeholder' => '',
+				'prepend' => '',
+				'append' => '',
+				'maxlength' => '',
 			),
 			array(
 				'key' => 'field_5e9eef7e7bbcf',
@@ -3274,4 +3292,3 @@ if( function_exists('acf_add_local_field_group') ):
 	));
 	
 	endif;
-	

@@ -11,7 +11,12 @@ get_header();
                 <p><?php the_field('home_sub_header'); ?></p>
             </div>
             <div class="form ac-form">
-                <?php echo do_shortcode('[activecampaign form=59]'); ?>
+            <?php $our_commitment_form = get_field('our_commitment-form');
+                                        if(!$our_commitment_form) {
+                                            $our_commitment_form = get_field('our_commitment-form', 'option');
+                                        }
+
+                                        echo do_shortcode($our_commitment_form);?>
             </div>
         </div>
         <div class="teal">
