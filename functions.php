@@ -271,7 +271,6 @@ add_filter('mce_buttons_2','tinymce_buttons_2');
 
 
 
-
 if( function_exists('acf_add_local_field_group') ):
 
 	acf_add_local_field_group(array(
@@ -3115,6 +3114,25 @@ if( function_exists('acf_add_local_field_group') ):
 				'maxlength' => '',
 			),
 			array(
+				'key' => 'field_5ebe5746f8ca3',
+				'label' => 'Our Commitment - Form',
+				'name' => 'our_commitment-form',
+				'type' => 'text',
+				'instructions' => '',
+				'required' => 0,
+				'conditional_logic' => 0,
+				'wrapper' => array(
+					'width' => '',
+					'class' => '',
+					'id' => '',
+				),
+				'default_value' => '[activecampaign form=59]',
+				'placeholder' => '',
+				'prepend' => '',
+				'append' => '',
+				'maxlength' => '',
+			),
+			array(
 				'key' => 'field_5ebab0326eb87',
 				'label' => 'Reviews (Home Page only)',
 				'name' => 'reviews_home_page_only',
@@ -3256,5 +3274,4 @@ if( function_exists('acf_add_local_field_group') ):
 	));
 	
 	endif;
-
 	
