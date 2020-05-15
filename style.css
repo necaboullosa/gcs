@@ -1626,6 +1626,14 @@ font-size: 0.69347826086rem;
 
 .blurb_type_2_container .blurb {
 	max-width: 22%;
+		box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+		margin: 0 auto;
+
+	
+}
+
+.blurb_type_2_container .blurb img {
+	max-height: 90px;
 }
 
 .blurbs {
