@@ -101,7 +101,7 @@
 		<hr>
 		<div class="copyright-outer">
 			<div class="copyright container">
-				<p>Global Citizen Solutions © 2017 -  <?php echo date("Y"); ?>
+				<p>Global Citizen Solutions  2017 -  <?php echo date("Y"); ?> ©
 . All rights reserved.</p>
 			</div>
 		</div>
