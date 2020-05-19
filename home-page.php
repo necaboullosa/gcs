@@ -1046,7 +1046,7 @@ get_header();
                                         ?>
                                     
 
-                                            <div class="review carousel-item item<?php echo $i;?> <?php if ($i === 1) { echo 'active'}?>">
+                                            <div class="review carousel-item item<?php echo $i;?> <?php if ($i === 1) { echo 'active';}?>">
                                                 <p class="quote-header">“<?php the_sub_field('tagline'); ?>”</p> 
                                                 <span class="author"><?php the_sub_field('name'); ?> - </span> <img class="small-flag" src="<?php the_sub_field('flag'); ?>"> <span class="country"><?php the_sub_field('country_name'); ?></span>
                                                 <p class=""><?php the_sub_field('review-text'); ?></p>
