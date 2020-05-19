@@ -616,12 +616,13 @@ header'); if($header) { ?><h6 class="blurbs-header txt-center sm-red-line space"
                                             <img src="<?php $icon = get_sub_field('icon'); echo get_template_directory_uri() . '/img/icons/GCS-ICONS-' . $icon . '.png'; ?>">
                                             <?php $header = get_sub_field('header'); if($header) { ?><h5 class="blurb-header sm-red-line txt-center "><?php   the_sub_field('header');?> </h5> <?php } ?>
                                             <img class="more" src="<?php 
-                                                                        $more_button_flip_cards = get_field('more_button_flip_cards'); 
+                                                                        $more_button_flip_cards = get_field('more_button_flip_cards', 'option'); 
                                                                         if ($more_button_flip_cards) {
                                                                             echo $more_button_flip_cards; 
                                                                         } else { 
                                                                             echo get_template_directory_uri() . '/img/more.png'; 
-                                                                        } ?>" alt="">
+                                                                        } 
+                                                                    ?>" alt="">
                                             </div>
                                             <div class="flip-card-back">
                                                 <span class="txt-center"> <?php the_sub_field('text'); ?></span>

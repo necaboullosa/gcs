@@ -41,22 +41,33 @@ get_header();
                 <h2 class="section-header sm-red-line"><?php the_field('home_intro-header'); ?></h2>
                 <?php the_field('home_intro-text'); ?>
                 <a href="<?php the_field('home_intro-button_url'); ?>">
-                    <div class="button"><?php if(ICL_LANGUAGE_CODE=='en'): ?>
-                        ABOUT US
-                        <?php elseif(ICL_LANGUAGE_CODE=='pt-pt'): ?>
-                            Quem Somos
-                        <?php endif; ?> <img src="<?php echo get_template_directory_uri(); ?>/img/arrow-button.png"></div>
+                    <div class="button">
+                
+                        <?php 
+                            $home_intro_button = get_field('home_intro_button'); 
+                            if ($home_intro_button) {
+                                echo $home_intro_button; 
+                            } else { 
+                                echo 'ABOUT US'; 
+                            } 
+                        ?>
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/arrow-button.png"></div>
                 </a>
 
             </div>
         </div>
     </div>
     <div class="container" data-aos="fade-up">
-        <h3 class="section-sub-header "><?php if(ICL_LANGUAGE_CODE=='en'): ?>
-            SERVICES
-                        <?php elseif(ICL_LANGUAGE_CODE=='pt-pt'): ?>
-                            SERVIÇOS
-                        <?php endif; ?></h3>
+        <h3 class="section-sub-header ">
+            <?php 
+                $home_section_services_sub = get_field('home_section_services_sub'); 
+                if ($home_section_services_sub) {
+                    echo $home_section_services_sub; 
+                } else { 
+                    echo 'Services'; 
+                } 
+            ?>
+        </h3>
 
     </div>
 
@@ -68,13 +79,16 @@ get_header();
         <div class="residency animated txt-center" data-aos="fade-up">
             <div class="top-card">
                 <img src="<?php echo get_template_directory_uri(); ?>/img/services-residency.png" alt="">
-                <h3 class="sm-red-line txt-center"><?php if(ICL_LANGUAGE_CODE=='en'): ?>
-                    Residency Programs
-                        <?php elseif(ICL_LANGUAGE_CODE=='pt-pt'): ?>
-                            Programas de Residência
-
-                        <?php endif; ?>
-</h3>
+                <h3 class="sm-red-line txt-center">
+                        <?php 
+                            $home_residency_header = get_field('home_residency_header'); 
+                            if ($home_residency_header) {
+                                echo $home_residency_header; 
+                            } else { 
+                                echo 'Residency Programs'; 
+                            } 
+                        ?>
+                </h3>
                 <?php the_field('home_residency-text'); ?>
             </div>
             <div class="bottom-card">
@@ -107,14 +121,15 @@ get_header();
                     </div>
 
                 <a href="<?php the_field('home_residency-url'); ?>">
-                    <div class="button"><?php if(ICL_LANGUAGE_CODE=='en'): ?>
-                        Compare Programs
-                        <?php elseif(ICL_LANGUAGE_CODE=='pt-pt'): ?>
-                            Compare programas
-
-
-
-                        <?php endif; ?> <img src="<?php echo get_template_directory_uri(); ?>/img/arrow-button.png"></div>
+                    <div class="button"> 
+                        <?php 
+                            $home_residency_link_text = get_field('home_residency_link_text'); 
+                            if ($home_residency_link_text) {
+                                echo $home_residency_link_text; 
+                            } else { 
+                                echo 'Compare Programs'; 
+                            } 
+                        ?><img src="<?php echo get_template_directory_uri(); ?>/img/arrow-button.png"></div>
                 </a>
 
             </div>
@@ -124,13 +139,16 @@ get_header();
             <div class="top-card">
 
                 <img src="<?php echo get_template_directory_uri(); ?>/img/services-citizenship.png" alt="">
-                <h3 class="sm-red-line txt-center"><?php if(ICL_LANGUAGE_CODE=='en'): ?>
-                    Citizenship Programs
-                        <?php elseif(ICL_LANGUAGE_CODE=='pt-pt'): ?>
-                            Programas de Cidadania
-
-
-                        <?php endif; ?></h3>
+                <h3 class="sm-red-line txt-center">
+                        <?php 
+                            $home_citizenship_link_text = get_field('home_citizenship_link_text'); 
+                            if ($home_citizenship_link_text) {
+                                echo $home_citizenship_link_text; 
+                            } else { 
+                                echo 'Compare Programmes'; 
+                            } 
+                        ?>
+                 </h3>
                 <?php the_field('home_citizenship-text'); ?>
 
             </div>
@@ -170,14 +188,16 @@ get_header();
                 </div>
 
                     <a href="<?php the_field('home_citizenship-url'); ?>">
-                        <div class="button"><?php if(ICL_LANGUAGE_CODE=='en'): ?>
-                        Compare Programs
-                        <?php elseif(ICL_LANGUAGE_CODE=='pt-pt'): ?>
-                            Compare programas
-
-
-
-                        <?php endif; ?> <img src="<?php echo get_template_directory_uri(); ?>/img/arrow-button.png"></div>
+                        <div class="button">
+                        <?php 
+                            $home_citizenship_link_text = get_field('home_citizenship_link_text'); 
+                            if ($home_citizenship_link_text) {
+                                echo $home_citizenship_link_text; 
+                            } else { 
+                                echo 'Compare Programs'; 
+                            } 
+                        ?>
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/arrow-button.png"></div>
                     </a>
                 </div>
 
@@ -409,15 +429,16 @@ get_header();
                   <?php elseif( get_row_layout() == 'as_seen_on' ): ?>
                     
 
-                    <h2 class="section-header txt-center sm-red-line as-seen-header" data-aos="fade-up"><?php if(ICL_LANGUAGE_CODE=='en'): ?>
-                        As seen on
-                        <?php elseif(ICL_LANGUAGE_CODE=='pt-pt'): ?>
-                            Como se ve en
-
-
-
-
-                        <?php endif; ?></h2>
+                    <h2 class="section-header txt-center sm-red-line as-seen-header" data-aos="fade-up">
+                        <?php 
+                            $featured_on_header = get_field('featured_on-header', 'option'); 
+                            if ($featured_on_header) {
+                                echo $featured_on_header; 
+                            } else { 
+                                echo ' As seen on'; 
+                            } 
+                        ?>
+                        </h2>
                         <div class="as-seen-outer" data-aos="fade-up">
                             <div class="as-seen container">
                                 <div class="source">
@@ -723,14 +744,54 @@ get_header();
 
             </div>
             <div class="text-container" data-aos="fade-up">
-                <h3 class="section-sub-header ">ANCILLARY SERVICES</h3>
-                <h2 class="section-header sm-red-line">Property investment is often a key step in residency solutions</h2>
-                <p>We exercise due diligence when assisting you in your purchase, making sure you avoid any common pitfalls that investors encounter.</p>
+                <h3 class="section-sub-header ">
+                <?php 
+                            $home_ancillary_sub_header = get_field('home_ancillary_sub_header'); 
+                            if ($home_ancillary_sub_header) {
+                                echo $home_ancillary_sub_header; 
+                            } else { 
+                                echo 'ANCILLARY SERVICES'; 
+                            } 
+                        ?>
+                </h3>
+                <h2 class="section-header sm-red-line">
+                        <?php 
+                            $home_ancillary_header = get_field('home_ancillary_header'); 
+                            if ($home_ancillary_header) {
+                                echo $home_ancillary_header; 
+                            } else { 
+                                echo 'Property investment is often a key step in residency solutions'; 
+                            } 
+                        ?>
+                </h2>
+                <?php 
+                            $home_ancillary_text = get_field('home_ancillary_text'); 
+                            if ($home_ancillary_text) {
+                                echo $home_ancillary_text; 
+                            } else { 
+                                echo ' <p>We exercise due diligence when assisting you in your purchase, making sure you avoid any common pitfalls that investors encounter.</p>
 
-                <p>Residency and citizenship investment often goes hand-in-hand with tax planning, and our team of experts is here to make sure you get the best of both. With personalized advice, real estate intelligence and statistical data about real estate market transactions, we will provide you with the information and insight to make the right decisions.</p>
+                                <p>Residency and citizenship investment often goes hand-in-hand with tax planning, and our team of experts is here to make sure you get the best of both. With personalized advice, real estate intelligence and statistical data about real estate market transactions, we will provide you with the information and insight to make the right decisions.</p>'; 
+                            } 
+                        ?>
+               
                 <div class="button-container">
-                    <a href="#">
-                        <div class="button">Property Investment <img src="<?php echo get_template_directory_uri(); ?>/img/arrow-button.png"></div>
+                    <a href=" <?php 
+                            $home_ancillary_cta_url = get_field('home_ancillary_cta_url'); 
+                            if ($home_ancillary_cta_url) {
+                                echo $home_ancillary_cta_url; 
+                            } else { 
+                                echo '#'; 
+                            } 
+                        ?>">
+                        <div class="button"> <?php 
+                            $home_ancillary_button_text = get_field('home_ancillary_button_text'); 
+                            if ($home_ancillary_button_text) {
+                                echo $home_ancillary_button_text; 
+                            } else { 
+                                echo 'Property investment'; 
+                            } 
+                        ?> <img src="<?php echo get_template_directory_uri(); ?>/img/arrow-button.png"></div>
                     </a>
                 </div>
 
@@ -740,17 +801,32 @@ get_header();
 
         <div class="container">
 
-            <h6 class="blurbs-header txt-center sm-red-line" data-aos="fade-up">We also provide services such as</h6>
+            <h6 class="blurbs-header txt-center sm-red-line" data-aos="fade-up">
+            
+            
+            <?php 
+                            $home_blurs_headert = get_field('home_blurbs_header'); 
+                            if ($home_blurbs_header) {
+                                echo $home_blurbs_header; 
+                            } else { 
+                                echo 'We also provide services such as'; 
+                            } 
+                        ?></h6>
 
             <div class="blurbs" data-aos="fade-up">
                 <div class="blurb">
                     <img src="<?php  echo get_template_directory_uri() . '/img/icons/GCS-ICONS-17.png'; ?>" alt="">
                     <span>
-                        <?php if(ICL_LANGUAGE_CODE=='en'): ?>
-                            Local banking introduction
-                        <?php elseif(ICL_LANGUAGE_CODE=='pt-pt'): ?>
-                            Apresentação a consultores bancários locais
-                        <?php endif; ?>
+
+                     <?php 
+                            $home_blurb_banking_text = get_field('home_blurb_banking_text'); 
+                            if ($home_blurb_banking_text) {
+                                echo $home_blurb_banking_text; 
+                            } else { 
+                                echo 'Relocation Services'; 
+                            } 
+                        ?>
+                    
 
                         
                     
@@ -763,11 +839,16 @@ get_header();
                 <div class="blurb">
                     <img src="<?php  echo get_template_directory_uri() . '/img/icons/GCS-ICONS-10.png'; ?>" alt="">
                     <span>
-                        <?php if(ICL_LANGUAGE_CODE=='en'): ?>
-                            Relocation Services
-                        <?php elseif(ICL_LANGUAGE_CODE=='pt-pt'): ?>
-                            Recolocação profissional
-                        <?php endif; ?>
+
+                        <?php 
+                            $home_blurb_relocation_text = get_field('home_blurb_relocation_text'); 
+                            if ($home_blurb_relocation_text) {
+                                echo $home_blurb_relocation_text; 
+                            } else { 
+                                echo 'Relocation Services'; 
+                            } 
+                        ?>
+                       
                        
                     </span>
                 </div>
@@ -777,11 +858,15 @@ get_header();
                 <div class="blurb">
                     <img src="<?php  echo get_template_directory_uri() . '/img/icons/GCS-ICONS-26.png'; ?>" alt="">
                     <span>
-                    <?php if(ICL_LANGUAGE_CODE=='en'): ?>
-                        Education consultancy
-                        <?php elseif(ICL_LANGUAGE_CODE=='pt-pt'): ?>
-                            Consultoria educacional
-                        <?php endif; ?>
+                    <?php 
+                            $home_blurb_education_text = get_field('home_blurb_education_text'); 
+                            if ($home_blurb_education_text) {
+                                echo $home_blurb_education_text; 
+                            } else { 
+                                echo ' Education consultancy'; 
+                            } 
+                        ?>
+                   
                        
                     </span>
                     
@@ -792,11 +877,15 @@ get_header();
                 <div class="blurb">
                     <img src="<?php  echo get_template_directory_uri() . '/img/icons/GCS-ICONS-39.png'; ?>" alt="">
                     <span>
-                    <?php if(ICL_LANGUAGE_CODE=='en'): ?>
-                        Concierge service
-                        <?php elseif(ICL_LANGUAGE_CODE=='pt-pt'): ?>
-                            Concierge
-                        <?php endif; ?>
+                        <?php 
+                            $home_blurb_concierge_text = get_field('home_blurb_concierge_text'); 
+                            if ($home_blurb_concierge_text) {
+                                echo $home_blurb_concierge_text; 
+                            } else { 
+                                echo 'Concierge service'; 
+                            } 
+                        ?>
+               
                         
                     </span>
                 </div>
@@ -804,17 +893,39 @@ get_header();
             </div>
         </div>
 
-        <p class="txt-center blurbs-sub-header " data-aos="fade-up">Additionally, we have a wide network of local partners through which we can recommend trusted professionals.</p>
+        <p class="txt-center blurbs-sub-header " data-aos="fade-up">
+        <?php 
+                            $home_blurbs_additional_text = get_field('home_blurbs_additional_text'); 
+                            if ($home_blurbs_additional_text) {
+                                echo $home_blurbs_additional_text; 
+                            } else { 
+                                echo 'Additionally, we have a wide network of local partners through which we can recommend trusted professionals.'; 
+                            } 
+                        ?></p>
 
         <div class="map-section-container" data-aos="fade-up">
 
             <div class="map-section container">
                 <div class="text">
-                    <h3 class="section-sub-header ">WHERE WE OPERATE</h3>
+                    <h3 class="section-sub-header "><?php 
+                            $home_map_sib_header = get_field('home_map_sib_header'); 
+                            if ($home_map_sib_header) {
+                                echo $home_map_sib_header; 
+                            } else { 
+                                echo 'List Countries'; 
+                            } 
+                        ?> </h3>
                     <h2 class="section-header sm-red-line"><?php the_field('home_where_we_operate-header'); ?></h2>
                     <p class="sm-text"><?php the_field('home_where_we_operate-text'); ?></p>
                     <a href="/countries/">
-                        <div class="button">LIST OF COUNTRIES <img src="<?php echo get_template_directory_uri(); ?>/img/arrow-button.png"></div>
+                        <div class="button"><?php 
+                            $home_map_cta_text = get_field('home_map_cta_text'); 
+                            if ($home_map_cta_text) {
+                                echo $home_map_cta_text; 
+                            } else { 
+                                echo 'List Countries'; 
+                            } 
+                        ?> <img src="<?php echo get_template_directory_uri(); ?>/img/arrow-button.png"></div>
                     </a>
 
                 </div>
@@ -828,8 +939,26 @@ get_header();
 
         <div class="guides-outer container" data-aos="fade-up">
 
-            <h3 class="section-sub-header txt-center">Local experts</h3>
-            <h2 class="section-header txt-center sm-red-line">Check out our Ultimate Guides for Citizenship and Residency by Investment</h2>
+            <h3 class="section-sub-header txt-center">
+                        <?php 
+                            $home_local_experts_sub_header = get_field('home_local_experts_sub_header'); 
+                            if ($home_local_experts_sub_header) {
+                                echo $home_local_experts_sub_header; 
+                            } else { 
+                                echo 'Local experts'; 
+                            } 
+                        ?></h3>
+            <h2 class="section-header txt-center sm-red-line">
+                        <?php 
+                            $home_local_experts_header = get_field('home_local_experts_header'); 
+                            if ($home_local_experts_header) {
+                                echo $home_local_experts_header; 
+                            } else { 
+                                echo 'Check out our Ultimate Guides for Citizenship and Residency by Investment'; 
+                            } 
+                        ?>
+            
+            </h2>
 
             <div class="guides">
             <?php
@@ -854,7 +983,18 @@ get_header();
 
                                         <h5><?php the_title(); ?></h5>
                                         <a href="<?php the_permalink(); ?>">
-                                            <div class="button">Click to read <img src="<?php echo get_template_directory_uri(); ?>/img/arrow-button.png"></div>
+                                            <div class="button">
+                                            
+                                            
+                                            <?php 
+                            $home_local_experts_click_to_read_text = get_field('home_local_experts_click_to_read_text'); 
+                            if ($home_local_experts_click_to_read_text) {
+                                echo $home_local_experts_click_to_read_text; 
+                            } else { 
+                                echo 'Click to read'; 
+                            } 
+                        ?>
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/arrow-button.png"></div>
                                         </a>
 
                                     </div>
@@ -895,6 +1035,8 @@ get_header();
 
                             <div class="carousel-list">
 
+                                
+
                                 <div class="review carousel-item item1 active">
                                     <p class="quote-header">“GCS provided, quickly and efficiently, all the assistance I needed.”</p> 
                                     <span class="author">Rod & Jay - </span> <img class="small-flag" src="<?php echo get_template_directory_uri(); ?>/img/flags-small/usa.svg"> <span class="country">USA</span>
@@ -934,7 +1076,17 @@ get_header();
 
             </div>
         </div>
-        <h2 class="section-header txt-center sm-red-line as-seen-header" data-aos="fade-up">As seen on</h2>
+        <h2 class="section-header txt-center sm-red-line as-seen-header" data-aos="fade-up">
+        <?php 
+                $featured_on_header = get_field('featured_on-header', 'option'); 
+                if ($featured_on_header) {
+                    echo $featured_on_header; 
+                } else { 
+                    echo ' As seen on'; 
+                } 
+            ?>
+       
+       </h2>
         <div class="as-seen-outer" data-aos="fade-up">
             <div class="as-seen container">
                 <div class="source">
