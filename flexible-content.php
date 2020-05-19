@@ -705,9 +705,9 @@ if($enable_our_commitment) { ?>
                                     <p><?php the_field('our_commitment-text', 'option'); ?></p>
 
                                     <div class="ceo">
-                                        <div class="photo-container">
+                                       <!-- <div class="photo-container">
                                             <img src="<?php echo get_template_directory_uri(); ?>/img/patricia.png">
-                                        </div>
+                                        </div> -->
                                         <div class="signature-container">
                                             <img src="<?php echo get_template_directory_uri(); ?>/img/signature-BG-blue.png">
                                         </div>
