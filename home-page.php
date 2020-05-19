@@ -1036,7 +1036,7 @@ get_header();
 
                                     <?php 
                                     /* repeater */
-
+                                    $i = 1;
                                     if( have_rows('reviews_home_page_only', 'option') ):
 
                                     // loop through the rows of data
@@ -1046,7 +1046,7 @@ get_header();
                                         ?>
                                     
 
-                                            <div class="review carousel-item item1 active">
+                                            <div class="review carousel-item item<?php echo $i;?> active">
                                                 <p class="quote-header">“<?php the_sub_field('tagline'); ?>”</p> 
                                                 <span class="author"><?php the_sub_field('name'); ?> - </span> <img class="small-flag" src="<?php the_sub_field('flag'); ?>"> <span class="country"><?php the_sub_field('country_name'); ?></span>
                                                 <p class=""><?php the_sub_field('review-text'); ?></p>
@@ -1055,7 +1055,7 @@ get_header();
                                         
 
                                         <?php
-
+                                        $i++;
                                         endwhile;
 
 
