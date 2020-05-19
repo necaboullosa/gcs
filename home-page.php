@@ -141,11 +141,11 @@ get_header();
                 <img src="<?php echo get_template_directory_uri(); ?>/img/services-citizenship.png" alt="">
                 <h3 class="sm-red-line txt-center">
                         <?php 
-                            $home_citizenship_link_text = get_field('home_citizenship_link_text'); 
-                            if ($home_citizenship_link_text) {
-                                echo $home_citizenship_link_text; 
+                            $home_citizenship_header = get_field('home_citizenship_header'); 
+                            if ($home_citizenship_header) {
+                                echo $home_citizenship_header; 
                             } else { 
-                                echo 'Compare Programmes'; 
+                                echo 'Citizenship Programs'; 
                             } 
                         ?>
                  </h3>
@@ -819,8 +819,8 @@ get_header();
                     <span>
 
                      <?php 
-                            $home_blurb_banking_text = get_field('home_blurb_banking_text'); 
-                            if ($home_blurb_banking_text) {
+                            $home_blurb_banking_text = get_field('home_blurb_relocation_text'); 
+                            if ($home_blurb_relocation_text) {
                                 echo $home_blurb_banking_text; 
                             } else { 
                                 echo 'Relocation Services'; 
@@ -898,8 +898,6 @@ get_header();
                             $home_blurbs_additional_text = get_field('home_blurbs_additional_text'); 
                             if ($home_blurbs_additional_text) {
                                 echo $home_blurbs_additional_text; 
-                            } else { 
-                                echo 'Additionally, we have a wide network of local partners through which we can recommend trusted professionals.'; 
                             } 
                         ?></p>
 
@@ -908,9 +906,9 @@ get_header();
             <div class="map-section container">
                 <div class="text">
                     <h3 class="section-sub-header "><?php 
-                            $home_map_sib_header = get_field('home_map_sib_header'); 
-                            if ($home_map_sib_header) {
-                                echo $home_map_sib_header; 
+                            $home_map_sub_header = get_field('home_map_sub_header'); 
+                            if ($home_map_sub_header) {
+                                echo $home_map_sub_header; 
                             } else { 
                                 echo 'List Countries'; 
                             } 
@@ -941,18 +939,18 @@ get_header();
 
             <h3 class="section-sub-header txt-center">
                         <?php 
-                            $home_local_experts_sub_header = get_field('home_local_experts_sub_header'); 
-                            if ($home_local_experts_sub_header) {
-                                echo $home_local_experts_sub_header; 
+                            $local_experts_sub_header = get_field('local_experts_sub_header', 'option'); 
+                            if ($local_experts_sub_header) {
+                                echo $local_experts_sub_header; 
                             } else { 
                                 echo 'Local experts'; 
                             } 
                         ?></h3>
             <h2 class="section-header txt-center sm-red-line">
                         <?php 
-                            $home_local_experts_header = get_field('home_local_experts_header'); 
-                            if ($home_local_experts_header) {
-                                echo $home_local_experts_header; 
+                            $local_experts_header = get_field('local_experts_header', 'option'); 
+                            if ($local_experts_header) {
+                                echo $local_experts_header; 
                             } else { 
                                 echo 'Check out our Ultimate Guides for Citizenship and Residency by Investment'; 
                             } 
@@ -987,9 +985,9 @@ get_header();
                                             
                                             
                                             <?php 
-                            $home_local_experts_click_to_read_text = get_field('home_local_experts_click_to_read_text'); 
-                            if ($home_local_experts_click_to_read_text) {
-                                echo $home_local_experts_click_to_read_text; 
+                            $local_experts_click_to_read_text = get_field('local_experts_click_to_read_text'); 
+                            if ($local_experts_click_to_read_text) {
+                                echo $local_experts_click_to_read_text; 
                             } else { 
                                 echo 'Click to read'; 
                             } 
@@ -1035,9 +1033,40 @@ get_header();
 
                             <div class="carousel-list">
 
+
+                                    <?php 
+                                    /* repeater */
+
+                                    if( have_rows('reviews_home_page_only', 'option') ):
+
+                                    // loop through the rows of data
+                                        while ( have_rows('reviews_home_page_only', 'option') ) : the_row();
+
+                                        // display a sub field value
+                                        ?>
+                                    
+
+                                            <div class="review carousel-item item1 active">
+                                                <p class="quote-header">“<?php the_sub_field('tagline'); ?>”</p> 
+                                                <span class="author"><?php the_sub_field('name'); ?> - </span> <img class="small-flag" src="<?php the_sub_field('flag'); ?>"> <span class="country"><?php the_sub_field('country_name'); ?></span>
+                                                <p class=""><?php the_sub_field('review-text'); ?></p>
+                                            </div>
+            
+                                        
+
+                                        <?php
+
+                                        endwhile;
+
+
+
+                                    endif;
+
+                                    ?>
+
                                 
 
-                                <div class="review carousel-item item1 active">
+                               <!--  <div class="review carousel-item item1 active">
                                     <p class="quote-header">“GCS provided, quickly and efficiently, all the assistance I needed.”</p> 
                                     <span class="author">Rod & Jay - </span> <img class="small-flag" src="<?php echo get_template_directory_uri(); ?>/img/flags-small/usa.svg"> <span class="country">USA</span>
                                     <p class="">GCS was very helpful and competent at every step and with a can-do attitude. We are now in Lisbon part of the year and always in touch. Thank you.</p>
@@ -1055,7 +1084,7 @@ get_header();
 
                                     <span class="author">Yuri & Lena - </span> <img class="small-flag" src="<?php echo get_template_directory_uri(); ?>/img/flags-small/russia.svg"> <span class="country">Russia</span>
                                     <p class="">I am happy to recommend the team at Global Citizen Solutions. They are knowledgeable and responsive and delivered what was promised.</p>
-                                </div>
+                                </div> -->
 
                                 
 
