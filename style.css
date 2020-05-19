@@ -2816,3 +2816,9 @@ blockquote {
 		color: #1955a6 !important;
 		font-size: 1rem !important;
 	}
+
+	@media (max-height:839px) and (min-width: 700px) {
+		.hero, .hero-page {
+			min-height: 100px;
+		}
+	}
