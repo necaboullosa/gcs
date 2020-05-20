@@ -1220,7 +1220,7 @@ div[class^="_form"] label, .ac-form label, .entry-content div[class^="_form"] la
 }
 
 .ac-form input, div[class^="_form"] input,  div[class^="_form"] textarea, .ac-form textarea, div[class^="_form"] select, .ac-form select, div[class^="_form"] input:focus, .ac-form input:focus, .ac-form textarea:focus, div[class^="_form"] textarea:focus, .ac-form select:focus, div[class^="_form"] select:focus  {
-	background-color: #007ac1;
+	background-color: #1955a6;
 	border: 0px solid white;
 	border-bottom: 1px solid white;
 	width: 100%;
@@ -1262,17 +1262,17 @@ div[class^="_form"] label, .ac-form label, .entry-content div[class^="_form"] la
     border-radius: 0px;
     outline: none;
     transition-duration: 0.3s;
-    background-color: #007ac1;
+    background-color: #1955a6;
     cursor: pointer;
 }
 
 
 .ac-form input::placeholder, .ac-form textarea::placeholder,  div[class^="_form"] input::placeholder,  div[class^="_form"] textarea::placeholder  {
-	color: #007ac1;
+	color: #1955a6;
 }
 
 .commitment-page .ac-form input::placeholder, .commitment-page .ac-form textarea::placeholder  {
-	color: #007ac1;
+	color: #1955a6;
 }
 
 
@@ -1339,7 +1339,7 @@ div[class^="_form"] label, .ac-form label, .entry-content div[class^="_form"] la
 }
 .top-menu {
 justify-content: flex-end;
-font-size: 0.69347826086rem;
+font-size: 0.8rem;
 }
 
 .main-menu-outer-container {
@@ -1809,13 +1809,13 @@ padding: 120px 0px;
 }
 
 .commitment-page .ac-form {
-	background: rgb(18, 121, 188);
+	background: #007ac1;
 
 }
 
 
 .commitment-page  .ac-form input, .commitment-page  .ac-form textarea, .commitment-page .ac-form select {
-	background-color: rgb(18, 121, 188);
+	background-color: #1955a6;
 }
 
 
