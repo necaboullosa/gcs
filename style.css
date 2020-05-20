@@ -1272,7 +1272,7 @@ div[class^="_form"] label, .ac-form label, .entry-content div[class^="_form"] la
 }
 
 .commitment-page .ac-form input::placeholder, .commitment-page .ac-form textarea::placeholder  {
-	color: #1955a6;
+	color: #007ac1;
 }
  
 
@@ -1782,7 +1782,7 @@ padding: 120px 0px;
 
 .commitment-page-container {
 	clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 85%);
-	background: rgb(18, 121, 188);
+	background: #007ac1;
 	padding: 120px 0px;
 	margin-bottom: -130px;
 	
