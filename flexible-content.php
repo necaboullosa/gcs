@@ -293,7 +293,7 @@ if($enable_header_form) { ?>
              <?php $header = get_sub_field('	padding: 20px;
 header'); if($header) { ?><h6 class="blurbs-header txt-center sm-red-line space" data-aos="fade-up"> <?php the_sub_field('header'); ?> </h6> <?php } ?>
                         <?php if( have_rows('blurb_type_1_repeater') ): ?>
-                            <div class="blurbs space" data-aos="fade-up">
+                            <div class="blurbs blurbs-type-1 space" data-aos="fade-up">
                                 <?php while ( have_rows('blurb_type_1_repeater') ) : the_row(); ?>
 
                                     <div class="blurb">
