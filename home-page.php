@@ -63,9 +63,7 @@ get_header();
                 $home_section_services_sub = get_field('home_section_services_sub'); 
                 if ($home_section_services_sub) {
                     echo $home_section_services_sub; 
-                } else { 
-                    echo 'Services'; 
-                } 
+                }
             ?>
         </h3>
 
@@ -749,8 +747,6 @@ get_header();
                             $home_ancillary_sub_header = get_field('home_ancillary_sub_header'); 
                             if ($home_ancillary_sub_header) {
                                 echo $home_ancillary_sub_header; 
-                            } else { 
-                                echo 'ANCILLARY SERVICES'; 
                             } 
                         ?>
                 </h3>
@@ -909,8 +905,6 @@ get_header();
                             $home_map_sub_header = get_field('home_map_sub_header'); 
                             if ($home_map_sub_header) {
                                 echo $home_map_sub_header; 
-                            } else { 
-                                echo 'List Countries'; 
                             } 
                         ?> </h3>
                     <h2 class="section-header sm-red-line"><?php the_field('home_where_we_operate-header'); ?></h2>
@@ -942,9 +936,7 @@ get_header();
                             $local_experts_sub_header = get_field('local_experts_sub_header', 'option'); 
                             if ($local_experts_sub_header) {
                                 echo $local_experts_sub_header; 
-                            } else { 
-                                echo 'Local experts'; 
-                            } 
+                            }  
                         ?></h3>
             <h2 class="section-header txt-center sm-red-line">
                         <?php 
