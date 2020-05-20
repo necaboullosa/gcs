@@ -1651,6 +1651,23 @@ font-size: 0.69347826086rem;
 }
 
 
+.blurbs-type-1 .blurb-header {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #007ac1;
+}
+
+.blurbs-type-1 img {
+    height: 100px;
+}
+
+.blurbs-type-1 span {
+    font-size: 1rem !important;
+    
+}
+
+
 
 .separator-container {
 	display: flex;
@@ -1661,7 +1678,7 @@ font-size: 0.69347826086rem;
 	background-color: rgb(28, 69, 155);
 
 	width: 1px;
-	height: 70px;
+	height: 60%;
 }
 
 .blurb {
