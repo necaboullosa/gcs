@@ -816,7 +816,7 @@ get_header();
 
                      <?php 
                             $home_blurb_banking_text = get_field('home_blurb_banking_text'); 
-                            if ($home_blurb_relocation_text) {
+                            if ($home_blurb_banking_text) {
                                 echo $home_blurb_banking_text; 
                             } else { 
                                 echo 'Banking Introduction'; 
