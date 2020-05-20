@@ -473,7 +473,14 @@ header'); if($header) { ?><h6 class="blurbs-header txt-center sm-red-line space"
                                         
                                             the_excerpt();
                                          ?> 
-                                        <div class="button">Read more <img src="<?php echo get_template_directory_uri(); ?>/img/arrow-button.png"></div>
+                                        <div class="button"> <?php 
+                            $read_more_global_button_text = get_field('read_more_global_button_text', 'option'); 
+                            if ($read_more_global_button_text) {
+                                echo $read_more_global_button_text; 
+                            } else { 
+                                echo 'Read more '; 
+                            } 
+                        ?> <img src="<?php echo get_template_directory_uri(); ?>/img/arrow-button.png"></div>
 
                                         </div>
                                     </a>
