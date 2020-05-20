@@ -1659,7 +1659,7 @@ font-size: 0.69347826086rem;
 }
 
 .blurbs-type-1 img {
-    height: 100px;
+    height: 100px !important;
 }
 
 .blurbs-type-1 span {
