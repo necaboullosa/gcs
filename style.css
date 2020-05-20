@@ -2097,6 +2097,10 @@ _::-webkit-full-page-media, _:future, :root .teal {
 	margin: 0px;
 }
 
+.entry-content h3 + p{
+    margin-top: 0px;
+}
+
 
 
 
