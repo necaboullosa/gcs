@@ -130,7 +130,7 @@ a {
 	text-decoration: none;
 	
 	
-		color: #2a3e71;
+		color: #1955a6;
 		
 }
 
@@ -138,7 +138,7 @@ a {
 .entry-content a, .entry-content a:visited {
 		font-weight: 400;
 		text-decoration: underline;
-		color: #2a3e71;
+		color: #1955a6;
 	
 }
 
@@ -436,7 +436,7 @@ input,
 select,
 optgroup,
 textarea {
-	color: #404040;
+	color: #808080;
 	font-family: 'Roboto', sans-serif;
 	font-size: 16px;
 	line-height: 1.5;
@@ -676,15 +676,15 @@ textarea {
 ## Links
 --------------------------------------------------------------*/
 a {
-	color: royalblue;
+	color: #007ac1;
 }
 
 a:visited {
-	color: purple;
+	color: #00b4c5;
 }
 
 a:hover, a:focus, a:active {
-	color: midnightblue;
+	color: #00b4c5;
 }
 
 a:focus {
@@ -1098,7 +1098,7 @@ object {
 }
 
 .button, button  {
-	background-color: rgb(221, 26, 54);
+	background-color: #e0013f;
 	color: white;
 	padding: 5px 10px;
 	display: inline-block ;
@@ -1142,7 +1142,7 @@ object {
 }
 
 .ac-form  {
-	background-color: rgb(24, 105, 185);
+	background-color: #1955a6;
 	padding: 20px;
 	color: white;
 	margin-bottom: -100px;
@@ -1151,7 +1151,7 @@ object {
 }
 
 .post div[class^="_form"], .popmake-content div[class^="_form"], .entry-content div[class^="_form"] {
-	background-color: rgb(24, 105, 185);
+	background-color: #1955a6;
 	padding: 20px;
 	color: white;
 
@@ -1220,7 +1220,7 @@ div[class^="_form"] label, .ac-form label, .entry-content div[class^="_form"] la
 }
 
 .ac-form input, div[class^="_form"] input,  div[class^="_form"] textarea, .ac-form textarea, div[class^="_form"] select, .ac-form select, div[class^="_form"] input:focus, .ac-form input:focus, .ac-form textarea:focus, div[class^="_form"] textarea:focus, .ac-form select:focus, div[class^="_form"] select:focus  {
-	background-color: rgb(24, 105, 185);
+	background-color: #007ac1;
 	border: 0px solid white;
 	border-bottom: 1px solid white;
 	width: 100%;
@@ -1262,17 +1262,17 @@ div[class^="_form"] label, .ac-form label, .entry-content div[class^="_form"] la
     border-radius: 0px;
     outline: none;
     transition-duration: 0.3s;
-    background-color: rgb(24, 105, 185);
+    background-color: #007ac1;
     cursor: pointer;
 }
 
 
 .ac-form input::placeholder, .ac-form textarea::placeholder,  div[class^="_form"] input::placeholder,  div[class^="_form"] textarea::placeholder  {
-	color: rgb(24, 105, 185);
+	color: #007ac1;
 }
 
 .commitment-page .ac-form input::placeholder, .commitment-page .ac-form textarea::placeholder  {
-	color: rgb(18, 121, 188);
+	color: #007ac1;
 }
 
 
@@ -1386,7 +1386,7 @@ font-size: 0.69347826086rem;
 
 #main-menu .sub-menu a {
 	color: rgb(153, 152, 152); 
-	font-weight: 400;ƒ#
+	font-weight: 400;
 }
 
 
@@ -1675,7 +1675,7 @@ font-size: 0.69347826086rem;
 }
 
 .separator {
-	background-color: rgb(28, 69, 155);
+	background-color: #1955a6;
 
 	width: 1px;
 	height: 60%;
@@ -1864,7 +1864,7 @@ padding: 120px 0px;
 
 
 .footer-logo-outer {
-	background-color: rgb(28, 69, 155);
+	background-color: #1955a6;
 	clip-path: polygon(0 0, 100% 65%, 100% 100%, 0% 100%);
 	padding-top: 50px;
 	height: 150px;
@@ -1876,7 +1876,7 @@ padding: 120px 0px;
 }
 
 .footer-widgets-outer {
-	background-color: rgb(28, 69, 155);
+	background-color: #1955a6;
 	color: white;
 }
 
@@ -1901,7 +1901,7 @@ padding: 120px 0px;
 }
 
 .footer-widgets a:hover {
-	color: #71cfda;
+	color: #00b4c5;
 }
 
 footer h6 {
@@ -1942,7 +1942,7 @@ footer .address img{
 /* chrome bug end */
 
 .copyright-outer {
-	background-color: rgb(28, 69, 155);
+	background-color: #1955a6;
 	color: white;
 	padding: 10px 0px;
 }
@@ -2098,7 +2098,7 @@ _::-webkit-full-page-media, _:future, :root .teal {
     display: block;
     margin-top: 20px;
     max-width: 20px;
-    border: 3px solid rgb(210,50,82);
+    border: 3px solid #e0013f;
 }
 
 
@@ -2142,7 +2142,7 @@ blockquote {
 }
 
 .entry-content [id^='_form_'] button{
-	background-color: rgb(221, 26, 54);
+	background-color: #e0013f;
 }
 
 .the-loop, .alm-reveal {
@@ -2199,7 +2199,7 @@ blockquote {
 
 
 .the-loop h5  {
-	color: rgb(18, 121, 188);
+	color: #007ac1;
 	font-weight: 400;
 	font-size: 1rem;
 	padding: 0px;
@@ -2325,7 +2325,7 @@ blockquote {
 
   .flip-card .blurb-header {
 	  text-transform: uppercase;
-	  color: rgb( 23, 107, 182);
+	  color: #007ac1;
 	  font-weight: 400;
 	  font-size: 1rem;
 
@@ -2377,7 +2377,7 @@ blockquote {
   }
   
   .flip-card-back {
-	background-color: rgb( 23, 107, 182);
+	background-color: #007ac1;
 	padding: 20px;
 	transform: rotateY(-180deg);
 	border-radius: 20px;
@@ -2432,7 +2432,7 @@ blockquote {
 	margin-top: 1em;
   }
   .the-team .name{
-	color: rgb(18, 121, 188);
+	color: #007ac1;
 	font-weight: 500;
 	text-transform: uppercase;
     font-size: 1rem;
