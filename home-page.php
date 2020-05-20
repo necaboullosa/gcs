@@ -801,7 +801,7 @@ get_header();
             
             
             <?php 
-                            $home_blurs_headert = get_field('home_blurbs_header'); 
+                            $home_blurs_header = get_field('home_blurbs_header'); 
                             if ($home_blurbs_header) {
                                 echo $home_blurbs_header; 
                             } else { 
