@@ -1274,7 +1274,7 @@ div[class^="_form"] label, .ac-form label, .entry-content div[class^="_form"] la
 .commitment-page .ac-form input::placeholder, .commitment-page .ac-form textarea::placeholder  {
 	color: #1955a6;
 }
-
+ 
 
 ._checkbox-radio > input:checked {
     border: 1px solid #e0013f !important;
