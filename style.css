@@ -1365,10 +1365,18 @@ font-size: 0.8rem;
 }
 
 
-
 #main-menu .sub-menu {
-	padding: 20px;
+padding-top: 10px;
+background: rgba(0,0,0,0);
+left: -13px;
 }
+
+#main-menu .sub-menu .menu-item {
+ background: white;
+ padding:10px;
+}
+
+
 #main-menu .sub-menu li{
 	font-size: 14px;
 	line-height: 1.4;
