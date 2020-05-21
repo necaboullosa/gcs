@@ -2528,6 +2528,7 @@ blockquote {
 
 	.home .blurb {
 		width: 50%;
+		max-width: 50%;
 	}
 
 	} 
@@ -2845,13 +2846,42 @@ blockquote {
 		
 
 		.flip_cards .flip-card {
-			max-width: 45%;
+			max-width: 100%;
 		}
 
 		.map-section {
 			flex-direction: column;
 		}
 
+
+		.blurbs-type-1 .blurb {
+			width: 50%;
+			max-width: 50%;
+		}
+
+		.blurbs-type-1 .separator {
+			display: none;
+		}
+		.text_image_cta-text {
+			max-width: 100%;
+		}
+
+		.usps .usp {
+			max-width: 100%;
+		}
+
+		.menu-item {
+			text-align: center;
+		}
+
+		.the-loop .post {
+			max-width: 100%;
+		}
+
+		.the-team>div {
+			max-width: 50%;
+			padding: 10px;
+		}
 		
 
 		
