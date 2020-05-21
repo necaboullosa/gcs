@@ -729,14 +729,21 @@ if($enable_our_commitment) { ?>
 
                                 <div class="wrapper">
                                     <div class="form ac-form">
-                                        <?php 
-                                        
-                                        $our_commitment_form = get_field('our_commitment-form2');
-                                        if(!$our_commitment_form) {
-                                            $our_commitment_form = get_field('our_commitment-form', 'option');
-                                        }
 
-                                        echo do_shortcode($our_commitment_form); ?>
+                                    <?php
+            $our_commitment_form = get_field('our_commitment-form');
+            
+            if($our_commitment_form) {
+                echo apply_filters( 'the_content', $our_commitment_form);
+            
+            } else {
+                $our_commitment_form = get_field('our_commitment-form', 'option');
+                echo apply_filters( 'the_content', $our_commitment_form);
+
+            }
+            
+           ?>
+                                       
                                     </div>
                                 </div>
 
