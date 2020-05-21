@@ -11,7 +11,7 @@ if($featured_img_url) {
     ?>
 <style>
 .hero {
-            background-image: url('<?php  echo $featured_img_url;?>');           
+            background-image: url('<?php  echo $featured_img_url;?>') !important;           
             
     
 }
