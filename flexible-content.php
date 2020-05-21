@@ -735,12 +735,10 @@ if($enable_our_commitment) { ?>
             
             if($our_commitment_form) {
                 echo apply_filters( 'the_content', $our_commitment_form);
-                echo $our_commitment_form . 'page specific';
             
             } else {
                 $our_commitment_form = get_field('our_commitment-form', 'option');
                 echo apply_filters( 'the_content', $our_commitment_form);
-                echo $our_commitment_form . 'global';;
 
             }
             
