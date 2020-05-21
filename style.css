@@ -2488,7 +2488,7 @@ blockquote {
 		position: fixed;
 		height: 100%;
 		width: 250px;
-		background: rgba(255, 255, 255, 0.7);
+		background: rgba(255, 255, 255, 0.9);
 		text-transform: uppercase;
     	color: #1955a6;
 		top: 0px;
@@ -2524,6 +2524,10 @@ blockquote {
 	}
 	.blurb_type_2_container .blurb {
 		max-width: 45%;
+	}
+
+	.home .blurb {
+		width: 50%;
 	}
 
 	} 
@@ -2690,7 +2694,7 @@ blockquote {
 		}
 
 		.map-section .map {
-			display: none;
+			padding-top: 20px;
 		}
 
 		.map-section .text {
@@ -2744,7 +2748,7 @@ blockquote {
 			flex-direction: column;
 		}
 
-		.optimists-outer, .commitment-page-container {
+		.optimists-outer, .commitment-page-container, .map-section-container {
 			
 			clip-path: polygon(0 0,100% 5%,100% 100%,0 95%) !important;
 		}
@@ -2765,6 +2769,10 @@ blockquote {
 		.commitment-page .wrapper {
 			padding-bottom: 100px;
 
+		}
+
+		.commitment-page .ac-form {
+			padding: 0px;
 		}
 		
 		.optimists > div, .services > div {
@@ -2834,13 +2842,17 @@ blockquote {
 			max-width: 90%;
 			margin-bottom: 2em;
 		}
-		.footer-widgets div{
-			width: 90%;
-		}
+		
 
 		.flip_cards .flip-card {
 			max-width: 45%;
 		}
+
+		.map-section {
+			flex-direction: column;
+		}
+
+		
 
 		
 	}
@@ -2857,9 +2869,7 @@ blockquote {
 	}
 
 	@media (max-width: 700px ) {
-		.hidden {
-			display: none;
-		}
+		
 		.hidden-sub-header {
 			display: none;
 		}
