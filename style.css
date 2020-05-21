@@ -2466,7 +2466,16 @@ blockquote {
 	max-width: 30%;
 	margin-top: 4em !important;
   }
+  .sc_card p {
+	  padding: 0px !important;
+  }
+  .sc_card h1, .sc_card h2, .sc_card h3, .sc_card h4, .sc_card h5, .sc_card h6 {
+	  margin: 0px !important;
+  }
 
+  .sc_card h1 + p , .sc_card h2 + p, .sc_card h3 + p, .sc_card h4 +p, .sc_card h5 +p, .sc_card h6 +p {
+	  margin-top: 0px;
+  } 
 
 
 @media (min-width: 1900px) {
@@ -2882,6 +2891,10 @@ blockquote {
 			max-width: 50%;
 			padding: 10px;
 		}
+
+		.flags {
+			height: auto;
+		}
 		
 
 		
@@ -2919,5 +2932,11 @@ blockquote {
 	@media (max-height:839px) and (min-width: 700px) {
 		.hero, .hero-page {
 			min-height: 100px;
+		}
+	}
+
+	@media (max-width: 400px) {
+		.main-menu-outer-container .container {
+			max-width: 100%;
 		}
 	}
