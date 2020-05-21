@@ -2744,9 +2744,27 @@ blockquote {
 			flex-direction: column;
 		}
 
-		.optimists-outer {
+		.optimists-outer, .commitment-page-container {
 			
-			clip-path: polygon(0 0,100% 5%,100% 100%,0 95%);
+			clip-path: polygon(0 0,100% 5%,100% 100%,0 95%) !important;
+		}
+
+		.commitment-page-container .commitment {
+			flex-direction: column;
+		}
+
+		.commitment>div {
+			width: 100%;
+		}
+
+		.commitment-page>div {
+			padding-bottom: 0px;
+
+		}
+
+		.commitment-page .wrapper {
+			padding-bottom: 100px;
+
 		}
 		
 		.optimists > div, .services > div {
