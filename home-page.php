@@ -2,7 +2,13 @@
 get_header();
 
 ?>
-
+<style>
+.hero {
+            background-image: url('<?php $featured_img_url = get_the_post_thumbnail_url(get_the_ID(),'full'); echo $featured_img_url;?>');           
+            
+    
+}
+</style>
     <div class="hero">
 
         <div class="hero-container container">
