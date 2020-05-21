@@ -1136,6 +1136,10 @@ object {
 	
 }
 
+
+.image-block-mobile {
+	display: none;
+}
 .block-image-center {
 	justify-content: center;
 }
@@ -2729,6 +2733,10 @@ blockquote {
 
 	@media (max-width: 769px) {
 		.top-menu-outer-container {
+			display: none;
+		}
+
+		.image-block-desktop {
 			display: none;
 		}
 

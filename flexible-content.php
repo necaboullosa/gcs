@@ -677,10 +677,12 @@ header'); if($header) { ?><h6 class="blurbs-header txt-center sm-red-line space"
                         echo ' <div class="block-image';?>
                         <?php if($image_center) { echo 'block-image-center';} ?>
                         
-                        "><img class="image'
-                        
+                        ">
+                        <?php $image_1_mobile = get_field('image_1_mobile'); if($image_1_mobile) { echo '<img class="image-block-mobile" src="' . $image_1_mobile . '">'; ?>
+
+                        <img class="image image-block-desktop'
+
                        <?php echo '" src="' . $image_url . '">
-                       
                        </div> ';
 
                        if($link) {
