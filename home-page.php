@@ -29,7 +29,7 @@ if($featured_img_url) {
             </div>
             <div class="form ac-form">
             <?php
-            $our_commitment_form = get_field('our_commitment-form');
+            $our_commitment_form = get_field('our_commitment-form2');
             
             if($our_commitment_form) {
                 echo apply_filters( 'the_content', $our_commitment_form);
