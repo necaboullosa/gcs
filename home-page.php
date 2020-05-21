@@ -2,12 +2,23 @@
 get_header();
 
 ?>
+
+<?php 
+
+$featured_img_url = get_the_post_thumbnail_url(get_the_ID(),'full');
+
+if($featured_img_url) {
+    ?>
 <style>
 .hero {
-            background-image: url('<?php $featured_img_url = get_the_post_thumbnail_url(get_the_ID(),'full'); echo $featured_img_url;?>');           
+            background-image: url('<?php  echo $featured_img_url;?>');           
             
     
 }
+    <?php
+}
+?>
+
 </style>
     <div class="hero">
 
