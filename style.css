@@ -2744,10 +2744,10 @@ blockquote {
 			flex-direction: column;
 		}
 
-		.optimists .text{
-			padding-bottom: 200px !important;
+		.optimists-outer {
+			
+			clip-path: polygon(0 0,100% 5%,100% 100%,0 95%);
 		}
-
 		
 		.optimists > div, .services > div {
 			width: 90%;
