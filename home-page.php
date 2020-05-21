@@ -33,12 +33,10 @@ if($featured_img_url) {
             
             if($our_commitment_form) {
                 echo apply_filters( 'the_content', $our_commitment_form);
-                echo 'page specific';
             
             } else {
                 $our_commitment_form = get_field('our_commitment-form', 'option');
                 echo apply_filters( 'the_content', $our_commitment_form);
-                echo 'global';
 
             }
             
