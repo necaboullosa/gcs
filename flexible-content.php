@@ -492,13 +492,10 @@ header'); if($header) { ?><h6 class="blurbs-header txt-center sm-red-line space"
                     ?>
                     </div>
 
-                    <?php if(ICL_LANGUAGE_CODE=='en'): ?>
+                    
                         <?php echo apply_filters( 'the_content', '[ajax_load_more container_type="div" posts_per_page="6" css_classes="the-loop"  offset="6" pause="true" scroll="false" button_label="Older Entries"]'); ?>
 
-                    <?php elseif(ICL_LANGUAGE_CODE=='pt-pt'): ?>
-                        <?php echo  apply_filters( 'the_content', '[ajax_load_more container_type="div" posts_per_page="6" css_classes="the-loop"  offset="6" pause="true" scroll="false" button_label="Posts Antigos" category="cidadania-europeia,investir-na-europa,mercado-imobiliario,residencia-europeia,vida-na-europa,visto-europeu"]'); ?>
-
-                    <?php endif; ?>
+                    
 
             <!-- END Blog posts loop -->
 
