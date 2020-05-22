@@ -491,7 +491,14 @@ header'); if($header) { ?><h6 class="blurbs-header txt-center sm-red-line space"
                             wp_reset_query();
                     ?>
                     </div>
-                    <?php echo apply_filters( 'the_content', '[ajax_load_more container_type="div" posts_per_page="6" css_classes="the-loop"  offset="6" pause="true" scroll="false" button_label="Older Entries"]'); ?>
+
+                    <?php if(ICL_LANGUAGE_CODE=='en'): ?>
+                        <?php echo apply_filters( 'the_content', '[ajax_load_more container_type="div" posts_per_page="6" css_classes="the-loop"  offset="6" pause="true" scroll="false" button_label="Older Entries"]'); ?>
+
+                    <?php elseif(ICL_LANGUAGE_CODE=='pt'): ?>
+                        <?php echo apply_filters( 'the_content', '[ajax_load_more container_type="div" posts_per_page="6" css_classes="the-loop"  offset="6" pause="true" scroll="false" button_label="Posts Antigos"]'); ?>
+
+                    <?php endif; ?>
 
             <!-- END Blog posts loop -->
 
@@ -566,6 +573,13 @@ header'); if($header) { ?><h6 class="blurbs-header txt-center sm-red-line space"
 
                         );
 
+                        if(get_sub_field('guides_category')) {
+                                  $args['category_name'] = get_sub_field('guides_category');
+                                  
+                                
+
+                        }
+
                        
 
                         $post_query = new WP_Query($args);
@@ -580,7 +594,13 @@ header'); if($header) { ?><h6 class="blurbs-header txt-center sm-red-line space"
 
                                         <h5><?php the_title(); ?></h5>
                                         <a href="<?php the_permalink(); ?>">
-                                            <div class="button">READ MORE <img src="<?php echo get_template_directory_uri(); ?>/img/arrow-button.png"></div>
+                                            <div class="button"><?php $read_more_global_button_text = get_field('read_more_global_button_text', 'option'); 
+                            if ($read_more_global_button_text) {
+                                echo $read_more_global_button_text; 
+                            } else { 
+                                echo 'Read more '; 
+                            } 
+                            ?><img src="<?php echo get_template_directory_uri(); ?>/img/arrow-button.png"></div>
                                         </a>
 
                                     </div>
@@ -684,7 +704,7 @@ header'); if($header) { ?><h6 class="blurbs-header txt-center sm-red-line space"
                                 } 
                         ?>
 
-                        <img class="image image-block-desktop'
+                        <img class="image image-block-desktop
 
                        <?php echo '" src="' . $image_url . '">
                        </div> ';

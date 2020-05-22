@@ -2477,6 +2477,10 @@ blockquote {
 	  margin-top: 0px;
   } 
 
+  .sc_card  {
+	  padding: 0px;
+  }
+
 
 @media (min-width: 1900px) {
 	.hero {
@@ -2835,7 +2839,7 @@ blockquote {
 		}
 
 		.countries .country {
-			max-width: 45%;
+			max-width: 100%;
 			
 			margin-bottom: 20px;
 		}
@@ -2894,6 +2898,14 @@ blockquote {
 
 		.flags {
 			height: auto;
+		}
+
+		.image-block-mobile  {
+			display: inline;
+		}
+
+		.image-block-desktop {
+			display: none;
 		}
 		
 
