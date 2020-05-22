@@ -1101,13 +1101,13 @@ object {
 
 }
 
-.button, button  {
-	background-color: #e0013f;
-	color: white;
-	padding: 5px 10px;
-	display: inline-block ;
-	border: 0px solid white;
-	border-radius: 0px;
+.button, button, .search-submit  {
+	background-color: #e0013f !important;
+	color: white !important;
+	padding: 5px 10px !important;
+	display: inline-block !important;
+	border: 0px solid white !important;
+	border-radius: 0px !important;
 	text-transform: uppercase;
 	font-size: 0.9rem;
 	line-height: 1.5;
@@ -2905,6 +2905,8 @@ blockquote {
 		.image-block-desktop {
 			display: none;
 		}
+
+		.
 		
 
 		
