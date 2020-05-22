@@ -707,7 +707,7 @@ header'); if($header) { ?><h6 class="blurbs-header txt-center sm-red-line space"
                                         display: none;
                                     }
                                 }
-                                    </style>'
+                                    </style>';
                                 } 
                         ?>
 
