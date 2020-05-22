@@ -2754,9 +2754,7 @@ blockquote {
 			display: none;
 		}
 
-		.image-block-desktop {
-			display: none;
-		}
+		
 
 		 .optimists, .services {
 			flex-direction: column;

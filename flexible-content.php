@@ -701,6 +701,13 @@ header'); if($header) { ?><h6 class="blurbs-header txt-center sm-red-line space"
                         <?php $image_url_mobile = get_sub_field('image_url_mobile'); 
                                 if($image_url_mobile) { 
                                     echo '<img class="image-block-mobile" src="' . $image_url_mobile . '">';
+                                    echo '<style> 
+                                    @media (max-width: 769px) {
+                                    .image-block-desktop {
+                                        display: none;
+                                    }
+                                }
+                                    </style>'
                                 } 
                         ?>
 
