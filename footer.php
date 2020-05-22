@@ -88,9 +88,9 @@
 				<div class="social">
 					<img class="hidden" src="<?php echo get_template_directory_uri(); ?>/img/footer-offices.png">
 
-					<?php $social_link_linked = get_field('social_links_linked', 'options'); if($social_link_linked) {  ?><a href="<?php the_field('social_links_linked', 'options');?>"><img src="<?php echo get_template_directory_uri(); ?>/img/footer-linked.png"> <span>Connect with us on LinkedIn</span></a><?php } ?>
-					<?php $social_links_facebook = get_field('social_links-facebook', 'options'); if($social_links_facebook) {  ?><a href="<?php the_field('social_links-facebook', 'options');?>"><img src="<?php echo get_template_directory_uri(); ?>/img/footer-fb.png"> <span>Find us on Facebook</span></a><?php } ?>
-					<?php $social_links_instagram_url = get_field('social_links-instagram_url', 'options'); if($social_links_instagram_url) {  ?><a href="<?php the_field('social_links-instagram_url', 'options');?>"><img src="<?php echo get_template_directory_uri(); ?>/img/footer-ig.png"> <span>Find us on Instagram</span></a><?php } ?>
+					<?php $social_link_linked = get_field('social_links_linked', 'options'); if($social_link_linked) {  ?><a href="<?php the_field('social_links_linked', 'options');?>"><img src="<?php echo get_template_directory_uri(); ?>/img/footer-linked.png"> <span>LinkedIn</span></a><?php } ?>
+					<?php $social_links_facebook = get_field('social_links-facebook', 'options'); if($social_links_facebook) {  ?><a href="<?php the_field('social_links-facebook', 'options');?>"><img src="<?php echo get_template_directory_uri(); ?>/img/footer-fb.png"> <span>Facebook</span></a><?php } ?>
+					<?php $social_links_instagram_url = get_field('social_links-instagram_url', 'options'); if($social_links_instagram_url) {  ?><a href="<?php the_field('social_links-instagram_url', 'options');?>"><img src="<?php echo get_template_directory_uri(); ?>/img/footer-ig.png"> <span>Instagram</span></a><?php } ?>
 				</div>
 			</div>
 		
