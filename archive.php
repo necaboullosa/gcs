@@ -21,6 +21,7 @@ get_header();
 				the_archive_description( '<div class="archive-description">', '</div>' );
 				?>
 			</header><!-- .page-header -->
+			 <div class="the-loop">
 
 			<?php
 			/* Start the Loop */
@@ -32,9 +33,31 @@ get_header();
 				 * If you want to override this in a child theme, then include a file
 				 * called content-___.php (where ___ is the Post Type name) and that will be used instead.
 				 */
-				get_template_part( 'template-parts/content', get_post_type() );
+				?>
+					<div class="post">
+                                    <a href="<?php the_permalink(); ?>">
+                                    <div class="thumbnail-container" style="background-image: url('<?php the_post_thumbnail_url('medium'); ?>'); height: 220px;">
+                                    </div>
+                                    <div class="text">
+
+                                    
+                                        <h5><?php the_title(); ?></h5>
+                                        <?php
+                                        
+                                            the_excerpt();
+                                         ?> 
+                                        <div class="button">Read more <img src="<?php echo get_template_directory_uri(); ?>/img/arrow-button.png"></div>
+
+                                        </div>
+                                    </a>
+                                </div>
+			
+				<?php
 
 			endwhile;
+				 ?>
+			</div>
+				 <?php
 
 			the_posts_navigation();
 

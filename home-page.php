@@ -68,7 +68,7 @@ if($featured_img_url) {
                                 echo 'ABOUT US'; 
                             } 
                         ?>
-                        <img src="<?php echo get_template_directory_uri(); ?>/img/arrow-button.png"></div>
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/arrow-button.png" alt="Arrow Icon"></div>
                 </a>
 
             </div>
@@ -93,7 +93,7 @@ if($featured_img_url) {
         </div>
         <div class="residency animated txt-center" data-aos="fade-up">
             <div class="top-card">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/services-residency.png" alt="">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/services-residency.png" alt="Residency services" >
                 <h3 class="sm-red-line txt-center">
                         <?php 
                             $home_residency_header = get_field('home_residency_header'); 
@@ -144,7 +144,7 @@ if($featured_img_url) {
                             } else { 
                                 echo 'Compare Programs'; 
                             } 
-                        ?><img src="<?php echo get_template_directory_uri(); ?>/img/arrow-button.png"></div>
+                        ?><img src="<?php echo get_template_directory_uri(); ?>/img/arrow-button.png" alt="arrow icon"></div>
                 </a>
 
             </div>
@@ -153,7 +153,7 @@ if($featured_img_url) {
         <div class="citizenship animated txt-center" data-aos="fade-left">
             <div class="top-card">
 
-                <img src="<?php echo get_template_directory_uri(); ?>/img/services-citizenship.png" alt="">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/services-citizenship.png" alt="Services citizenship" >
                 <h3 class="sm-red-line txt-center">
                         <?php 
                             $home_citizenship_header = get_field('home_citizenship_header'); 
@@ -212,7 +212,7 @@ if($featured_img_url) {
                                 echo 'Compare Programs'; 
                             } 
                         ?>
-                        <img src="<?php echo get_template_directory_uri(); ?>/img/arrow-button.png"></div>
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/arrow-button.png" alt="arrow icon"></div>
                     </a>
                 </div>
 
@@ -333,7 +333,7 @@ if($featured_img_url) {
                        if($enable_button) {
                            ?>
                            <a href="<?php $button_url = get_sub_field('button_url'); echo $button_url; ?>">
-                               <div class="button"><?php $button_text = get_sub_field('button_text'); echo $button_text; ?> <img src="<?php echo get_template_directory_uri(); ?>/img/arrow-button.png"></div>
+                               <div class="button"><?php $button_text = get_sub_field('button_text'); echo $button_text; ?> <img src="<?php echo get_template_directory_uri(); ?>/img/arrow-button.png" alt="arrow icon"></div>
                            </a>
        
                            <?php
@@ -372,7 +372,7 @@ if($featured_img_url) {
                                 <?php while ( have_rows('blurb_type_1_repeater') ) : the_row(); ?>
 
                                     <div class="blurb">
-                                        <img src="<?php $icon = get_sub_field('icon'); echo get_template_directory_uri() . '/img/icons/' . $icon . '.png'; ?>">
+                                        <img alt="<?php the_sub_field('text'); ?>" src="<?php $icon = get_sub_field('icon'); echo get_template_directory_uri() . '/img/icons/' . $icon . '.png'; ?>">
                                         <?php $header = get_sub_field('header'); if($header) { ?><h3 class="blurb-header sm-red-line txt-center "><?php   the_sub_field('header');?> </h3> <?php } ?>
                                         <span> <?php the_sub_field('text'); ?></span>
                                     </div>

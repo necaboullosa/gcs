@@ -192,9 +192,9 @@ if( function_exists('acf_add_options_page') ) {
 	));
 	
 	acf_add_options_sub_page(array(
-		'page_title' 	=> 'Theme Header Settings',
-		'menu_title'	=> 'Header',
-		'parent_slug'	=> 'theme-general-settings',
+		'page_title' 	=> '404',
+		'menu_title'	=> '404',
+		'parent_slug'	=> '404',
 	));
 	
 	acf_add_options_sub_page(array(
@@ -267,5 +267,12 @@ function tinymce_buttons_2($buttons)
     );
  }
 add_filter('mce_buttons_2','tinymce_buttons_2');
+
+
+add_image_size( 'custom-size', 300, 200 ); // 220 pixels wide by 180 pixels tall, soft proportional crop mode
+
+add_image_size( 'custom-size', 300, 208 ); // 220 pixels wide by 180 pixels tall, soft proportional crop mode
+
+
 
 

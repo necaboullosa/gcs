@@ -1101,13 +1101,13 @@ object {
 
 }
 
-.button, button, .search-submit  {
-	background-color: #e0013f !important;
-	color: white !important;
-	padding: 5px 10px !important;
-	display: inline-block !important;
-	border: 0px solid white !important;
-	border-radius: 0px !important;
+.button, button  {
+	background-color: #e0013f;
+	color: white;
+	padding: 5px 10px;
+	display: inline-block ;
+	border: 0px solid white;
+	border-radius: 0px;
 	text-transform: uppercase;
 	font-size: 0.9rem;
 	line-height: 1.5;
@@ -2835,6 +2835,15 @@ blockquote {
 		.hero-page .ac-form {
 			display: none;
 		}
+		
+		.hero-page h1 {
+			font-size: 2rem;
+			line-height: 2rem;
+		}
+
+		.hero-page {
+		 min-height: 600px;   
+		}
 
 		.countries .country {
 			max-width: 100%;
@@ -2868,6 +2877,16 @@ blockquote {
 		.blurbs-type-1 .blurb {
 			width: 50%;
 			max-width: 50%;
+		}
+				.footer-logo-outer {
+			
+			clip-path: polygon(0 0,100% 35%,100% 100%,0 100%);
+		
+			margin-top: 50px;
+		}
+
+		.blurbs-type-1 .blurb {
+			max-width: 50% !important;
 		}
 
 		.blurbs-type-1 .separator {
@@ -2905,8 +2924,6 @@ blockquote {
 		.image-block-desktop {
 			display: none;
 		}
-
-		.
 		
 
 		
@@ -2952,3 +2969,17 @@ blockquote {
 			max-width: 100%;
 		}
 	}
+
+
+.asp_product_buy_btn_container span {
+	color: white !important;
+}
+
+
+
+
+
+#cookieconsent a {
+    color: #00b4c5;
+}
+

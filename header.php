@@ -43,6 +43,15 @@ var b=a.data(this,"plugin_intlTelInput");b instanceof p&&"function"==typeof b[c]
 		}
 		.intl-tel-input .country-name { color: #000 }
 	</style>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-100129997-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-100129997-1');
+</script>
 
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
@@ -139,7 +148,7 @@ var b=a.data(this,"plugin_intlTelInput");b instanceof p&&"function"==typeof b[c]
 			<div class="container">
 				<div class="logo">
 					<a href="<?php $url = home_url();
-echo $url; ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/header-logo.png"></a>
+echo $url; ?>"><img alt="Residency and citizenship by investment" src="<?php echo get_template_directory_uri(); ?>/img/header-logo.png"></a>
 
 				</div>
 				<div class="main-menu-container">
@@ -155,7 +164,7 @@ echo $url; ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/header-
 				</div>
 
 				<div id="toggle">
-				<img src="<?php echo get_template_directory_uri(); ?>/img/hamburger.png"></div>
+				<img alt="Residency and citizenship by investment" src="<?php echo get_template_directory_uri(); ?>/img/hamburger.png"></div>
 					<div id="popout">
 					<?php wp_nav_menu( array( 'theme_location' => 'header', 'menu_class' => 'nav-menu-mobile' ) ); ?>
 					</div>

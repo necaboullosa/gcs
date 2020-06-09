@@ -15,14 +15,14 @@
 	<footer id="colophon" class="site-footer">
 		<div class="footer-logo-outer">
 			<div class="container">
-				<img src="<?php echo get_template_directory_uri(); ?>/img/footer-logo.png" alt="" class="footer-logo">
+				<img src="<?php echo get_template_directory_uri(); ?>/img/footer-logo.png" alt="global citizen solutions" class="footer-logo">
 			</div>
 		</div>
 	
 		<div class="footer-widgets-outer">
 			<div class="footer-widgets container">
 				<div class="address">
-					<img src="<?php echo get_template_directory_uri(); ?>/img/footer-offices.png">
+					<img src="<?php echo get_template_directory_uri(); ?>/img/footer-offices.png" alt="our offices logo">
 
 					<?php the_field('offices', 'options'); ?>
 					<!--<h6>Our Offices</h6>
@@ -88,9 +88,9 @@
 				<div class="social">
 					<img class="hidden" src="<?php echo get_template_directory_uri(); ?>/img/footer-offices.png">
 
-					<?php $social_link_linked = get_field('social_links_linked', 'options'); if($social_link_linked) {  ?><a href="<?php the_field('social_links_linked', 'options');?>"><img src="<?php echo get_template_directory_uri(); ?>/img/footer-linked.png"> <span>LinkedIn</span></a><?php } ?>
-					<?php $social_links_facebook = get_field('social_links-facebook', 'options'); if($social_links_facebook) {  ?><a href="<?php the_field('social_links-facebook', 'options');?>"><img src="<?php echo get_template_directory_uri(); ?>/img/footer-fb.png"> <span>Facebook</span></a><?php } ?>
-					<?php $social_links_instagram_url = get_field('social_links-instagram_url', 'options'); if($social_links_instagram_url) {  ?><a href="<?php the_field('social_links-instagram_url', 'options');?>"><img src="<?php echo get_template_directory_uri(); ?>/img/footer-ig.png"> <span>Instagram</span></a><?php } ?>
+					<?php $social_link_linked = get_field('social_links_linked', 'options'); if($social_link_linked) {  ?><a href="<?php the_field('social_links_linked', 'options');?>"><img src="<?php echo get_template_directory_uri(); ?>/img/footer-linked.png" alt="linkedin logo"> <span>LinkedIn</span></a><?php } ?>
+					<?php $social_links_facebook = get_field('social_links-facebook', 'options'); if($social_links_facebook) {  ?><a href="<?php the_field('social_links-facebook', 'options');?>"><img src="<?php echo get_template_directory_uri(); ?>/img/footer-fb.png" alt="facebook logo"> <span>Facebook</span></a><?php } ?>
+					<?php $social_links_instagram_url = get_field('social_links-instagram_url', 'options'); if($social_links_instagram_url) {  ?><a href="<?php the_field('social_links-instagram_url', 'options');?>"><img src="<?php echo get_template_directory_uri(); ?>/img/footer-ig.png" alt="instagram logo"> <span>Instagram</span></a><?php } ?>
 				</div>
 			</div>
 		
@@ -111,7 +111,18 @@
 
 </div><!-- #page -->
 
+ <?php if(ICL_LANGUAGE_CODE=='en'): ?>
+                     <div class="cookieconsent" id="cookieconsent" style="position:fixed;padding:20px;left:0;bottom:0;background-color:#1955a6;color:#FFF;text-align:center;width:100%;z-index:9999999; display: none;">
+			We use cookies to ensure that we give you the best experience on our website. Our <a href="https://www.globalcitizensolutions.com/terms-conditions/">Terms and Coditions</a> 
+			<a href="#" id="consent_button" class="button" onclick="event.preventDefault(); acceptConsent();">I Agree</a>
+		</div>
 
+<?php elseif(ICL_LANGUAGE_CODE=='pt-pt'): ?>
+                        <div class="cookieconsent" id="cookieconsent" style="position:fixed;padding:20px;left:0;bottom:0;background-color:#1955a6;color:#FFF;text-align:center;width:100%;z-index:9999999; display: none;">
+			We use cookies to ensure that we give you the best experience on our website. Our <a href="https://www.globalcitizensolutions.com/terms-conditions/">Terms and Coditions</a> 
+			<a href="#" id="consent_button" class="button" onclick="event.preventDefault(); acceptConsent();" style="color: white !important">I Agree</a>
+		</div>
+<?php endif; ?>
 
 
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -201,6 +212,32 @@ $('#toggle').toggle(
 
 
 </script>
+	<script>
+			if (!localStorage.getItem('cookieconsent')) {
+	
+			document.querySelector('.cookieconsent').style.display = 'block';
+		
+		
+	}
+			
+			var x = document.getElementById("consent_button");
+			
+			function acceptConsent() {
+				
+			
+			document.querySelector('.cookieconsent').style.display = 'none';
+			localStorage.setItem('cookieconsent', true);
+				
+			}
+			
+			
+
+
+
+</script>
+
+
+
 
 </body>
 </html>
