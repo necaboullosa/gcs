@@ -17,8 +17,33 @@
 			background-blend-mode: multiply;
 }
 </style>
+<?php 
 
+if(get_field('enable_shorter_header')) {
+	?>
+		<style>
+			.hero-page {
+				height: 50vh;
+			
+			}
+			
+			@media (max-width: 760px) {
+				.hero-page {
+					min-height: 400px;
+				}
+			}
+			
+		</style>
+<?php
+}
 
+?>
+
+<?php 
+
+if(!get_field('disable_header')) {
+	
+	?>
 
 <div class="hero-page">
 
@@ -55,6 +80,21 @@
     </div>
 
 </div>
+
+<?php
+	
+} else {
+	
+	?>
+<style>
+	.type-post {
+		padding-top: 150px;
+	}
+</style>
+<?php
+}
+/* if statement for disable header */
+?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">

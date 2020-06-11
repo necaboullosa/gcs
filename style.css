@@ -1494,6 +1494,21 @@ left: -13px;
 
 }
 
+@media not all and (min-resolution:.001dpcm) { 
+	@supports (-webkit-appearance:none) {
+		.hero-container {
+			overflow: hidden;
+		
+		
+		}
+
+		.hero-page {
+			max-height: 700px;
+			margin-bottom: 2em;
+		}
+	}
+}
+
 
 
 
