@@ -2975,6 +2975,12 @@ blockquote {
 
 	@media (max-height:839px) and (min-width: 700px) {
 		.hero, .hero-page {
+			min-height: 100px;
+		}
+	}
+
+	@media (max-height:839px) and (min-width: 700px) {
+		.home .hero, .hero-page {
 			min-height: 700px;
 		}
 	}
