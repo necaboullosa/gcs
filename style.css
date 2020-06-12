@@ -2975,7 +2975,7 @@ blockquote {
 
 	@media (max-height:839px) and (min-width: 700px) {
 		.hero, .hero-page {
-			min-height: 100px;
+			min-height: 700px;
 		}
 	}
 
