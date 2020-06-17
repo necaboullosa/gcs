@@ -356,16 +356,22 @@ $k = 0;
                     return false; 
                 } 
             } 
+
+            var_dump($_GET);
               
             $typeform_url = get_sub_field('typeform_url'); 
+            var_dump($typeform_url);
             // get the default
             $custom_typeform_urls = get_sub_field('custom_typeform_urls');
             // get all the custom values
+            var_dump($custom_typeform_urls);
 
             if($custom_typeform_urls) {
                 foreach($custom_typeform_urls as $custom_typeform_url) {
                     $key_match = ExistsKey($custom_typeform_url['key'], $_GET);
+                    var_dump($key_match);
                     $value_match = array_search($custom_typeform_url['value'], $_GET);
+                    var_dump($value_match);
 
                     if ($key_match AND $value_match) {
                         $typeform_url = $custom_typeform_url['custom_typeform-urls'];
@@ -374,6 +380,7 @@ $k = 0;
                 }
             }
 
+            var_dump($typeform_url);
 
 
              
