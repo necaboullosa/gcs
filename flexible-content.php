@@ -358,9 +358,11 @@ $k = 0;
             } 
               
             $typeform_url = get_sub_field('typeform_url'); 
+            var_dump($typeform_url);
             // get the default
             $custom_typeform_urls = get_sub_field('custom_typeform_urls');
             // get all the custom values
+            var_dump($custom_typeform_urls);
 
             if($custom_typeform_urls) {
                 foreach($custom_typeform_urls as $custom_typeform_url) {
@@ -368,11 +370,13 @@ $k = 0;
                     $value_match = array_search($custom_typeform_url['value'], $_GET);
 
                     if ($key_match AND $value_match) {
-                        $typeform_url = $custom_typeform_url['custom_typeform_urls'];
+                        $typeform_url = $custom_typeform_url['custom_typeform-urls'];
                     }
 
                 }
             }
+
+            var_dump($typeform_url);
 
 
              
