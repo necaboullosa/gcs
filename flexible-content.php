@@ -345,8 +345,38 @@ $k = 0;
 
              
 
-              <?php  
-              $typeform_url = get_sub_field('typeform_url'); 
+              <?php
+
+            function ExistsKey($index, $array) 
+            { 
+                if (array_key_exists($index, $array)){ 
+                    return true;
+                } 
+                else{ 
+                    return false; 
+                } 
+            } 
+              
+            $typeform_url = get_sub_field('typeform_url'); 
+            // get the default
+            $custom_typeform_urls = get_sub_field('custom_typeform_urls');
+            // get all the custom values
+
+            if($custom_typeform_urls) {
+                foreach($custom_typeform_urls as $custom_typeform_url) {
+                    $key_match = ExistsKey($custom_typeform_url['key'], $_GET);
+                    $value_match = array_search($custom_typeform_url['value'], $_GET);
+
+                    if ($key_match AND $value_match) {
+                        $typeform_url = $custom_typeform_url['custom_typeform_urls'];
+                    }
+
+                }
+            }
+
+
+             
+
 
               $i = 0;
               foreach ($_GET as $key => $value) {
