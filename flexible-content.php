@@ -374,7 +374,7 @@ $k = 0;
                     var_dump($value_match);
 
                     if ($key_match AND $value_match) {
-                        $typeform_url = $custom_typeform_url['custom_typeform-urls'];
+                        $typeform_url = $custom_typeform_url['custom_typeform-url'];
                     }
 
                 }
