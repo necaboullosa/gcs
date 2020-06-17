@@ -366,9 +366,7 @@ $k = 0;
             if($custom_typeform_urls) {
                 foreach($custom_typeform_urls as $custom_typeform_url) {
                     $key_match = ExistsKey($custom_typeform_url['key'], $_GET);
-                    var_dump($key_match);
                     $value_match = array_search($custom_typeform_url['value'], $_GET);
-                    var_dump($value_match);
 
                     if ($key_match AND $value_match) {
                         $typeform_url = $custom_typeform_url['custom_typeform-url'];
