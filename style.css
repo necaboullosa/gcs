@@ -1509,6 +1509,20 @@ left: -13px;
 	}
 }
 
+_::-webkit-full-page-media, _:future, :root .hero-container {
+
+	overflow: hidden;
+  
+  }
+
+
+  _::-webkit-full-page-media, _:future, :root .hero-page  {
+
+	max-height: 700px;
+	margin-bottom: 2em;
+  
+  }
+
 
 
 
