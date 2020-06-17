@@ -358,11 +358,9 @@ $k = 0;
             } 
               
             $typeform_url = get_sub_field('typeform_url'); 
-            var_dump($typeform_url);
             // get the default
             $custom_typeform_urls = get_sub_field('custom_typeform_urls');
             // get all the custom values
-            var_dump($custom_typeform_urls);
 
             if($custom_typeform_urls) {
                 foreach($custom_typeform_urls as $custom_typeform_url) {
@@ -376,7 +374,6 @@ $k = 0;
                 }
             }
 
-            var_dump($typeform_url);
 
 
              
