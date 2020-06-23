@@ -158,7 +158,7 @@ if ($enable_custom_editor) { ?>
 
 	
 <?php
-
+}
 
 
 $k = 0;
@@ -215,7 +215,7 @@ $k = 0;
 
                 <div class="text-container" data-aos="fade-up">
                     <?php $sub_header = get_sub_field('sub_header'); if($sub_header) {?>  <h3 class="section-sub-header "><?php echo $sub_header; }?></h3>
-                    <h2 class="section-header sm-red-line"><?php $header = get_sub_field('header'); echo $header; ?></h2>
+                    <?php $block_image_header = get_sub_field('header'); var_dump($block_image_header); if($block_image_header) { ?><h2 class="section-header sm-red-line"><?php  echo $image_header; ?></h2><?php }?>
                     <?php $text = get_sub_field('text'); echo $text; ?>
 
                     <?php $enable_button = get_sub_field('enable_button');
@@ -368,8 +368,40 @@ $k = 0;
 
              
 
-              <?php  
-              $typeform_url = get_sub_field('typeform_url'); 
+              <?php
+
+            function ExistsKey($index, $array) 
+            { 
+                if (array_key_exists($index, $array)){ 
+                    return true;
+                } 
+                else{ 
+                    return false; 
+                } 
+            } 
+
+              
+            $typeform_url = get_sub_field('typeform_url'); 
+            // get the default
+            $custom_typeform_urls = get_sub_field('custom_typeform_urls');
+            // get all the custom values
+
+            if($custom_typeform_urls) {
+                foreach($custom_typeform_urls as $custom_typeform_url) {
+                    $key_match = ExistsKey($custom_typeform_url['key'], $_GET);
+                    $value_match = array_search($custom_typeform_url['value'], $_GET);
+
+                    if ($key_match AND $value_match) {
+                        $typeform_url = $custom_typeform_url['custom_typeform-url'];
+                    }
+
+                }
+            }
+
+
+
+             
+
 
               $i = 0;
               foreach ($_GET as $key => $value) {
@@ -596,8 +628,13 @@ header'); if($header) { ?><h6 class="blurbs-header txt-center sm-red-line space"
                         );
 
                         if(get_sub_field('posts_category')) { 
-                            $posts_per_page = get_sub_field('posts_category');
-                            $args['posts_per_page'] = $posts_per_page;
+                            $posts_category = get_sub_field('posts_category');
+                            $args['cat'] = $posts_category;
+                        }
+
+                        if(get_sub_field('number_of_posts')) { 
+                            $number_of_posts = get_sub_field('number_of_posts');
+                            $args['posts_per_page'] = $number_of_posts;
                         } else {
                            $args['posts_per_page'] =  6;
                         }
@@ -639,12 +676,19 @@ header'); if($header) { ?><h6 class="blurbs-header txt-center sm-red-line space"
                     ?>
                     </div>
 
+                    <?php 
+
+                    $enable_ajax = get_sub_field('add_infinite_loading_at_the_end');
+
+                    if($enable_ajax): ?>
+
                     <?php if(ICL_LANGUAGE_CODE=='en'): ?>
-                        <?php echo apply_filters( 'the_content', '[ajax_load_more container_type="div" posts_per_page="6" css_classes="the-loop"  offset="6" pause="true" scroll="false" button_label="Older Entries"]'); ?>
+                        <?php echo apply_filters( 'the_content', '[ajax_load_more container_type="div" posts_per_page="6" css_classes="the-loop"  offset="6" pause="true" scroll="false" button_label="Load More"]'); ?>
 
                     <?php elseif(ICL_LANGUAGE_CODE=='pt-pt'): ?>
                         <?php echo  apply_filters( 'the_content', '[ajax_load_more container_type="div" posts_per_page="6" css_classes="the-loop"  offset="6" pause="true" scroll="false" button_label="Posts Antigos" category="cidadania-europeia,investir-na-europa,mercado-imobiliario,residencia-europeia,vida-na-europa,visto-europeu"]'); ?>
 
+                    <?php endif; ?>
                     <?php endif; ?>
                     <?php $k++; ?>
 
@@ -862,9 +906,7 @@ header'); if($header) { ?><h6 class="blurbs-header txt-center sm-red-line space"
                                 } 
                         ?>
 
-                        <img alt="<?php the_sub_field('alt-image-text'); ?>" class="image image-block-desktop
-
-                       <?php echo '" src="' . $image_url . '">
+                        <img alt="<?php the_sub_field('alt-image-text'); ?>" class="image image-block-desktop" <?php echo ' src="' . $image_url . '">
                        </div> ';
 
                        if($link) {
@@ -888,6 +930,5 @@ header'); if($header) { ?><h6 class="blurbs-header txt-center sm-red-line space"
             </div>
             <?php endwhile; ?>
         <?php endif; ?>
-
 				<?php } ?>
 </article><!-- #post-<?php the_ID(); ?> -->
