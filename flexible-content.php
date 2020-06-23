@@ -192,7 +192,7 @@ $k = 0;
 
                 <div class="text-container" data-aos="fade-up">
                     <?php $sub_header = get_sub_field('sub_header'); if($sub_header) {?>  <h3 class="section-sub-header "><?php echo $sub_header; }?></h3>
-                    <h2 class="section-header sm-red-line"><?php $header = get_sub_field('header'); echo $header; ?></h2>
+            <?php $header = get_sub_field('header'); if($header) { ?><h2 class="section-header sm-red-line"><?php $header = get_sub_field('header'); echo $header; ?></h2><?php }?>
                     <?php $text = get_sub_field('text'); echo $text; ?>
 
                     <?php $enable_button = get_sub_field('enable_button');
@@ -660,7 +660,7 @@ header'); if($header) { ?><h6 class="blurbs-header txt-center sm-red-line space"
                     if($enable_ajax): ?>
 
                     <?php if(ICL_LANGUAGE_CODE=='en'): ?>
-                        <?php echo apply_filters( 'the_content', '[ajax_load_more container_type="div" posts_per_page="6" css_classes="the-loop"  offset="6" pause="true" scroll="false" button_label="Older Entries"]'); ?>
+                        <?php echo apply_filters( 'the_content', '[ajax_load_more container_type="div" posts_per_page="6" css_classes="the-loop"  offset="6" pause="true" scroll="false" button_label="Load More"]'); ?>
 
                     <?php elseif(ICL_LANGUAGE_CODE=='pt-pt'): ?>
                         <?php echo  apply_filters( 'the_content', '[ajax_load_more container_type="div" posts_per_page="6" css_classes="the-loop"  offset="6" pause="true" scroll="false" button_label="Posts Antigos" category="cidadania-europeia,investir-na-europa,mercado-imobiliario,residencia-europeia,vida-na-europa,visto-europeu"]'); ?>
