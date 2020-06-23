@@ -215,7 +215,7 @@ $k = 0;
 
                 <div class="text-container" data-aos="fade-up">
                     <?php $sub_header = get_sub_field('sub_header'); if($sub_header) {?>  <h3 class="section-sub-header "><?php echo $sub_header; }?></h3>
-                    <h2 class="section-header sm-red-line"><?php $header = get_sub_field('header'); echo $header; ?></h2>
+                    <?php $block_image_header = get_sub_field('header'); var_dump($block_image_header); if($block_image_header) { ?><h2 class="section-header sm-red-line"><?php  echo $image_header; ?></h2><?php }?>
                     <?php $text = get_sub_field('text'); echo $text; ?>
 
                     <?php $enable_button = get_sub_field('enable_button');
