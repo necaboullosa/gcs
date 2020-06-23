@@ -883,7 +883,7 @@ header'); if($header) { ?><h6 class="blurbs-header txt-center sm-red-line space"
                                 } 
                         ?>
 
-                        <img alt="<?php the_sub_field('alt-image-text'); ?>" class="image image-block-desktop
+                        <img alt="<?php the_sub_field('alt-image-text'); ?>" class="image image-block-desktop 
 
                        <?php echo '" src="' . $image_url . '">
                        </div> ';
