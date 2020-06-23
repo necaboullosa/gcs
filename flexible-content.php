@@ -192,7 +192,7 @@ $k = 0;
 
                 <div class="text-container" data-aos="fade-up">
                     <?php $sub_header = get_sub_field('sub_header'); if($sub_header) {?>  <h3 class="section-sub-header "><?php echo $sub_header; }?></h3>
-                    <?php $block_image_header = get_sub_field('header'); var_dump($block_image_header); if($block_image_header) { ?><h2 class="section-header sm-red-line"><?php  echo $image_header; ?></h2><?php }?>
+                    <?php $block_image_header = get_sub_field('header'); echo 'test5'; if($block_image_header) { ?><h2 class="section-header sm-red-line"><?php  echo $image_header; ?></h2><?php }?>
                     <?php $text = get_sub_field('text'); echo $text; ?>
 
                     <?php $enable_button = get_sub_field('enable_button');
@@ -430,8 +430,7 @@ $k = 0;
 
              <!-- blurbs type 1 -->
              <?php elseif( get_row_layout() == 'blurbs_type_1' ): ?>
-             <?php $header = get_sub_field('	padding: 20px;
-header'); if($header) { ?><h6 class="blurbs-header txt-center sm-red-line space" data-aos="fade-up"> <?php the_sub_field('header'); ?> </h6> <?php } ?>
+             <?php $header = get_sub_field('header'); if($header) { ?><h6 class="blurbs-header txt-center sm-red-line space" data-aos="fade-up"> <?php the_sub_field('header'); ?> </h6> <?php } ?>
                         <?php if( have_rows('blurb_type_1_repeater') ): ?>
                             <div class="blurbs blurbs-type-1 space" data-aos="fade-up">
                                 <?php while ( have_rows('blurb_type_1_repeater') ) : the_row(); ?>
