@@ -906,53 +906,6 @@ $k = 0;
             </div>
             <?php endwhile; ?>
         <?php endif; ?>
-<?php
-$enable_our_commitment = get_field('enable_our_commitment');
-if($enable_our_commitment) { ?>
-
-                        <div class="commitment-section commitment-page-container" data-aos="fade-up">
-
-                            <div class="commitment commitment-page container">
-                                <div class="patricia">
-                                    <h2 id="commitment-header" class="section-header sm-red-line"><?php the_field('our_commitment-header', 'option'); ?></h2>
-                                    <p><?php the_field('our_commitment-text', 'option'); ?></p>
-
-                                    <div class="ceo">
-                                       <!-- <div class="photo-container">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/img/patricia.png">
-                                        </div> -->
-                                        <div class="signature-container">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/img/signature-BG-blue.png" alt="Patricia signature">
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="wrapper">
-                                    <div class="form ac-form">
-
-                                    <?php
-            $our_commitment_form = get_field('our_commitment-form2');
-            
-            if($our_commitment_form) {
-                echo apply_filters( 'the_content', $our_commitment_form);
-            
-            } else {
-                $our_commitment_form = get_field('our_commitment-form', 'option');
-                echo apply_filters( 'the_content', $our_commitment_form);
-
-            }
-            
-           ?>
-                                       
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-
-<?php
-}
-?>
 
 <?php 
 get_footer(); 
