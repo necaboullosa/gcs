@@ -145,11 +145,18 @@ if($enable_our_commitment) { ?>
 		<div class="footer-widgets">
 		
 		</div>
+		<div class="footer-mobile-whatsapp">
+			<a href="<?php the_field('whats_app-url', 'options'); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/ICON-WHATSAPP.png"><span><?php the_field('whats_app-text', 'options'); ?></span></a>
+		</div>
 		<hr>
 		<div class="copyright-outer">
-			<div class="copyright container">
+			<div class="copyright margin-left">
 				<p>Global Citizen Solutions  2017 -  <?php echo date("Y"); ?> ©. All rights reserved.</p>
+				<div class="footer-desktop-whatsapp">
+					<a href="<?php the_field('whats_app-url', 'options'); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/ICON-WHATSAPP.png"> <span><?php the_field('whats_app-text', 'options'); ?></span></a>
+				</div>
 			</div>
+			
 		</div>
 	
 	</footer><!-- #colophon -->

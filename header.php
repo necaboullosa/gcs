@@ -125,11 +125,13 @@ var b=a.data(this,"plugin_intlTelInput");b instanceof p&&"function"==typeof b[c]
 
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
+
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'gcs' ); ?></a>
 
 	<header id="masthead" class="site-header">
 		<div class="top-menu-outer-container">
+	
 			<div class="container">
 				<ul id="top-menu" class="top-menu">
 
@@ -145,6 +147,9 @@ var b=a.data(this,"plugin_intlTelInput");b instanceof p&&"function"==typeof b[c]
 			</div>
 		</div>
 		<div class="main-menu-outer-container">
+		<div id="header-mobile-whatsapp" class="footer-mobile-whatsapp">
+			<a href="<?php the_field('whats_app-url', 'options'); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/ICON-WHATSAPP.png"><span><?php the_field('whats_app-text', 'options'); ?></span></a>
+</div>
 			<div class="container">
 				<div class="logo">
 					<a href="<?php $url = home_url();
