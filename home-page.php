@@ -976,6 +976,12 @@ if($featured_img_url) {
 
                         );
 
+                        if(get_field('guides_category', 'options')) {
+                            $args['category_name'] = get_field('guides_category', 'options');
+                            
+                        
+                            }
+
                        
 
                         $post_query = new WP_Query($args);
