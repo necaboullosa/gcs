@@ -623,16 +623,13 @@ $k = 0;
                                 ?>
                                 <div class="post">
                                     <a href="<?php the_permalink(); ?>">
-                                    <div class="thumbnail-container" style="background-image: url('<?php the_post_thumbnail_url('medium'); ?>'); height: 220px;">
+                                    <div class="thumbnail-container" style="background-image: url('<?php the_post_thumbnail_url('large'); ?>'); height: 220px;">
                                     </div>
                                     <div class="text">
 
                                     
                                         <h5><?php the_title(); ?></h5>
-                                        <?php
-                                        
-                                            the_excerpt();
-                                         ?> 
+                                        <?php the_excerpt(); ?> 
                                         <div class="button"> <?php 
                             $read_more_global_button_text = get_field('read_more_global_button_text', 'option'); 
                             if ($read_more_global_button_text) {
