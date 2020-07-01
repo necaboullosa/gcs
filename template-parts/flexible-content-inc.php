@@ -303,7 +303,7 @@ $k = 0;
 										}
 									</style>
                                     <div class="blurb">
-                                        <img alt="<?php the_sub_field('text'); ?>" src="<?php $icon = get_sub_field('icon'); if($icon < 10) { $icon = '0' . $icon;} echo get_template_directory_uri() . '/img/icons/GCS-ICONS-' . $icon . '.png'; ?>">
+                                        <img alt="<?php the_sub_field('text'); ?>" src="<?php $icon = get_sub_field('icon'); $first_digit = $icon[0]; if($icon < 10 AND $first_digit) { $icon = '0' . $icon;} echo get_template_directory_uri() . '/img/icons/GCS-ICONS-' . $icon . '.png'; ?>">
                                         <?php $header = get_sub_field('header'); if($header) { ?><h3 class="blurb-header sm-red-line txt-center "><?php   the_sub_field('header');?> </h3> <?php } ?>
                                         <span> <?php the_sub_field('text'); ?></span>
                                     </div>
@@ -339,7 +339,7 @@ $k = 0;
                             <div class="blurb_type_2_container blurbs">
                                 <?php while ( have_rows('blurb_type_2_repeater') ) : the_row(); ?>
                                     <div class="blurb">
-                                        <img alt="<?php the_sub_field('text'); ?>" src="<?php $icon = get_sub_field('icon'); if($icon < 10) { $icon = '0' . $icon;} echo get_template_directory_uri() . '/img/icons/GCS-ICONS-' . $icon . '.png'; ?>">
+                                        <img alt="<?php the_sub_field('text'); ?>" src="<?php $icon = get_sub_field('icon'); $first_digit = $icon[0]; if($icon < 10 AND $first_digit) { $icon = '0' . $icon;} echo get_template_directory_uri() . '/img/icons/GCS-ICONS-' . $icon . '.png'; ?>">
                                         <h3 class="blurb-header sm-red-line txt-center "><?php   the_sub_field('header');?> </h3>
                                         <p class="blurb-text txt-center ">
                                             <?php the_sub_field('text'); ?>
@@ -359,7 +359,7 @@ $k = 0;
                             <div class="blurb_type_3_container blurbs">
                                 <?php while ( have_rows('blurb_type_3_repeater') ) : the_row(); ?>
                                     <div class="blurb">
-                                        <img alt="<?php the_sub_field('text'); ?>" src="<?php $icon = get_sub_field('icon'); if($icon < 10) { $icon = '0' . $icon;} echo get_template_directory_uri() . '/img/icons/GCS-ICONS-' . $icon . '.png'; ?>">
+                                        <img alt="<?php the_sub_field('text'); ?>" src="<?php $icon = get_sub_field('icon'); $first_digit = $icon[0]; if($icon < 10 AND $first_digit) { $icon = '0' . $icon;} echo get_template_directory_uri() . '/img/icons/GCS-ICONS-' . $icon . '.png'; ?>">
                                         <h3 class="blurb-header sm-red-line txt-center "><?php   the_sub_field('header');?> </h3>
                                         <p class="blurb-text txt-center ">
                                             <?php the_sub_field('text'); ?>
@@ -418,7 +418,7 @@ $k = 0;
                                 <?php while ( have_rows('usp') ) : the_row(); ?>
 
                                     <div class="usp">
-                                        <img alt="<?php   the_sub_field('header');?>" src="<?php $icon = get_sub_field('icon'); if($icon < 10) { $icon = '0' . $icon;} echo get_template_directory_uri() . '/img/icons/GCS-ICONS-' . $icon . '.png'; ?>">
+                                        <img alt="<?php   the_sub_field('header');?>" src="<?php $icon = get_sub_field('icon'); $first_digit = $icon[0]; if($icon < 10 AND $first_digit) { $icon = '0' . $icon;} echo get_template_directory_uri() . '/img/icons/GCS-ICONS-' . $icon . '.png'; ?>">
                                         <?php $header = get_sub_field('header'); if($header) { ?><h5 class="blurb-header sm-red-line txt-center "><?php   the_sub_field('header');?> </h5> <?php } ?>
                                         <span class="txt-center"> <?php the_sub_field('text'); ?></span>
                                     </div>
@@ -680,7 +680,7 @@ $k = 0;
                                     <div class="flip-card">
                                         <div class="flip-card-inner">
                                             <div class="flip-card-front">
-                                            <img src="<?php $icon = get_sub_field('icon'); if($icon < 10) { $icon = '0' . $icon;} echo get_template_directory_uri() . '/img/icons/GCS-ICONS-' . $icon . '.png'; ?>" alt="<?php   the_sub_field('header');?>">
+                                            <img src="<?php $icon = get_sub_field('icon'); $first_digit = $icon[0]; if($icon < 10 AND $first_digit) { $icon = '0' . $icon;} echo get_template_directory_uri() . '/img/icons/GCS-ICONS-' . $icon . '.png'; ?>" alt="<?php   the_sub_field('header');?>">
                                             <?php $header = get_sub_field('header'); if($header) { ?><h5 class="blurb-header sm-red-line txt-center "><?php   the_sub_field('header');?> </h5> <?php } ?>
                                             <img class="more" src="<?php 
                                                                         $more_button_flip_cards = get_field('more_button_flip_cards', 'option'); 
