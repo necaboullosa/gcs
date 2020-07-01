@@ -592,14 +592,14 @@ $k = 0;
 
 
                 <div class="guides">
-
+                <?php $i = 0; ?>
 
                 <?php
                         $args = array(
+                            'post__not_in' => array (get_the_ID()),
                             'post_type' => 'post',
                             'posts_per_page' => 4,
                             'category_name' => 'guides',
-                            'post__not_in' => array (get_the_ID()),
 
                         );
 
@@ -621,7 +621,7 @@ $k = 0;
                                 $post_query->the_post();
                                 ?>
 
-                                <div style="background-image: url('<?php the_post_thumbnail_url('medium'); ?>')">
+                                <div class="<?php echo 'guide-' . $i; ?>" style="background-image: url('<?php the_post_thumbnail_url('medium'); ?>')">
                                     <div class="guide colour">
 
                                         <h5><?php the_title(); ?></h5>
@@ -632,6 +632,8 @@ $k = 0;
                             } else { 
                                 echo 'Read more '; 
                             } 
+
+                            $i++;
                             ?><img src="<?php echo get_template_directory_uri(); ?>/img/arrow-button.png" alt="arrow icon"></div>
                                         </a>
 

@@ -1776,9 +1776,10 @@ padding: 120px 0px;
 
 .guides {
 	display: flex;
-	height: 200px;
+	min-height: 200px;
 	justify-content: space-between;
 	flex-wrap: wrap;
+	height: auto;
 }
 
 .guides > div {
@@ -1788,6 +1789,10 @@ padding: 120px 0px;
 	border-radius: 20px;
 
 
+}
+
+.guide-4, .guide-5, .guide-6, .guide-7, .guide-8, .guide-9, .guide-10 {
+	margin-top: 1em;
 }
 
 
@@ -2955,7 +2960,8 @@ blockquote {
 		}
 
 		.guides > div {
-			max-width: 90%;
+			width: 90%;
+
 			margin-bottom: 2em;
 		}
 		
