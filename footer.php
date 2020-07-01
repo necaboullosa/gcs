@@ -121,7 +121,7 @@ if($enable_our_commitment) { ?>
 
 								?>
 
-									<li><a href="<?php the_sub_field('url');?>"><?php the_sub_field('text');?></a></li>
+									<li><a target="_blank" href="<?php the_sub_field('url');?>"><?php the_sub_field('text');?></a></li>
 								<?php
 
 							endwhile;
@@ -135,9 +135,9 @@ if($enable_our_commitment) { ?>
 				<div class="social">
 					<img class="hidden" src="<?php echo get_template_directory_uri(); ?>/img/footer-offices.png">
 
-					<?php $social_link_linked = get_field('social_links_linked', 'options'); if($social_link_linked) {  ?><a href="<?php the_field('social_links_linked', 'options');?>"><img src="<?php echo get_template_directory_uri(); ?>/img/footer-linked.png" alt="linkedin logo"> <span>LinkedIn</span></a><?php } ?>
-					<?php $social_links_facebook = get_field('social_links-facebook', 'options'); if($social_links_facebook) {  ?><a href="<?php the_field('social_links-facebook', 'options');?>"><img src="<?php echo get_template_directory_uri(); ?>/img/footer-fb.png" alt="facebook logo"> <span>Facebook</span></a><?php } ?>
-					<?php $social_links_instagram_url = get_field('social_links-instagram_url', 'options'); if($social_links_instagram_url) {  ?><a href="<?php the_field('social_links-instagram_url', 'options');?>"><img src="<?php echo get_template_directory_uri(); ?>/img/footer-ig.png" alt="instagram logo"> <span>Instagram</span></a><?php } ?>
+					<?php $social_link_linked = get_field('social_links_linked', 'options'); if($social_link_linked) {  ?><a target="_blank" href="<?php the_field('social_links_linked', 'options');?>"><img src="<?php echo get_template_directory_uri(); ?>/img/footer-linked.png" alt="linkedin logo"> <span>LinkedIn</span></a><?php } ?>
+					<?php $social_links_facebook = get_field('social_links-facebook', 'options'); if($social_links_facebook) {  ?><a target="_blank" href="<?php the_field('social_links-facebook', 'options');?>"><img src="<?php echo get_template_directory_uri(); ?>/img/footer-fb.png" alt="facebook logo"> <span>Facebook</span></a><?php } ?>
+					<?php $social_links_instagram_url = get_field('social_links-instagram_url', 'options'); if($social_links_instagram_url) {  ?><a target="_blank" href="<?php the_field('social_links-instagram_url', 'options');?>"><img src="<?php echo get_template_directory_uri(); ?>/img/footer-ig.png" alt="instagram logo"> <span>Instagram</span></a><?php } ?>
 				</div>
 			</div>
 		
@@ -153,7 +153,7 @@ if($enable_our_commitment) { ?>
 			<div class="copyright margin-left">
 				<p>Global Citizen Solutions  2017 -  <?php echo date("Y"); ?> ©. All rights reserved.</p>
 				<div class="footer-desktop-whatsapp">
-					<a href="<?php the_field('whats_app-url', 'options'); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/ICON-WHATSAPP.png"> <span><?php the_field('whats_app-text', 'options'); ?></span></a>
+					<a href="<?php the_field('whats_app-url', 'options'); ?>" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/ICON-WHATSAPP.png"> <span><?php the_field('whats_app-text', 'options'); ?></span></a>
 				</div>
 			</div>
 			

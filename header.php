@@ -131,8 +131,7 @@ var b=a.data(this,"plugin_intlTelInput");b instanceof p&&"function"==typeof b[c]
 
 	<header id="masthead" class="site-header">
 		<div class="top-menu-outer-container">
-	
-			<div class="container">
+			<div class="container ">
 				<ul id="top-menu" class="top-menu">
 
 				<?php $header_top_menu = wp_nav_menu( array( 'theme_location' => 'header-top', 'container' => '', 'fallback_cb' => '', 'echo' => false, 'items_wrap' => '%3$s' ) );
@@ -148,8 +147,11 @@ var b=a.data(this,"plugin_intlTelInput");b instanceof p&&"function"==typeof b[c]
 		</div>
 		<div class="main-menu-outer-container">
 		<div id="header-mobile-whatsapp" class="footer-mobile-whatsapp">
-			<a href="<?php the_field('whats_app-url', 'options'); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/ICON-WHATSAPP.png"><span><?php the_field('whats_app-text', 'options'); ?></span></a>
-</div>
+			<a target="_blank" href="<?php the_field('whats_app-url', 'options'); ?>">
+				<img src="<?php echo get_template_directory_uri(); ?>/img/ICON-WHATSAPP.png">
+				<span><?php the_field('whats_app-text', 'options'); ?></span>
+			</a>
+		</div>
 			<div class="container">
 				<div class="logo">
 					<a href="<?php $url = home_url();

@@ -2518,6 +2518,11 @@ blockquote {
 	  display: none;
   }
 
+  #header-mobile-whatsapp a {
+	color: white !important;
+}
+
+
 
 @media (min-width: 1900px) {
 	.hero {
@@ -2550,7 +2555,7 @@ blockquote {
 	#toggle {
 	float: right;
 	position: fixed;
-	top: 60px;
+	top: 100px;
 	right: 45px;
 	width: 28px;
 	height: 0px;
@@ -2799,8 +2804,28 @@ blockquote {
 			color: white;
 			display: flex;
 			align-items: center;
-
+			justify-content: center;
+			padding: 10px;
+			text-transform: uppercase;
 		}
+
+		#header-mobile-whatsapp {
+			display: block
+		}
+
+		.main-menu-outer-container {
+			padding: 0px;
+		}
+
+		.main-menu-outer-container .container {
+			padding: 10px;
+		}
+
+		
+		
+		
+
+		
 
 
 		.footer-mobile-whatsapp  span {
@@ -2811,6 +2836,11 @@ blockquote {
 		.copyright {
 			justify-content: center !important;
 			margin-left: 0px !important;
+		}
+
+		.copyright p {
+			padding: 10px;
+
 		}
 		.footer-desktop-whatsapp {
 			display: none;
@@ -3076,7 +3106,21 @@ blockquote {
 	margin-left: 10px;
 }
 .margin-left {
-	margin-left: calc((100vw - 1080px) / 2);
+	margin-left: calc((100% - 1080px) / 2);
+}
+
+@media (max-width: 1200px) {
+	.margin-left {
+		margin-left: 5%;
+	}
+
+	.margin-left p {
+		min-width: 60%;
+	}
+
+	.footer-desktop-whatsapp {
+		width: 100%;
+	}
 }
 
 .copyright {
