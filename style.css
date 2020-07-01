@@ -1793,7 +1793,7 @@ padding: 120px 0px;
 
 .guide-4, .guide-5, .guide-6, .guide-7, .guide-8, .guide-9, .guide-10 {
 	
-	margin: 1em auto 0px auto;
+	margin-top: 1em;
 	min-height: 152px;
 }
 
@@ -1972,6 +1972,24 @@ footer .address img{
 	margin-bottom: 2px;
 	
 }
+
+.archive .page-header {
+	padding-top: 8em;
+}
+
+.archive .entry-content p {
+	font-family: 'Roboto',sans-serif !important;
+	font-size: 1rem !important;
+	font-weight: 400;
+	color: gray;
+}
+
+
+.archive .page-header .page-title {
+	color: #007ac1;
+}
+
+
 
 
 

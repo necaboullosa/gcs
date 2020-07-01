@@ -613,6 +613,7 @@ $k = 0;
                             $args['posts_per_page'] = $posts_per_page++;
                         }
 
+                       
                       
 
                        
@@ -651,6 +652,21 @@ $k = 0;
                                 }
                             }
                             wp_reset_query();
+
+                            if($custom_per_row) {
+
+                            } else {
+                                if ($i > 4 and 8 > $i)
+                                ?>
+                                <style>
+                                    .guide-4, .guide-5, .guide-6, .guide-7, .guide-8, .guide-9, .guide-10 {
+                                    margin: 1em auto 0px auto;
+                                    }
+                                </style>    
+    
+                                <?php
+                            }
+    
                     ?>
 
 
