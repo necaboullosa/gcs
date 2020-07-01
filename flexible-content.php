@@ -736,14 +736,17 @@ $k = 0;
                             'post_type' => 'post',
                             'posts_per_page' => 4,
                             'category_name' => 'guides',
+                            'post__not_in' => array (get_the_ID()),
 
                         );
 
                         if(get_sub_field('guides_category')) {
                                   $args['category_name'] = get_sub_field('guides_category');
                                   
-                                
+                        }
 
+                        if(get_sub_field('posts_per_page')) {
+                            $args['posts_per_page'] = get_sub_field('posts_per_page');
                         }
 
                        
