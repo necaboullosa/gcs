@@ -609,8 +609,11 @@ $k = 0;
                         }
 
                         if(get_sub_field('posts_per_page')) {
-                            $args['posts_per_page'] = get_sub_field('posts_per_page');
+                            $posts_per_page = get_sub_field('posts_per_page');
+                            $args['posts_per_page'] = $posts_per_page++;
                         }
+
+                      
 
                        
 
@@ -619,6 +622,7 @@ $k = 0;
                         if($post_query->have_posts() ) {
                             while($post_query->have_posts() ) {
                                 $post_query->the_post();
+                                if ( $posts_per_page > $i or !$posts_per_page) {
                                 ?>
 
                                 <div class="<?php echo 'guide-' . $i; ?>" style="background-image: url('<?php the_post_thumbnail_url('medium'); ?>')">
@@ -643,6 +647,7 @@ $k = 0;
 
                               
                                 <?php
+                                }
                                 }
                             }
                             wp_reset_query();

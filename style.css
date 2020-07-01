@@ -1792,9 +1792,15 @@ padding: 120px 0px;
 }
 
 .guide-4, .guide-5, .guide-6, .guide-7, .guide-8, .guide-9, .guide-10 {
-	margin-top: 1em;
+	
+	margin: 1em auto 0px auto;
+	min-height: 152px;
 }
 
+.guide-4 .guide, .guide-5 .guide, .guide-6 .guide, .guide-7.guide , .guide-8 .guide , .guide-9 .guide, .guide-10 .guide {
+	min-height: 197px;
+	min-width: 253px;
+} 
 
 .guides .colour  {
 	background-color: rgba(0, 0, 0, 0.35);
