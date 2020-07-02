@@ -721,6 +721,51 @@ $k = 0;
                         <?php $k++; ?>
             <!-- END Flip Cards -->
 
+
+
+
+              <!-- FAQs -->
+              <?php elseif( get_row_layout() == 'faqs' ): ?>
+              <?php $section_header = get_sub_field('section_header');  if($section_header) { ?><h2 class="section-header space sm-red-line"> <?php the_sub_field('section_header'); ?> </h2><?php }?>
+                        <?php if( have_rows('faq_item') ): ?>
+                                <?php while ( have_rows('faq_item') ) : the_row(); ?>
+                                    <section class="sc_fs_faq sc_card">
+                                        <div>
+                                            <h3><?php the_sub_field('question'); ?></h3>
+                                            <div>
+                                                <p><?php the_sub_field('answer'); ?></p>
+                                            </div>
+                                        </div>
+                                    </section>
+                                <?php endwhile; ?>
+                             
+                                    <script type="application/ld+json">
+
+                                    {
+                                    "@context": "https://schema.org",
+                                    "@type": "FAQPage",
+                                    "mainEntity": [
+
+                                        <?php while ( have_rows('faq_item') ) : the_row(); ?>
+
+                                                {
+                                            "@type": "Question",
+                                            "name": "<?php the_sub_field('question'); ?>",
+                                            "acceptedAnswer": {
+                                                "@type": "Answer",
+                                                "text": "<?php the_sub_field('answer'); ?>"
+                                                                }
+                                        },
+                                        <?php endwhile; ?>
+                                        ]}
+
+                                    </script>
+                                                                                    
+
+                        <?php endif; ?>
+                        <?php $k++; ?>
+            <!-- END FAQs -->
+
             
              
 
