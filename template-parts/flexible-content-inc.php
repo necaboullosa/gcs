@@ -728,6 +728,8 @@ $k = 0;
               <?php elseif( get_row_layout() == 'faqs' ): ?>
               <?php $section_header = get_sub_field('section_header');  if($section_header) { ?><h2 class="section-header space sm-red-line"> <?php the_sub_field('section_header'); ?> </h2><?php }?>
                         <?php if( have_rows('faq_item') ): ?>
+
+                                <?php $i = 0; ?>
                                 <?php while ( have_rows('faq_item') ) : the_row(); ?>
                                     <section class="sc_fs_faq sc_card">
                                         <div>
@@ -737,8 +739,11 @@ $k = 0;
                                             </div>
                                         </div>
                                     </section>
+                                    <?php $i++; ?> 
                                 <?php endwhile; ?>
-                             
+
+
+                                    <?php $k = 0; ?>
                                     <script type="application/ld+json">
 
                                     {
@@ -755,9 +760,10 @@ $k = 0;
                                                 "@type": "Answer",
                                                 "text": "<?php the_sub_field('answer'); ?>"
                                                                 }
-                                        },
+                                        }<?php $k++; if ($i != $k) {echo ','; }?>
                                         <?php endwhile; ?>
-                                        ]}
+                                        ]
+                                    }
 
                                     </script>
                                                                                     
