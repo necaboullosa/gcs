@@ -772,6 +772,88 @@ $k = 0;
                         <?php $k++; ?>
             <!-- END FAQs -->
 
+              <!-- Step by step -->
+              <?php elseif( get_row_layout() == 'step_by_step' ): ?>
+
+                <style>
+                    .steps {
+                        display: flex;
+                        flex-wrap: wrap;
+                    }
+                    
+                    .steps .step {
+                        max-width: 17%;
+                        margin-right: 1em;
+                        margin: 0 auto;
+                    }
+
+                    .step-4 {
+                        margin-right: 0px;
+                    }
+
+                    .step-content {
+                        display: flex;
+                        align-items: center;
+                        border-top: 1px solid #007ac1;
+                        border-bottom: 1px solid #007ac1;
+                    }
+
+                    .step-content h5 {
+                        text-transform: uppercase;
+                        color: #007ac1;
+                        font-weight: 400;
+                        font-size: 1rem;
+                    }
+
+                    .number .number {
+                        font-size: 4rem !important;
+                        line-height: 4rem;
+                        margin: 0px;
+                        padding-right: 5px;
+                        min-height: 5rem;
+                    }
+                </style>
+                <div class="steps-container container">    
+                    <h2 class="section-header txt-center sm-gold-line space"> 
+                        <?php the_sub_field('section_header'); ?> 
+                    </h2>
+                    <?php 
+                        $section_description = get_sub_field('section_description'); 
+                        if($section_description) {
+                            echo  $section_description;
+                        }
+                    ?>
+
+                    <?php $k_step_by_step = 1; ?>
+                    <?php if( have_rows('step') ): ?>
+                        <div class="steps">
+                            <?php while ( have_rows('step') ) : the_row(); ?>
+                                <div class="step step-<?php echo $k_step_by_step; ?> row-<?php if(5 <=
+                                 $k_step_by_step) { echo '2';} else { echo '1';}?>">
+                             
+                                    <img src="<?php $icon = get_sub_field('icon'); $first_digit = $icon[0]; if($icon < 10 AND $first_digit) { $icon = '0' . $icon;} echo get_template_directory_uri() . '/img/icons/GCS-ICONS-' . $icon . '.png'; ?>">
+
+                                    <div class="step-content">
+                                        <div class="number"><h3 class="number"><?php echo $k_step_by_step; ?></h3></div>
+
+                                        <h5 class="blurb-header sm-gold-line txt-center "><?php   the_sub_field('header');?> </h5>
+                                        
+                                    </div>
+                                </div>
+                                <?php $k_step_by_step++; ?> 
+                            <?php endwhile; ?>
+                        </div>
+                    <?php endif; ?>
+
+                    <?php $closing_remarks = get_sub_field('closing_remarks');
+                            if($closing_remarks) {
+                                echo '<div class="closing-remarkts space">' . $closing_remarks . '</div>';
+                            }
+                    ?>
+                </div>
+            <!-- END step by step -->
+
+
             
              
 
