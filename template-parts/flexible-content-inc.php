@@ -779,6 +779,7 @@ $k = 0;
                     .steps {
                         display: flex;
                         flex-wrap: wrap;
+                        margin-bottom: 2em;
                     }
                     
                     .steps .step {
