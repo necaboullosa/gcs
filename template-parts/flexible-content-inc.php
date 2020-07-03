@@ -787,6 +787,27 @@ $k = 0;
                         margin: 0 auto;
                     }
 
+                    @media (max-width: 780px) {
+                        .steps .step {
+                            max-width: 90%;
+                            width: 90%;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                        }
+
+                        .step img {
+                            width: 200px;
+                            height: auto;
+
+                        }
+
+                        .step-content {
+                            width: 90%;
+                        }
+                    }
+
                     .step-4 {
                         margin-right: 0px;
                     }
