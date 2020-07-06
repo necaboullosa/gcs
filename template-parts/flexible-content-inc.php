@@ -301,8 +301,12 @@ $k = 0;
 										.blurbs-type-1 .blurb {
 											max-width: 15%;
 										}
+
+                                        .blurbs-type-1 .row-2 {
+											margin-top: 2em;
+										}
 									</style>
-                                    <div class="blurb blurb-<?php echo $i; if($i > 5) { echo 'row-2';}?>">
+                                    <div class="blurb blurb-<?php echo $i; if($i > 5) { echo ' row-2';}?>">
                                         <img alt="<?php the_sub_field('text'); ?>" src="<?php $icon = get_sub_field('icon'); $first_digit = $icon[0]; if($icon < 10 AND $first_digit) { $icon = '0' . $icon;} echo get_template_directory_uri() . '/img/icons/GCS-ICONS-' . $icon . '.png'; ?>">
                                         <?php $header = get_sub_field('header'); if($header) { ?><h3 class="blurb-header sm-red-line txt-center "><?php   the_sub_field('header');?> </h3> <?php } else {?> <style> .blurbs-type-1 .blurb {
     max-width: 15%;
