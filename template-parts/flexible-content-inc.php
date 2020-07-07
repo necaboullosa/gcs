@@ -11,11 +11,12 @@ $k = 0;
 
             <div class="container entry-content container row-<?php echo $k ?>">
 
-            <!-- visual editor --> 
                 <?php if( get_row_layout() == 'text-visual_editor' ):                                       
                     $header = get_field('header');
                     if ($header) {
                     ?>
+                                <!-- visual editor --> 
+
                     <h2 class="section-header sm-red-line"> <?php the_sub_field('header'); }?> </h2>
                     <?php $visual_editor_content = get_sub_field('text-visual_editor'); 
                             echo $visual_editor_content;
@@ -29,9 +30,10 @@ $k = 0;
 
 
 
-            <!-- Text and Image --> 
             
-            <?php elseif( get_row_layout() == 'text_image' ):  ?>                                     
+            <?php elseif( get_row_layout() == 'text_image' ):  ?>    
+                        <!-- Text and Image --> 
+                                 
                    
                     
 
@@ -96,9 +98,10 @@ $k = 0;
 
 
 
-                <!-- text_image_cta --> 
             
-            <?php elseif( get_row_layout() == 'text_image_cta' ):  ?>                                     
+            <?php elseif( get_row_layout() == 'text_image_cta' ):  ?>
+                            <!-- text_image_cta --> 
+                                     
                    
                     
 
@@ -140,9 +143,10 @@ $k = 0;
                     <!-- text_image_cta --> 
 
 
-                 <!-- Text and 2 Images --> 
             
-            <?php elseif( get_row_layout() == 'text_2images' ):  ?>                                     
+            <?php elseif( get_row_layout() == 'text_2images' ):  ?>       
+                             <!-- Text and 2 Images --> 
+                              
                    
                     
 
@@ -202,8 +206,9 @@ $k = 0;
        
                     <!-- Text and 2 Images --> 
 				
-				 <!-- Typeform -->
          <?php elseif( get_row_layout() == 'typeform' ): ?>
+         				 <!-- Typeform -->
+
 
 
              
@@ -291,8 +296,9 @@ $k = 0;
 
 
 
-             <!-- blurbs type 1 -->
              <?php elseif( get_row_layout() == 'blurbs_type_1' ): ?>
+                          <!-- blurbs type 1 -->
+
              <?php $header = get_sub_field('header'); if($header) { ?><h6 class="blurbs-header txt-center sm-red-line space" data-aos="fade-up"> <?php the_sub_field('header'); ?> </h6> <?php } ?>
                         <?php if( have_rows('blurb_type_1_repeater') ): ?>
                             <div class="blurbs blurbs-type-1 space" data-aos="fade-up">
@@ -346,8 +352,9 @@ $k = 0;
             <!-- END blurbs type 1 -->
 
 
-            <!-- blurbs type 2 -->
                     <?php elseif( get_row_layout() == 'blurbs_type_2' ): ?>
+                                <!-- blurbs type 2 -->
+
                         <h2 class="section-header sm-red-line space"> <?php the_sub_field('header'); ?> </h2>
                         <?php if( have_rows('blurb_type_2_repeater') ): ?>
                             <div class="blurb_type_2_container blurbs">
@@ -366,8 +373,9 @@ $k = 0;
             <!-- END blurbs type 2 -->
 
 
-            <!-- blurbs type 3 -->
               <?php elseif( get_row_layout() == 'blurbs_type_3' ): ?>
+                          <!-- blurbs type 3 -->
+
                         <h2 class="section-header sm-red-line space"> <?php the_sub_field('header'); ?> </h2>
                         <?php if( have_rows('blurb_type_3_repeater') ): ?>
                             <div class="blurb_type_3_container blurbs">
@@ -394,8 +402,9 @@ $k = 0;
 
 
 
-                  <!-- As seen On -->
                   <?php elseif( get_row_layout() == 'as_seen_on' ): ?>
+                                    <!-- As seen On -->
+
                     
 
                     <h2 class="section-header txt-center sm-red-line as-seen-header space" data-aos="fade-up">As seen on</h2>
@@ -424,8 +433,9 @@ $k = 0;
 
 
 
-               <!-- USPs -->
                <?php elseif( get_row_layout() == 'usps_type1' ): ?>
+                              <!-- USPs -->
+
                 <h2 class="section-header sm-red-line space"> <?php the_sub_field('section_header'); ?> </h2>
                         <?php if( have_rows('usp') ): ?>
                             <div class="usps" data-aos="fade-up">
@@ -446,8 +456,9 @@ $k = 0;
 
 
 
-               <!-- The Team -->
                <?php elseif( get_row_layout() == 'the_team' ): ?>
+                              <!-- The Team -->
+
                 <h2 class="section-header sm-red-line"> <?php the_sub_field('section_header'); ?> </h2>
                         <?php if( have_rows('the_team') ): ?>
                             <div class="the-team" data-aos="fade-up">
@@ -470,8 +481,9 @@ $k = 0;
 
 
 
-             <!-- Blog posts loop -->
              <?php elseif( get_row_layout() == 'blogs_loop' ): ?>
+                          <!-- Blog posts loop -->
+
              <?php if(get_sub_field('section_header')) { ?><h2 class="section-header sm-red-line"> <?php the_sub_field('section_header'); ?> </h2><?php } ?>
                 <div class="the-loop">
 
@@ -551,8 +563,9 @@ $k = 0;
 
 
 
-            <!-- Countries Grid -->
             <?php elseif( get_row_layout() == 'countries_grid' ): ?>
+                        <!-- Countries Grid -->
+
              <?php if(get_sub_field('section_header')) { ?><h2 class="section-header sm-red-line"> <?php the_sub_field('section_header'); ?> </h2><?php } ?>
                 <div class="the-loop countries">
                     <?php if( have_rows('country') ): ?>
@@ -598,8 +611,9 @@ $k = 0;
 
 
 
-             <!-- Local Experts Guide -->
              <?php elseif( get_row_layout() == 'local_experts_guides' ): ?>
+                          <!-- Local Experts Guide -->
+
              <div class="guides-outer " data-aos="fade-up">
 
                 <?php if(get_sub_field('section_header')) { ?><h2 class="section-header txt-center sm-red-line"> <?php the_sub_field('section_header'); ?> </h2><?php } ?>
@@ -697,8 +711,9 @@ $k = 0;
 
 
 
-              <!-- Flip Cards -->
               <?php elseif( get_row_layout() == 'flip_cards' ): ?>
+                            <!-- Flip Cards -->
+
                 <h2 class="section-header space sm-red-line txt-center"> <?php the_sub_field('section_header'); ?> </h2>
                         <?php if( have_rows('flip_card') ): ?>
                             <div class="flip_cards space" data-aos="fade-up">
@@ -738,8 +753,9 @@ $k = 0;
 
 
 
-              <!-- FAQs -->
               <?php elseif( get_row_layout() == 'faqs' ): ?>
+                            <!-- FAQs -->
+
               <?php $section_header = get_sub_field('section_header');  if($section_header) { ?><h2 class="section-header space sm-red-line"> <?php the_sub_field('section_header'); ?> </h2><?php }?>
                         <?php if( have_rows('faq_item') ): ?>
 
@@ -786,8 +802,8 @@ $k = 0;
                         <?php $k++; ?>
             <!-- END FAQs -->
 
-              <!-- Step by step -->
               <?php elseif( get_row_layout() == 'step_by_step' ): ?>
+              <!-- Step by step -->
 
                 <style>
                     .steps {
@@ -890,14 +906,136 @@ $k = 0;
             <!-- END step by step -->
 
 
+
+               <?php elseif( get_row_layout() == 'timeline-vertical' ): ?>
+               <!-- Timeline vertical -->
+                <style>
+                    .timeline_stamp_item  {
+                        display: flex;
+                        justify-content: center;
+                        width: 600px;
+                        max-width: 90%;
+                    }
+
+                    .timeline_stamp_item  h5, .timeline_stamp_item  strong {
+                        text-transform: uppercase;
+                        color: #007ac1;
+                        font-weight: 400;
+                        font-size: 1rem;
+                        width: 130px;
+                        text-align: right;
+                        margin-right: 1em;
+                    }
+
+                    .timeline_stamp_item  .text {
+                        min-height: 200px;
+                        width: 200px;
+                        margin-left: 1em;
+                    }
+
+                    .timeline_stamp_item  .text p:first-of-type {
+                        margin: 0px;
+
+                    }
+
+                    .arrow {
+                        display: flex;
+                        align-items: flex-end;
+                        padding: 2px;
+                        
+                    }
+
+               
+
+
+                                            
+                    .timeline_stamp_item .text ul {
+                        margin-left: 2em;
+                        list-style: none; /* Remove default bullets */
+                    }
+
+                    .timeline_stamp_item .text ul li::before {
+                        content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+                        color: #00b4c5; /* Change the color */
+                        font-weight: bold; /* If you want it to be bold */
+                        display: inline-block; /* Needed to add space between the bullet and the text */
+                        width: 1em; /* Also needed for space (tweak if needed) */
+                        margin-left: -1em; /* Also needed for space (tweak if needed) */
+                        }
+
+                        @media (max-width: 700px) {
+                            .timeline_stamp_item  .text {
+                                width: 130px;
+                            }
+
+
+                    .timeline_stamp_item  h5, .timeline_stamp_item  strong {
+                     
+                        width: 80px;
+                       
+                    }
+
+                    
+
+                        }
+                </style>
+               
+                <div class="steps-container container">    
+                    <h2 class="section-header txt-center sm-gold-line space"> 
+                        <?php the_sub_field('section_header'); ?> 
+                    </h2>
+                   
+
+                    <?php $k_timeline_stamp = 1; ?>
+                    <?php if( have_rows('timeline_stamp') ): ?>
+                        <div class="timeline_stamp">
+                            <?php while ( have_rows('timeline_stamp') ) : the_row(); ?>
+                                <div class="timeline_stamp_item timeline_stamp-<?php echo $k_timeline_stamp; ?>">
+                            
+
+                                            <div class="time">
+                                                <h5 class="blurb-header sm-gold-line txt-center " style="color: <?php the_sub_field('colour');?>"><?php   the_sub_field('timestamp');?> </h5>
+
+                                            </div>
+                                            <div class="arrow" style="background-color: <?php the_sub_field('colour');?>">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/img/arrow-white.png" alt="arrow icon"> 
+                                            </div>
+                                           
+                                      
+                                        <div class="text"><?php the_sub_field('text');?></div>
+
+                                        
+                                </div>
+                                
+
+                               
+                                <?php $k_timeline_stamp++; ?> 
+                            <?php endwhile; ?>
+
+                            <?php $k_timeline_stamp--; ?> 
+                            <style>
+                                <?php echo '.timeline_stamp-' . $k_timeline_stamp . ' .text {';?> 
+                                    min-height: 100px !important;
+                                }
+                            </style>
+                          
+
+                        </div>
+                    <?php endif; ?>
+                 
+                   
+                </div>
+                <!-- END Timeline vertical-->
+
+
             
              
 
 
 
 
-             <!-- image -->
             <?php elseif( get_row_layout() == 'image' ): ?>
+             <!-- image -->
 
                     <?php 
                     
