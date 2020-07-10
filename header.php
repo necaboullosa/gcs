@@ -121,6 +121,15 @@ var b=a.data(this,"plugin_intlTelInput");b instanceof p&&"function"==typeof b[c]
 			
 
 	</style>
+	<script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+<script>
+  window.OneSignal = window.OneSignal || [];
+  OneSignal.push(function() {
+    OneSignal.init({
+      appId: "78000ccb-3e54-4249-96f2-d5e84737c92a",
+    });
+  });
+</script>
 </head>
 
 <body <?php body_class(); ?>>
