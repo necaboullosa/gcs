@@ -293,8 +293,20 @@ $('#toggle').toggle(
 
 <script>
   setTimeout(function(){
- 	document.querySelectorAll("._field57 input").value = "<?php echo basename(get_permalink()); ?>"; 
+
+	 var myElementArray = document.querySelectorAll('._field57 input');
+
+
+for(var i=0;i< myElementArray.length; i++){
+	    myElementArray[i].value = "<?php echo basename(get_permalink()); ?>";
+}
+
 }, 3000);
+
+
+
+
+
 </script>
 
 
