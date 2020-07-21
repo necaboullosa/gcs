@@ -301,7 +301,7 @@ for(var i=0;i< myElementArray.length; i++){
 	    myElementArray[i].value = "<?php echo basename(get_permalink()); ?>";
 }
 
-}, 6000);
+}, 10000);
 
 
 
