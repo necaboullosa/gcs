@@ -2188,7 +2188,7 @@ _::-webkit-full-page-media, _:future, :root .teal {
 	
 }
 
-.entry-content img {
+.post .entry-content img {
     border-radius: 20px;
 }
 
