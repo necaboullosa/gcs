@@ -190,13 +190,13 @@ echo $url; ?>"><img alt="Residency and citizenship by investment" src="<?php ech
 					</ul>
 				</div>
 
-				<div id="h32oi4j32po4">
-					<img alt="Residency and citizenship by investment" src="<?php echo get_template_directory_uri(); ?>/img/hamburger.png"></div>
+				<!-- <div id="toggle">
+				<img alt="Residency and citizenship by investment" src="<?php echo get_template_directory_uri(); ?>/img/hamburger.png"></div>
 					<div id="popout">
 					<?php wp_nav_menu( array( 'theme_location' => 'header', 'menu_class' => 'nav-menu-mobile' ) ); ?>
-				</div>
+					</div>
 
-			</div>
+			</div> -->
 		</div>
 
 	

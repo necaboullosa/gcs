@@ -2561,7 +2561,7 @@ blockquote {
 }
 
   @media screen and (min-width: 769px) { 
-	#h32oi4j32po4, #popout {
+	#toggle, #popout {
 	display:none;
 	}
 	 
@@ -2581,7 +2581,7 @@ blockquote {
 	}
 	 
 	 
-	#h32oi4j32po4 {
+	#toggle {
 	float: right;
 	position: fixed;
 	top: 100px;
@@ -2943,7 +2943,7 @@ blockquote {
 			color: rgb(153, 152, 152);
 		}
 
-		#h32oi4j32po4 img {
+		#toggle img {
 			height: 24px;
 		}
   
