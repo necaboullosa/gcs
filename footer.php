@@ -248,15 +248,15 @@ function ChangeSlide(slideNumber) {
 }
 
 (function($) {
-$('#5h32oi4j32po4').toggle( 
+$('#h32oi4j32po4').toggle( 
     function() {
         $('#popout').animate({ left: 0 }, 'slow', function() {
-            $('#5h32oi4j32po4').html('<img src="<?php echo get_template_directory_uri(); ?>/img/hamburger.png">');
+            $('#h32oi4j32po4').html('<img src="<?php echo get_template_directory_uri(); ?>/img/hamburger.png">');
         });
     }, 
     function() {
         $('#popout').animate({ left: -250 }, 'slow', function() {
-            $('#5h32oi4j32po4').html('<img src="<?php echo get_template_directory_uri(); ?>/img/hamburger.png">');
+            $('#h32oi4j32po4').html('<img src="<?php echo get_template_directory_uri(); ?>/img/hamburger.png">');
         });
     }
 );
