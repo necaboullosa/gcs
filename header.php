@@ -190,11 +190,11 @@ echo $url; ?>"><img alt="Residency and citizenship by investment" src="<?php ech
 					</ul>
 				</div>
 
-				<div id="toggle-mobile-menu">
-				<img alt="Residency and citizenship by investment" src="<?php echo get_template_directory_uri(); ?>/img/hamburger.png"></div>
+				<div id="mobile-menu">
+					<img alt="Residency and citizenship by investment" src="<?php echo get_template_directory_uri(); ?>/img/hamburger.png"></div>
 					<div id="popout">
 					<?php wp_nav_menu( array( 'theme_location' => 'header', 'menu_class' => 'nav-menu-mobile' ) ); ?>
-					</div>
+				</div>
 
 			</div>
 		</div>

@@ -2561,7 +2561,7 @@ blockquote {
 }
 
   @media screen and (min-width: 769px) { 
-	#toggle-mobile-menu, #popout {
+	#mobile-menu, #popout {
 	display:none;
 	}
 	 
@@ -2581,7 +2581,7 @@ blockquote {
 	}
 	 
 	 
-	#toggle-mobile-menu {
+	#mobile-menu {
 	float: right;
 	position: fixed;
 	top: 100px;
@@ -2943,7 +2943,7 @@ blockquote {
 			color: rgb(153, 152, 152);
 		}
 
-		#toggle-mobile-menu img {
+		#mobile-menu img {
 			height: 24px;
 		}
   
