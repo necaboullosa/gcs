@@ -19,7 +19,11 @@
 .sitewide-notice {
 	background-color: rgba(224,0,63,1);
 	color: white;
-	max-width: 300px;
+	max-width: 400px;
+	height: auto;
+	display: flex;
+	justify-conent: center;
+	align-items: center;
 }
 </style>
 <?php 
