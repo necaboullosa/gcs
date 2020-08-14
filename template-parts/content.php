@@ -117,7 +117,6 @@ if(!get_field('disable_header')) {
 
 	$postid = get_the_ID();
 
-	var_dump($id);
 
 	if($covid_notice AND !($postid === 10633)) {
 		?>
