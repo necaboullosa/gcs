@@ -106,7 +106,7 @@ if(!get_field('disable_header')) {
 	$covid_notice = get_field('covid_notice', 'options');
 	if($covid_notice) {
 		?>
-			<div class="sitewide-notice">
+			<div class="sitewide-notice container entry-content ">
 				<?php echo do_shortcode($covid_notice); ?>
 			</div>
 		<?php
