@@ -114,12 +114,12 @@ if(!get_field('disable_header')) {
 <?php 
 	$covid_notice = get_field('covid_notice', 'options');
 
-	global $post_get_id;
-	$id = $post_get_id->ID;
+
+	$postid = get_the_ID();
 
 	var_dump($id);
 
-	if($covid_notice AND !($id === 10633)) {
+	if($covid_notice AND !($postid === 10633)) {
 		?>
 			<div class="container ">
 				<div class="sitewide-notice">
