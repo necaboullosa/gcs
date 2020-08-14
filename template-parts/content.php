@@ -16,6 +16,11 @@
 			background-color: #d3d3d3;
 			background-blend-mode: multiply;
 }
+.sitewide-notice {
+	background-color: rgba(224,0,63,1);
+	color: white;
+	max-width: 300px;
+}
 </style>
 <?php 
 
@@ -106,8 +111,11 @@ if(!get_field('disable_header')) {
 	$covid_notice = get_field('covid_notice', 'options');
 	if($covid_notice) {
 		?>
-			<div class="sitewide-notice container entry-content ">
-				<?php echo do_shortcode($covid_notice); ?>
+			<div class="container ">
+				<div class="sitewide-notice">
+					<?php echo do_shortcode($covid_notice); ?>
+				</div>
+				
 			</div>
 		<?php
 	}?>
