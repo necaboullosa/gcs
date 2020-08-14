@@ -22,7 +22,7 @@
 	max-width: 400px;
 	height: auto;
 	display: flex;
-	justify-conent: center;
+	justify-content: center;
 	align-items: center;
 }
 </style>
