@@ -102,9 +102,8 @@ if(!get_field('disable_header')) {
 
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-
-	<?php 
-	$covid_notice = get_field('covid_notice');
+<?php 
+	$covid_notice = get_field('covid_notice', 'options');
 	if($covid_notice) {
 		?>
 			<div class="sitewide-notice">
@@ -112,6 +111,7 @@ if(!get_field('disable_header')) {
 			</div>
 		<?php
 	}?>
+	
 	
 
 <?php 
