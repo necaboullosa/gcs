@@ -117,6 +117,8 @@ if(!get_field('disable_header')) {
 	global $post_get_id;
 	$id = $post_get_id->ID;
 
+	var_dump($id);
+
 	if($covid_notice AND !($id === 10633)) {
 		?>
 			<div class="container ">
