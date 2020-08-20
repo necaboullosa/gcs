@@ -480,6 +480,33 @@ $k = 0;
 
 
 
+            <?php elseif( get_row_layout() == 'space' ): ?>
+                              <!-- Space -->
+            <style>
+            #block-<?php echo $k; ?> {
+                height: <?php the_sub_field('height');?>px;
+            }
+
+            <?php if (get_sub_field('mobile-height')) : ?>
+
+            @media (max-width: 800px) {
+                #block-<?php echo $k; ?> {
+                    height: <?php the_sub_field('mobile-height');?>px;
+                }
+            }
+            <?php endif; ?>
+
+            </style>
+
+            <div id="block-<?php echo $k; ?>" class="container">
+
+            </div>
+               
+            <?php $k++; ?> 
+            <!-- END Space -->
+
+
+
 
              <?php elseif( get_row_layout() == 'blogs_loop' ): ?>
                           <!-- Blog posts loop -->
