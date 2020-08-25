@@ -2634,6 +2634,10 @@ blockquote {
 			height: 80vh;
 		}
 
+		.footer-desktop-whatsapp {
+			width: calc((100vw - 1080px) / 2 + 300px);
+		}
+
 		.hero .ac-form {
 			padding: 20px;
 			color: white;
@@ -2664,9 +2668,7 @@ blockquote {
 
 	@media (max-width: 1080px) {
 
-		.footer-desktop-whatsapp {
-			width: calc((100vw - 1080px) / 2 + 300px);
-		}
+		
 
 		.hero .ac-form {
 			display: none;
