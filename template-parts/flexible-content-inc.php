@@ -971,6 +971,16 @@ $k = 0;
 
                     }
 
+                    .timeline_stamp {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                    }
+
+                    .timeline_stamp_item .time{
+                        width: 200px;
+                    }
+
                     .arrow {
                         display: flex;
                         align-items: flex-end;
