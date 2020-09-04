@@ -30,7 +30,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 <?php if(get_field('enable_trust_pilot')):?>
 <!-- TrustBox script -->
-<script type=“text/javascript” src=“//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js” async></script>
+<script type="text/javascript" src="//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js" async></script>
 <!-- End TrustBox script -->
 <?php endif?>
 	<script>
