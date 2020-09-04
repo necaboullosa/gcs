@@ -139,6 +139,12 @@ var b=a.data(this,"plugin_intlTelInput");b instanceof p&&"function"==typeof b[c]
 </script>
 </head>
 
+<?php if(get_field('enable_trust_pilot')):?>
+<!-- TrustBox script -->
+<script type=“text/javascript” src=“//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js” async></script>
+<!-- End TrustBox script -->
+<?php endif?>
+
 <body <?php body_class(); ?>>
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PNHD62R"
