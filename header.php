@@ -27,6 +27,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','GTM-PNHD62R');</script>
 <!-- End Google Tag Manager -->
 	<!-- Input Phone -->
+
+<?php if(get_field('enable_trust_pilot')):?>
+<!-- TrustBox script -->
+<script type=“text/javascript” src=“//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js” async></script>
+<!-- End TrustBox script -->
+<?php endif?>
 	<script>
 	/*
  * International Telephone Input v15.0.0
@@ -139,11 +145,6 @@ var b=a.data(this,"plugin_intlTelInput");b instanceof p&&"function"==typeof b[c]
 </script>
 </head>
 
-<?php if(get_field('enable_trust_pilot')):?>
-<!-- TrustBox script -->
-<script type=“text/javascript” src=“//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js” async></script>
-<!-- End TrustBox script -->
-<?php endif?>
 
 <body <?php body_class(); ?>>
 <!-- Google Tag Manager (noscript) -->
