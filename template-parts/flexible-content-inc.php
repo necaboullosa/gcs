@@ -304,7 +304,7 @@ $k = 0;
                                                     echo '15%;';
                                                     break;
                                                 case 4:
-                                                    echo '20%;';
+                                                    echo '23%;';
                                                     break;
                                                 case 3:
                                                     echo '30%;';
@@ -428,10 +428,10 @@ $k = 0;
                                                     echo '15%;';
                                                     break;
                                                 case 4:
-                                                    echo '20%;';
+                                                    echo '23%;';
                                                     break;
                                                 case 3:
-                                                    echo '30%;';
+                                                    echo '32%;';
                                                     break;
                                                 
                                                 default:
@@ -478,7 +478,7 @@ $k = 0;
                                                     echo '15%;';
                                                     break;
                                                 case 4:
-                                                    echo '20%;';
+                                                    echo '23%;';
                                                     break;
                                                 case 3:
                                                     echo '30%;';
