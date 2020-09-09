@@ -30,9 +30,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 <?php if(get_field('enable_trust_pilot')):?>
 <!-- TrustBox script -->
-<script type="text/javascript" src="//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js" async></script>
+<script type="text/javascript" src="https://widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js" async></script>
 <!-- End TrustBox script -->
-<?php endif?>
+<?php endif; ?>
 	<script>
 	/*
  * International Telephone Input v15.0.0
@@ -181,8 +181,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		</div>
 			<div class="container">
 				<div class="logo">
-					<a href="<?php $url = home_url();
-echo $url; ?>"><img alt="Residency and citizenship by investment" src="<?php echo get_template_directory_uri(); ?>/img/header-logo.png"></a>
+					<a href="<?php $url = home_url(); echo $url; ?>"><img alt="Residency and citizenship by investment" src="<?php echo get_template_directory_uri(); ?>/img/header-logo.png"></a>
 
 				</div>
 				<div class="main-menu-container">

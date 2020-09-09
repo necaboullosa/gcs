@@ -13,8 +13,7 @@ $k = 0;
 
                 <?php if( get_row_layout() == 'text-visual_editor' ):                                       
                     $header = get_field('header');
-                    if ($header) {
-                    ?>
+                    if ($header) { ?>
                                 <!-- visual editor --> 
 
                     <h2 class="section-header sm-red-line"> <?php the_sub_field('header'); }?> </h2>
@@ -39,22 +38,13 @@ $k = 0;
 
             <div class="text_image  space ">
 
-                <?php $image_on_the_right = get_sub_field('image_on_the_right');
-                
-                if(!$image_on_the_right) {
-                    ?>
+                <?php $image_on_the_right = get_sub_field('image_on_the_right');                
+                if(!$image_on_the_right) { ?>
                 <div class="image-container">
                     <?php $sub_header = get_sub_field('sub_header'); if($sub_header) {?>  <h3 class="section-sub-header hidden-sub-header"><?php echo $sub_header; }?></h3>
-
                     <img class="img-stack-top-left stack-bottom" data-aos="fade-right" src="<?php $image_1 = get_sub_field('image_1'); echo $image_1; ?>" alt="<?php $header = get_sub_field('header'); echo $header; ?>">
-
                 </div>
-
-                    <?php
-                }
-                ?>
-               
-
+                    <?php } ?>
                 <div class="text-container" data-aos="fade-up">
                     <?php $sub_header = get_sub_field('sub_header'); if($sub_header) {?>  <h3 class="section-sub-header "><?php echo $sub_header; }?></h3>
                     <?php $block_image_header = get_sub_field('header'); ; if($block_image_header) { ?><h2 class="section-header sm-red-line"><?php  echo $block_image_header; ?></h2><?php }?>
@@ -305,7 +295,27 @@ $k = 0;
                                 <?php while ( have_rows('blurb_type_1_repeater') ) : the_row(); ?>
 									<style>
 										.blurbs-type-1 .blurb {
-											max-width: 15%;
+                                            max-width: <?php $blurbs_by_row = get_sub_field('blurbs_by_row'); 
+                                            if($blurbs_by_row === 5) {
+                                                echo '15%;';
+                                            }
+
+                                            switch ($blurbs_by_row) {
+                                                case 5:
+                                                    echo '15%;';
+                                                    break;
+                                                case 4:
+                                                    echo '20%;';
+                                                    break;
+                                                case 3:
+                                                    echo '30%;';
+                                                    break;
+                                                
+                                                default:
+                                                    echo '20%;';
+                                            }
+                                            
+                                            ?>
 										}
 
                                         .blurbs-type-1 .row-2 {
