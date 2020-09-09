@@ -292,13 +292,12 @@ $k = 0;
              <?php $header = get_sub_field('header'); if($header) { ?><h6 class="blurbs-header txt-center sm-red-line space" data-aos="fade-up"> <?php the_sub_field('header'); ?> </h6> <?php } ?>
                         <?php if( have_rows('blurb_type_1_repeater') ): ?>
                             <div class="blurbs blurbs-type-1 space" data-aos="fade-up">
-                                <?php while ( have_rows('blurb_type_1_repeater') ) : the_row(); ?>
-									<style>
+                                    <style>
 										.blurbs-type-1 .blurb {
+                                            display: flex;
+                                            justify-content: flex-start;
                                             max-width: <?php $blurbs_by_row = get_sub_field('blurbs_by_row'); 
-                                            if($blurbs_by_row === 5) {
-                                                echo '15%;';
-                                            }
+                                            
 
                                             switch ($blurbs_by_row) {
                                                 case 5:
@@ -316,38 +315,89 @@ $k = 0;
                                             }
                                             
                                             ?>
+                                         
 										}
 
                                         .blurbs-type-1 .row-2 {
 											margin-top: 2em;
 										}
+
+                                        .blurbs-type-1 img {
+                                            max-height: 120px !important;
+                                            min-height: 120px;
+                                        }
+
 									</style>
+                                <?php while ( have_rows('blurb_type_1_repeater') ) : the_row(); ?>
+									
                                     <div class="blurb blurb-<?php echo $i; if($i > 5) { echo ' row-2';}?>">
                                         <img alt="<?php the_sub_field('text'); ?>" src="<?php $icon = get_sub_field('icon'); $first_digit = $icon[0]; if($icon < 10 AND $first_digit) { $icon = '0' . $icon;} echo get_template_directory_uri() . '/img/icons/GCS-ICONS-' . $icon . '.png'; ?>">
-                                        <?php $header = get_sub_field('header'); if($header) { ?><h3 class="blurb-header sm-red-line txt-center "><?php   the_sub_field('header');?> </h3> <?php } else {?> <style> .blurbs-type-1 .blurb {
-    max-width: 15%;
-    display: flex;
-    justify-content: flex-start;
-}
-.blurbs-type-1 img {
-    max-height: 120px !important;
-    min-height: 120px;
-}
-
- </style> <?php } ?>
+                                        <?php $header = get_sub_field('header'); if($header) { ?><h3 class="blurb-header sm-red-line txt-center "><?php   the_sub_field('header');?> </h3> <?php } else {?> 
+                                        <?php } ?>
                                         <span> <?php the_sub_field('text'); ?></span>
                                     </div>
                                     <?php 
                                     
                                     global $i;
                                     $i++;
-                                    if($i != 6) {
-                                      ?>
-                                         <div class="separator-container blurb-id-<?php echo $i; ?>" >
-                                            <div class="separator"></div>
-                                        </div> 
 
-                                        <?php } ?>
+                                    if($blurbs_by_row === 3) {
+                                        switch ($i) {
+                                            case 1:
+                                                echo '';
+                                                break;
+                                            case 2:
+                                                echo '<div class="separator-container blurb-id-' . $i . '"><div class="separator"></div></div> ';
+                                                break;
+                                            case 3:
+                                                echo '<div class="separator-container blurb-id-' . $i . '"><div class="separator"></div></div> ';
+                                                break;
+                                            
+                                            default:
+                                                echo '';
+                                        }
+
+                                    }
+
+                                    if($blurbs_by_row === 4) {
+                                        switch ($i) {
+                                           
+                                            case 2:
+                                                echo '<div class="separator-container blurb-id-' . $i . '"><div class="separator"></div></div> ';
+                                                break;
+                                            case 3:
+                                                echo '<div class="separator-container blurb-id-' . $i . '"><div class="separator"></div></div> ';
+                                                break;
+
+                                                case 6:
+                                                    echo '<div class="separator-container blurb-id-' . $i . '"><div class="separator"></div></div> ';
+                                                    break;
+                                            
+                                            default:
+                                                echo '';
+                                        }
+
+                                    }
+
+                                    if($blurbs_by_row === 5) {
+                                        switch ($i) {
+                                            case 1:
+                                                echo '';
+                                                break;
+                                            case 2:
+                                                echo '<div class="separator-container blurb-id-' . $i . '"><div class="separator"></div></div> ';
+                                                break;
+                                            case 3:
+                                                echo '<div class="separator-container blurb-id-' . $i . '"><div class="separator"></div></div> ';
+                                                break;
+                                            
+                                            default:
+                                                echo '';
+                                        }
+
+                                    }
+                                  
+                                    ?>
                                    
                                     <?php endwhile; ?>
 								<style>
@@ -366,7 +416,35 @@ $k = 0;
                                 <!-- blurbs type 2 -->
 
                         <h2 class="section-header sm-red-line space"> <?php the_sub_field('header'); ?> </h2>
+
+                        <style>
+
+.blurb_type_2_container .blurb {
+    max-width: <?php $blurbs_by_row = get_sub_field('blurbs_by_row'); 
+                                            
+
+                                            switch ($blurbs_by_row) {
+                                                case 5:
+                                                    echo '15%;';
+                                                    break;
+                                                case 4:
+                                                    echo '20%;';
+                                                    break;
+                                                case 3:
+                                                    echo '30%;';
+                                                    break;
+                                                
+                                                default:
+                                                    echo '20%;';
+                                            }
+                                            
+                                            ?>
+}
+                                
+
+                            </style>
                         <?php if( have_rows('blurb_type_2_repeater') ): ?>
+
                             <div class="blurb_type_2_container blurbs">
                                 <?php while ( have_rows('blurb_type_2_repeater') ) : the_row(); ?>
                                     <div class="blurb">
@@ -387,7 +465,38 @@ $k = 0;
                           <!-- blurbs type 3 -->
 
                         <h2 class="section-header sm-red-line space"> <?php the_sub_field('header'); ?> </h2>
+
+                        <style>
+<style>
+
+.blurb_type_3_container  .blurb {
+    max-width: <?php $blurbs_by_row = get_sub_field('blurbs_by_row'); 
+                                            
+
+                                            switch ($blurbs_by_row) {
+                                                case 5:
+                                                    echo '15%;';
+                                                    break;
+                                                case 4:
+                                                    echo '20%;';
+                                                    break;
+                                                case 3:
+                                                    echo '30%;';
+                                                    break;
+                                                
+                                                default:
+                                                    echo '20%;';
+                                            }
+                                            
+                                            ?>
+}
+                                
+
+                            </style>
+                        </style>
                         <?php if( have_rows('blurb_type_3_repeater') ): ?>
+
+
                             <div class="blurb_type_3_container blurbs">
                                 <?php while ( have_rows('blurb_type_3_repeater') ) : the_row(); ?>
                                     <div class="blurb">
