@@ -934,13 +934,15 @@ $k = 0;
                                             "name": "<?php the_sub_field('question'); ?>",
                                             "acceptedAnswer": {
                                                 "@type": "Answer",
-                                                "text": '<?php $answer = get_sub_field('answer'); 
+                                                "text": "<?php $answer = get_sub_field('answer'); 
+
+                                                $answer = preg_replace('"', "'", $answer); 
                                                 /* $answer = preg_replace('style="font-weight: 400;"', '', $answer);
                                                 $answer = preg_replace(';', '', $answer); 
                                                 $answer = preg_replace('{', '', $answer);
                                                 $answer = preg_replace('}', '', $answer);  */ 
                                                 echo $answer;
-                                                ?>'
+                                                ?>"
                                                                 }
                                         }<?php $k++; if ($i != $k) {echo ','; }?>
                                         <?php endwhile; ?>
