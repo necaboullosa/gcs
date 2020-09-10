@@ -1782,7 +1782,8 @@ padding: 120px 0px;
 }
 
 .guides > div {
-	max-width: 23.5%;
+	width: 23.5%;
+	height: 170px;
 	background-size: cover;
 	background-position: center;
 	border-radius: 20px;

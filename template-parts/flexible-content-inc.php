@@ -291,9 +291,9 @@ $k = 0;
 
              <?php $header = get_sub_field('header'); if($header) { ?><h6 class="blurbs-header txt-center sm-red-line space" data-aos="fade-up"> <?php the_sub_field('header'); ?> </h6> <?php } ?>
                         <?php if( have_rows('blurb_type_1_repeater') ): ?>
-                            <div class="blurbs blurbs-type-1 space" data-aos="fade-up">
+                            <div class="blurbs blurbs-type-1 blurbs-<?php echo $k; ?> space" data-aos="fade-up">
                                     <style>
-										.blurbs-type-1 .blurb {
+										.blurbs-<?php echo $k; ?> .blurb {
                                             display: flex;
                                             justify-content: flex-start;
                                             max-width: <?php $blurbs_by_row = get_sub_field('blurbs_by_row'); 
@@ -934,13 +934,13 @@ $k = 0;
                                             "name": "<?php the_sub_field('question'); ?>",
                                             "acceptedAnswer": {
                                                 "@type": "Answer",
-                                                "text": "<?php $answer = get_sub_field('answer'); 
+                                                "text": '<?php $answer = get_sub_field('answer'); 
                                                 /* $answer = preg_replace('style="font-weight: 400;"', '', $answer);
                                                 $answer = preg_replace(';', '', $answer); 
                                                 $answer = preg_replace('{', '', $answer);
                                                 $answer = preg_replace('}', '', $answer);  */ 
                                                 echo $answer;
-                                                ?>"
+                                                ?>'
                                                                 }
                                         }<?php $k++; if ($i != $k) {echo ','; }?>
                                         <?php endwhile; ?>
