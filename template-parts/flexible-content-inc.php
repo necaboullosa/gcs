@@ -346,75 +346,7 @@ $k = 0;
                                         <?php } ?>
                                         <span> <?php the_sub_field('text'); ?></span>
                                     </div>
-                                    <?php 
-                                    
-                                    global $i;
-                                    $i++;
-
-                                    if($blurbs_by_row === 3) {
-                                        switch ($i) {
-                                            case 1:
-                                                echo '';
-                                                break;
-                                            case 2:
-                                                echo '<div class="separator-container blurb-id-' . $i . '"><div class="separator"></div></div> ';
-                                                break;
-                                            case 3:
-                                                echo '<div class="separator-container blurb-id-' . $i . '"><div class="separator"></div></div> ';
-                                                break;
-                                            
-                                            default:
-                                                echo '';
-                                        }
-
-                                    }
-
-                                    if($blurbs_by_row === 4) {
-                                        switch ($i) {
-                                           
-                                            case 2:
-                                                echo '<div class="separator-container blurb-id-' . $i . '"><div class="separator"></div></div> ';
-                                                break;
-                                            case 3:
-                                                echo '<div class="separator-container blurb-id-' . $i . '"><div class="separator"></div></div> ';
-                                                break;
-
-                                                case 6:
-                                                    echo '<div class="separator-container blurb-id-' . $i . '"><div class="separator"></div></div> ';
-                                                    break;
-                                            
-                                            default:
-                                                echo '';
-                                        }
-
-                                    }
-
-                                    if($blurbs_by_row === 5) {
-                                        switch ($i) {
-                                            case 1:
-                                                echo '';
-                                                break;
-                                            case 2:
-                                                echo '<div class="separator-container blurb-id-' . $i . '"><div class="separator"></div></div> ';
-                                                break;
-                                            case 3:
-                                                echo '<div class="separator-container blurb-id-' . $i . '"><div class="separator"></div></div> ';
-                                                break;
-                                            
-                                            default:
-                                                echo '';
-                                        }
-
-                                    }
-                                  
-                                    ?>
-                                   
-                                    <?php endwhile; ?>
-								<style>
-									.blurb-id-<?php echo $i;?> {
-										display: none;
-									}
-								</style>
+                                 
 								
                             </div>
                         <?php endif; ?>
