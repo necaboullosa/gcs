@@ -859,7 +859,7 @@ $k = 0;
                                                     echo '17%;';
                                                     break;
                                                 case 4:
-                                                    echo '23%;';
+                                                    echo '21%;';
                                                     break;
                                                 case 3:
                                                     echo '30%;';
