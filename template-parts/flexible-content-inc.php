@@ -305,8 +305,11 @@ $k = 0;
                                             max-width: <?php 
                                                                              
                                             switch ($blurbs_by_row) {
+                                                case 6:
+                                                    echo '15%;';
+                                                    break;
                                                 case 5:
-                                                    echo '16%;';
+                                                    echo '17%;';
                                                     break;
                                                 case 4:
                                                     echo '23%;';
