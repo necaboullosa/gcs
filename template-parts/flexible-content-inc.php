@@ -846,7 +846,7 @@ $k = 0;
                                 <?php while ( have_rows('flip_card') ) : the_row(); ?>
 
                                 <style>
-										.blurbs-<?php echo $k; ?> .blurb {
+										.blurbs-<?php echo $k; ?> .flip-item {
                                             display: flex;
                                             justify-content: flex-start;
                                             max-width: <?php 
@@ -878,7 +878,7 @@ $k = 0;
 									</style>
 
 
-                                    <div class="flip-card blurb">
+                                    <div class="flip-card flip-item">
                                         <div class="flip-card-inner">
                                             <div class="flip-card-front">
                                             <img src="<?php $icon = get_sub_field('icon'); $first_digit = $icon[0]; if($icon < 10 AND $first_digit) { $icon = '0' . $icon;} echo get_template_directory_uri() . '/img/icons/GCS-ICONS-' . $icon . '.png'; ?>" alt="<?php   the_sub_field('header');?>">
