@@ -512,9 +512,8 @@ $k = 0;
                         <h2 class="section-header sm-red-line space"> <?php the_sub_field('header'); ?> </h2>
 
                         <style>
-<style>
 
-.blurb_type_3_container  .blurb {
+.blurbs-<?php echo $k; ?> .blurb {
     max-width: <?php 
                                             
 
@@ -538,7 +537,6 @@ $k = 0;
                                 
 
                             </style>
-                        </style>
                         <?php if( have_rows('blurb_type_3_repeater') ): ?>
                             <?php $blurbs_by_row = get_sub_field('blurbs_by_row');  ?>
 
