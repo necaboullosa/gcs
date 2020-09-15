@@ -455,8 +455,37 @@ $k = 0;
                             </style>
                         <?php if( have_rows('blurb_type_2_repeater') ): ?>
 
-                            <div class="blurb_type_2_container blurbs">
+                            <div class="blurb_type_2_container blurbs blurbs-<?php echo $k; ?>">
                                 <?php while ( have_rows('blurb_type_2_repeater') ) : the_row(); ?>
+
+                                <style>
+										.blurbs-<?php echo $k; ?> .blurb {
+                                            display: flex;
+                                            justify-content: flex-start;
+                                            max-width: <?php 
+                                                                             
+                                            switch ($blurbs_by_row) {
+                                                case 6:
+                                                    echo '15%;';
+                                                    break;
+                                                case 5:
+                                                    echo '17%;';
+                                                    break;
+                                                case 4:
+                                                    echo '23%;';
+                                                    break;
+                                                case 3:
+                                                    echo '30%;';
+                                                    break;
+                                                
+                                                default:
+                                                    echo '20%;';
+                                            }
+                                            
+                                            ?>
+                                         
+										}
+                                    </style>
                                     <div class="blurb">
                                         <img alt="<?php the_sub_field('text'); ?>" src="<?php $icon = get_sub_field('icon'); $first_digit = $icon[0]; if($icon < 10 AND $first_digit) { $icon = '0' . $icon;} echo get_template_directory_uri() . '/img/icons/GCS-ICONS-' . $icon . '.png'; ?>">
                                         <h3 class="blurb-header sm-red-line txt-center "><?php   the_sub_field('header');?> </h3>
