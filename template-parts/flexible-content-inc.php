@@ -319,7 +319,7 @@ $k = 0;
                                                     break;
                                                 
                                                 default:
-                                                    echo '20%;';
+                                                    echo '23%;';
                                             }
                                             
                                             ?>
@@ -382,7 +382,7 @@ $k = 0;
                                                     break;
                                                 
                                                 default:
-                                                    echo '20%;';
+                                                    echo '23%;';
                                             }
                                             
                                             ?>
@@ -417,7 +417,7 @@ $k = 0;
                                                     break;
                                                 
                                                 default:
-                                                    echo '20%;';
+                                                    echo '23%;';
                                             }
                                             
                                             ?>
@@ -462,7 +462,7 @@ $k = 0;
                                                     break;
                                                 
                                                 default:
-                                                    echo '20%;';
+                                                    echo '23%;';
                                             }
                                             
                                             ?>
@@ -556,7 +556,7 @@ $k = 0;
                                                     break;
                                                 
                                                 default:
-                                                    echo '20%;';
+                                                    echo '23%;';
                                             }
                                             
                                             ?>
@@ -900,7 +900,7 @@ $k = 0;
                                                     break;
                                                 
                                                 default:
-                                                    echo '20%;';
+                                                    echo '21%;';
                                             }
                                             
                                             ?>
