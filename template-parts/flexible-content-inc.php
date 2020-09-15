@@ -302,7 +302,7 @@ $k = 0;
 										.blurbs-<?php echo $k; ?> .blurb {
                                             display: flex;
                                             justify-content: flex-start;
-                                            max-width: <?php 
+                                            width: <?php 
                                                                              
                                             switch ($blurbs_by_row) {
                                                 case 6:
@@ -367,7 +367,7 @@ $k = 0;
                         <style>
 
 .blurb_type_2_container .blurb {
-    max-width: <?php
+    width: <?php
                                             
 
                                             switch ($blurbs_by_row) {
@@ -400,7 +400,7 @@ $k = 0;
 										.blurbs-<?php echo $k; ?> .blurb {
                                             display: flex;
                                             justify-content: flex-start;
-                                            max-width: <?php 
+                                            width: <?php 
                                                                              
                                             switch ($blurbs_by_row) {
                                                 case 6:
@@ -447,7 +447,7 @@ $k = 0;
                         <style>
 
 .blurbs-<?php echo $k; ?> .blurb {
-    max-width: <?php 
+    width: <?php 
                                             
 
                                             switch ($blurbs_by_row) {
