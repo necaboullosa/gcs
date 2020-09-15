@@ -293,6 +293,8 @@ $k = 0;
                           <!-- blurbs type 1 -->
 
              <?php $header = get_sub_field('header'); if($header) { ?><h6 class="blurbs-header txt-center sm-red-line space" data-aos="fade-up"> <?php the_sub_field('header'); ?> </h6> <?php } ?>
+                        <?php $blurbs_by_row = get_sub_field('header');  ?>
+                        
                         <?php if( have_rows('blurb_type_1_repeater') ): ?>
                             <div class="blurbs blurbs-type-1 blurbs-<?php echo $k; ?> space" data-aos="fade-up">
 
