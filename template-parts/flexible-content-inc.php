@@ -838,14 +838,47 @@ $k = 0;
                             <!-- Flip Cards -->
 
                 <h2 class="section-header space sm-red-line txt-center"> <?php the_sub_field('section_header'); ?> </h2>
+                    <?php $blurbs_by_row = get_sub_field('blurbs_by_row');  ?>
+
                         <?php if( have_rows('flip_card') ): ?>
-                            <div class="flip_cards space" data-aos="fade-up">
+
+                            <div class="flip_cards space blurbs-<?php echo $k; ?>" data-aos="fade-up">
                                 <?php while ( have_rows('flip_card') ) : the_row(); ?>
 
-                                    
+                                <style>
+										.blurbs-<?php echo $k; ?> .blurb {
+                                            display: flex;
+                                            justify-content: flex-start;
+                                            max-width: <?php 
+                                                                             
+                                            switch ($blurbs_by_row) {
+                                                case 6:
+                                                    echo '15%;';
+                                                    break;
+                                                case 5:
+                                                    echo '17%;';
+                                                    break;
+                                                case 4:
+                                                    echo '23%;';
+                                                    break;
+                                                case 3:
+                                                    echo '30%;';
+                                                    break;
+                                                
+                                                default:
+                                                    echo '20%;';
+                                            }
+                                            
+                                            ?>
+                                         
+										}
+
+                                       
+
+									</style>
 
 
-                                    <div class="flip-card">
+                                    <div class="flip-card blurb">
                                         <div class="flip-card-inner">
                                             <div class="flip-card-front">
                                             <img src="<?php $icon = get_sub_field('icon'); $first_digit = $icon[0]; if($icon < 10 AND $first_digit) { $icon = '0' . $icon;} echo get_template_directory_uri() . '/img/icons/GCS-ICONS-' . $icon . '.png'; ?>" alt="<?php   the_sub_field('header');?>">
