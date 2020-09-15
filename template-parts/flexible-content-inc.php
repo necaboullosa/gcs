@@ -347,6 +347,7 @@ $k = 0;
                                         <span> <?php the_sub_field('text'); ?></span>
                                     </div>
                                  
+                                <?php endwhile;?>
 								
                             </div>
                         <?php endif; ?>
