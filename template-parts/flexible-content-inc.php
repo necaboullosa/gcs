@@ -293,7 +293,6 @@ $k = 0;
                         <?php if( have_rows('blurb_type_1_repeater') ): ?>
                             <div class="blurbs blurbs-type-1 blurbs-<?php echo $k; ?> space" data-aos="fade-up">
 
-                                    <?php var_dump($blurbs_by_row); ?>
                                     <style>
 										.blurbs-<?php echo $k; ?> .blurb {
                                             display: flex;
@@ -330,6 +329,9 @@ $k = 0;
                                         }
 
 									</style>
+
+<?php var_dump($blurbs_by_row); ?>
+
                                 <?php while ( have_rows('blurb_type_1_repeater') ) : the_row(); ?>
 									
                                     <div class="blurb blurb-<?php echo $i; if($i > 5) { echo ' row-2';}?>">
