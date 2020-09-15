@@ -533,11 +533,45 @@ $k = 0;
                               <!-- USPs -->
 
                 <h2 class="section-header sm-red-line space"> <?php the_sub_field('section_header'); ?> </h2>
+                <?php $blurbs_by_row = get_sub_field('blurbs_by_row');  ?>
+
+                <style>
+										.blurbs-<?php echo $k; ?> .usp-item {
+                                            display: flex;
+                                            justify-content: flex-start;
+                                            max-width: <?php 
+                                                                             
+                                            switch ($blurbs_by_row) {
+                                                case 6:
+                                                    echo '15%;';
+                                                    break;
+                                                case 5:
+                                                    echo '17%;';
+                                                    break;
+                                                case 4:
+                                                    echo '23%;';
+                                                    break;
+                                                case 3:
+                                                    echo '30%;';
+                                                    break;
+                                                
+                                                default:
+                                                    echo '20%;';
+                                            }
+                                            
+                                            ?>
+                                         
+										}
+
+                                      
+
+									</style>
+
                         <?php if( have_rows('usp') ): ?>
-                            <div class="usps" data-aos="fade-up">
+                            <div class="usps blurbs-<?php echo $k; ?>" data-aos="fade-up">
                                 <?php while ( have_rows('usp') ) : the_row(); ?>
 
-                                    <div class="usp">
+                                    <div class="usp usp-item">
                                         <img alt="<?php   the_sub_field('header');?>" src="<?php $icon = get_sub_field('icon'); $first_digit = $icon[0]; if($icon < 10 AND $first_digit) { $icon = '0' . $icon;} echo get_template_directory_uri() . '/img/icons/GCS-ICONS-' . $icon . '.png'; ?>">
                                         <?php $header = get_sub_field('header'); if($header) { ?><h5 class="blurb-header sm-red-line txt-center "><?php   the_sub_field('header');?> </h5> <?php } ?>
                                         <span class="txt-center"> <?php the_sub_field('text'); ?></span>
