@@ -287,6 +287,12 @@ $k = 0;
 
 
              <?php elseif( get_row_layout() == 'blurbs_type_1' ): ?>
+
+
+             <?php $test = get_field('blurbs_type_1');
+
+                var_dump($test);
+            ?>
                           <!-- blurbs type 1 -->
 
              <?php $header = get_sub_field('header'); if($header) { ?><h6 class="blurbs-header txt-center sm-red-line space" data-aos="fade-up"> <?php the_sub_field('header'); ?> </h6> <?php } ?>
@@ -299,6 +305,9 @@ $k = 0;
                                             justify-content: flex-start;
                                             max-width: <?php $blurbs_by_row = get_sub_field('blurbs_by_row'); 
                                             
+                                            
+                                            var_dump($blurbs_by_row); 
+
 
                                             switch ($blurbs_by_row) {
                                                 case '5':
@@ -330,7 +339,6 @@ $k = 0;
 
 									</style>
 
-<?php var_dump($blurbs_by_row); ?>
 
                                 <?php while ( have_rows('blurb_type_1_repeater') ) : the_row(); ?>
 									
