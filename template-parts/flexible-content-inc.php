@@ -306,7 +306,7 @@ $k = 0;
                                                                              
                                             switch ($blurbs_by_row) {
                                                 case 5:
-                                                    echo '15%;';
+                                                    echo '16%;';
                                                     break;
                                                 case 4:
                                                     echo '23%;';
