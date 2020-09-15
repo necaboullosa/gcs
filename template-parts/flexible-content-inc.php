@@ -300,7 +300,7 @@ $k = 0;
 										.blurbs-<?php echo $k; ?> .blurb {
                                             display: flex;
                                             justify-content: flex-start;
-                                            max-width: <?php $blurbs_by_row = get_sub_field('blurbs_by_row2'); 
+                                            max-width: <?php $blurbs_by_row = get_sub_field('header'); 
                                             var_dump($blurbs_by_row);                                    
                                             switch ($blurbs_by_row) {
                                                 case 5:
