@@ -423,6 +423,10 @@ $k = 0;
 
 
                     <?php elseif( get_row_layout() == 'blurbs_type_2' ): ?>
+
+
+                        <?php $blurbs_by_row = get_sub_field('blurbs_by_row');  ?>
+
                                 <!-- blurbs type 2 -->
 
                         <h2 class="section-header sm-red-line space"> <?php the_sub_field('header'); ?> </h2>
@@ -430,7 +434,7 @@ $k = 0;
                         <style>
 
 .blurb_type_2_container .blurb {
-    max-width: <?php $blurbs_by_row = get_sub_field('blurbs_by_row'); 
+    max-width: <?php
                                             
 
                                             switch ($blurbs_by_row) {
@@ -454,6 +458,7 @@ $k = 0;
 
                             </style>
                         <?php if( have_rows('blurb_type_2_repeater') ): ?>
+
 
                             <div class="blurb_type_2_container blurbs blurbs-<?php echo $k; ?>">
                                 <?php while ( have_rows('blurb_type_2_repeater') ) : the_row(); ?>
@@ -502,6 +507,7 @@ $k = 0;
 
               <?php elseif( get_row_layout() == 'blurbs_type_3' ): ?>
                           <!-- blurbs type 3 -->
+                          <?php $blurbs_by_row = get_sub_field('blurbs_by_row');  ?>
 
                         <h2 class="section-header sm-red-line space"> <?php the_sub_field('header'); ?> </h2>
 
@@ -509,7 +515,7 @@ $k = 0;
 <style>
 
 .blurb_type_3_container  .blurb {
-    max-width: <?php $blurbs_by_row = get_sub_field('blurbs_by_row'); 
+    max-width: <?php 
                                             
 
                                             switch ($blurbs_by_row) {
@@ -534,9 +540,10 @@ $k = 0;
                             </style>
                         </style>
                         <?php if( have_rows('blurb_type_3_repeater') ): ?>
+                            <?php $blurbs_by_row = get_sub_field('blurbs_by_row');  ?>
 
 
-                            <div class="blurb_type_3_container blurbs">
+                            <div class="blurb_type_3_container blurbs blurbs-<?php echo $k; ?>">
                                 <?php while ( have_rows('blurb_type_3_repeater') ) : the_row(); ?>
                                     <div class="blurb">
                                         <img alt="<?php the_sub_field('text'); ?>" src="<?php $icon = get_sub_field('icon'); $first_digit = $icon[0]; if($icon < 10 AND $first_digit) { $icon = '0' . $icon;} echo get_template_directory_uri() . '/img/icons/GCS-ICONS-' . $icon . '.png'; ?>">
