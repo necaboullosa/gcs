@@ -301,18 +301,15 @@ $k = 0;
                                             display: flex;
                                             justify-content: flex-start;
                                             max-width: <?php $blurbs_by_row = get_sub_field('blurbs_by_row2'); 
-                                            
-                                            
-
-
+                                            var_dump($blurbs_by_row);                                    
                                             switch ($blurbs_by_row) {
-                                                case '5':
+                                                case 5:
                                                     echo '15%;';
                                                     break;
-                                                case '4':
+                                                case 4:
                                                     echo '23%;';
                                                     break;
-                                                case '3':
+                                                case 3:
                                                     echo '30%;';
                                                     break;
                                                 
