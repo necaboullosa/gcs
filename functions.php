@@ -274,28 +274,7 @@ add_image_size( 'custom-size', 300, 200 ); // 220 pixels wide by 180 pixels tall
 add_image_size( 'custom-size', 300, 208 ); // 220 pixels wide by 180 pixels tall, soft proportional crop mode
 
 
-function return_blurb_width($blurbs_by_row)
- {
 
-	switch ($blurbs_by_row) {
-		case 6:
-			return '15%;';
-			break;
-		case 5:
-			return '17%;';
-			break;
-		case 4:
-			return '23%;';
-			break;
-		case 3:
-			return '30%;';
-			break;
-		
-		default:
-			return '23%;';
-	}
-   
- }
 
 
 
