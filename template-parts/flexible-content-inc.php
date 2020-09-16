@@ -209,10 +209,10 @@ $k = 0;
             function ExistsKey($index, $array) 
             { 
                 if (array_key_exists($index, $array)){ 
-                    return true;
+                    echo true;
                 } 
                 else{ 
-                    return false; 
+                    echo false; 
                 } 
             } 
 
@@ -305,40 +305,40 @@ $k = 0;
                                             justify-content: flex-start;
                                             width: <?php switch ($blurbs_by_row) {
                                                         case 6:
-                                                            return '15%;';
+                                                            echo '15%;';
                                                             break;
                                                         case 5:
-                                                            return '17%;';
+                                                            echo '17%;';
                                                             break;
                                                         case 4:
-                                                            return '23%;';
+                                                            echo '23%;';
                                                             break;
                                                         case 3:
-                                                            return '30%;';
+                                                            echo '30%;';
                                                             break;
                                                         
                                                         default:
-                                                            return '23%;';
-                                                    }?>;
+                                                            echo '23%;';
+                                                        }?>;
                                                     max-width: <?php switch ($blurbs_by_row) {
                                                         case 6:
-                                                            return '15%;';
+                                                            echo '15%;';
                                                             break;
                                                         case 5:
-                                                            return '17%;';
+                                                            echo '17%;';
                                                             break;
                                                         case 4:
-                                                            return '23%;';
+                                                            echo '23%;';
                                                             break;
                                                         case 3:
-                                                            return '30%;';
+                                                            echo '30%;';
                                                             break;
                                                         
                                                         default:
-                                                            return '23%;';
+                                                        echo '23%;';
                                                     }?>;
                                          
-										}
+                                                }
 
                                         .blurbs-type-1 .row-2 {
 											margin-top: 2em;
@@ -383,37 +383,37 @@ $k = 0;
                         .blurb_type_2_container .blurb {
                             width: <?php switch ($blurbs_by_row) {
                                 case 6:
-                                    return '15%;';
+                                    echo '15%;';
                                     break;
                                 case 5:
-                                    return '17%;';
+                                    echo '17%;';
                                     break;
                                 case 4:
-                                    return '23%;';
+                                    echo '23%;';
                                     break;
                                 case 3:
-                                    return '30%;';
+                                    echo '30%;';
                                     break;
                                 
                                 default:
-                                    return '23%;';
+                                    echo '23%;';
                             }?>;
                             max-width: <?php switch ($blurbs_by_row) {
                                 case 6:
-                                    return '15%;';
+                                    echo '15%;';
                                     break;
                                 case 5:
-                                    return '17%;';
+                                    echo '17%;';
                                     break;
                                 case 4:
-                                    return '23%;';
+                                    echo '23%;';
                                     break;
                                 case 3:
-                                    return '30%;';
+                                    echo '30%;';
                                     break;
                                 
                                 default:
-                                    return '23%;';
+                                    echo '23%;';
                             }?>;
 
                         }
@@ -452,37 +452,37 @@ $k = 0;
 .blurbs-<?php echo $k; ?> .blurb {
     width: <?php switch ($blurbs_by_row) {
 		case 6:
-			return '15%;';
+			echo '15%;';
 			break;
 		case 5:
-			return '17%;';
+			echo '17%;';
 			break;
 		case 4:
-			return '23%;';
+			echo '23%;';
 			break;
 		case 3:
-			return '30%;';
+			echo '30%;';
 			break;
 		
 		default:
-			return '23%;';
+			echo '23%;';
 	}?>;
     max-width: <?php switch ($blurbs_by_row) {
 		case 6:
-			return '15%;';
+			echo '15%;';
 			break;
 		case 5:
-			return '17%;';
+			echo '17%;';
 			break;
 		case 4:
-			return '23%;';
+			echo '23%;';
 			break;
 		case 3:
-			return '30%;';
+			echo '30%;';
 			break;
 		
 		default:
-			return '23%;';
+			echo '23%;';
 	}?>;
 }
                                 
@@ -559,37 +559,37 @@ $k = 0;
                                             justify-content: flex-start;
                                             width: <?php switch ($blurbs_by_row) {
                                                             case 6:
-                                                                return '15%;';
+                                                                echo '15%;';
                                                                 break;
                                                             case 5:
-                                                                return '17%;';
+                                                                echo '17%;';
                                                                 break;
                                                             case 4:
-                                                                return '23%;';
+                                                                echo '23%;';
                                                                 break;
                                                             case 3:
-                                                                return '30%;';
+                                                                echo '30%;';
                                                                 break;
                                                             
                                                             default:
-                                                                return '23%;';
+                                                                echo '23%;';
                                                         }?>;
                                             max-width: <?php switch ($blurbs_by_row) {
                                                             case 6:
-                                                                return '15%;';
+                                                                echo '15%;';
                                                                 break;
                                                             case 5:
-                                                                return '17%;';
+                                                                echo '17%;';
                                                                 break;
                                                             case 4:
-                                                                return '23%;';
+                                                                echo '23%;';
                                                                 break;
                                                             case 3:
-                                                                return '30%;';
+                                                                echo '30%;';
                                                                 break;
                                                             
                                                             default:
-                                                                return '23%;';
+                                                                echo '23%;';
                                                         }?>;
 										}
 
