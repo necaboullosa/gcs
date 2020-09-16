@@ -367,8 +367,8 @@ $k = 0;
                         <style>
 
 .blurb_type_2_container .blurb {
-    width: <?php return_blurb_width();?>;
-    max-width: <?php return_blurb_width();?>;
+    width: <?php return_blurb_width($blurbs_by_row);?>;
+    max-width: <?php return_blurb_width($blurbs_by_row);?>;
 
 }
                                 
