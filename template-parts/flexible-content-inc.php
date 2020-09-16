@@ -302,7 +302,7 @@ $k = 0;
 										.blurbs-<?php echo $k; ?> .blurb {
                                             display: flex;
                                             justify-content: flex-start;
-                                            width: <?php 
+                                            max-width: <?php 
                                                                              
                                             switch ($blurbs_by_row) {
                                                 case 6:
@@ -367,25 +367,9 @@ $k = 0;
                         <style>
 
 .blurb_type_2_container .blurb {
-    width: <?php
-                                            
+    width: <?php return_blurb_width();?>;
+    max-width: <?php return_blurb_width();?>;
 
-                                            switch ($blurbs_by_row) {
-                                                case 5:
-                                                    echo '15%;';
-                                                    break;
-                                                case 4:
-                                                    echo '23%;';
-                                                    break;
-                                                case 3:
-                                                    echo '32%;';
-                                                    break;
-                                                
-                                                default:
-                                                    echo '23%;';
-                                            }
-                                            
-                                            ?>
 }
                                 
 
@@ -396,34 +380,7 @@ $k = 0;
                             <div class="blurb_type_2_container blurbs blurbs-<?php echo $k; ?>">
                                 <?php while ( have_rows('blurb_type_2_repeater') ) : the_row(); ?>
 
-                                <style>
-										.blurbs-<?php echo $k; ?> .blurb {
-                                            display: flex;
-                                            justify-content: flex-start;
-                                            width: <?php 
-                                                                             
-                                            switch ($blurbs_by_row) {
-                                                case 6:
-                                                    echo '15%;';
-                                                    break;
-                                                case 5:
-                                                    echo '17%;';
-                                                    break;
-                                                case 4:
-                                                    echo '23%;';
-                                                    break;
-                                                case 3:
-                                                    echo '30%;';
-                                                    break;
-                                                
-                                                default:
-                                                    echo '23%;';
-                                            }
-                                            
-                                            ?>
-                                         
-										}
-                                    </style>
+                              
                                     <div class="blurb">
                                         <img alt="<?php the_sub_field('text'); ?>" src="<?php $icon = get_sub_field('icon'); $first_digit = $icon[0]; if($icon < 10 AND $first_digit) { $icon = '0' . $icon;} echo get_template_directory_uri() . '/img/icons/GCS-ICONS-' . $icon . '.png'; ?>">
                                         <h3 class="blurb-header sm-red-line txt-center "><?php   the_sub_field('header');?> </h3>
