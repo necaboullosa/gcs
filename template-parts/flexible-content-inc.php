@@ -3,7 +3,7 @@
 
 function return_blurb_width($blurbs_by_row)
  {
-
+    echo $blurbs_by_row;
 	switch ($blurbs_by_row) {
 		case 6:
 			return '15%;';
