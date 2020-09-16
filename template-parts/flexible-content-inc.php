@@ -1,28 +1,6 @@
 <?php
 
 
-function return_blurb_width($blurbs_by_row)
- {
-    echo $blurbs_by_row;
-	switch ($blurbs_by_row) {
-		case 6:
-			return '15%;';
-			break;
-		case 5:
-			return '17%;';
-			break;
-		case 4:
-			return '23%;';
-			break;
-		case 3:
-			return '30%;';
-			break;
-		
-		default:
-			return '23%;';
-	}
-   
- }
 
 $k = 0;
 /* to count row */
@@ -325,27 +303,40 @@ $k = 0;
 										.blurbs-<?php echo $k; ?> .blurb {
                                             display: flex;
                                             justify-content: flex-start;
-                                            max-width: <?php 
-                                                                             
-                                            switch ($blurbs_by_row) {
-                                                case 6:
-                                                    echo '15%;';
-                                                    break;
-                                                case 5:
-                                                    echo '17%;';
-                                                    break;
-                                                case 4:
-                                                    echo '23%;';
-                                                    break;
-                                                case 3:
-                                                    echo '30%;';
-                                                    break;
-                                                
-                                                default:
-                                                    echo '23%;';
-                                            }
-                                            
-                                            ?>
+                                            width: <?php switch ($blurbs_by_row) {
+                                                        case 6:
+                                                            return '15%;';
+                                                            break;
+                                                        case 5:
+                                                            return '17%;';
+                                                            break;
+                                                        case 4:
+                                                            return '23%;';
+                                                            break;
+                                                        case 3:
+                                                            return '30%;';
+                                                            break;
+                                                        
+                                                        default:
+                                                            return '23%;';
+                                                    }?>;
+                                                    max-width: <?php switch ($blurbs_by_row) {
+                                                        case 6:
+                                                            return '15%;';
+                                                            break;
+                                                        case 5:
+                                                            return '17%;';
+                                                            break;
+                                                        case 4:
+                                                            return '23%;';
+                                                            break;
+                                                        case 3:
+                                                            return '30%;';
+                                                            break;
+                                                        
+                                                        default:
+                                                            return '23%;';
+                                                    }?>;
                                          
 										}
 
@@ -389,14 +380,46 @@ $k = 0;
 
                         <style>
 
-.blurb_type_2_container .blurb {
-    width: <?php return_blurb_width($blurbs_by_row);?>;
-    max-width: <?php return_blurb_width($blurbs_by_row);?>;
+                        .blurb_type_2_container .blurb {
+                            width: <?php switch ($blurbs_by_row) {
+                                case 6:
+                                    return '15%;';
+                                    break;
+                                case 5:
+                                    return '17%;';
+                                    break;
+                                case 4:
+                                    return '23%;';
+                                    break;
+                                case 3:
+                                    return '30%;';
+                                    break;
+                                
+                                default:
+                                    return '23%;';
+                            }?>;
+                            max-width: <?php switch ($blurbs_by_row) {
+                                case 6:
+                                    return '15%;';
+                                    break;
+                                case 5:
+                                    return '17%;';
+                                    break;
+                                case 4:
+                                    return '23%;';
+                                    break;
+                                case 3:
+                                    return '30%;';
+                                    break;
+                                
+                                default:
+                                    return '23%;';
+                            }?>;
 
-}
+                        }
                                 
 
-                            </style>
+                        </style>
                         <?php if( have_rows('blurb_type_2_repeater') ): ?>
 
 
@@ -427,25 +450,40 @@ $k = 0;
                         <style>
 
 .blurbs-<?php echo $k; ?> .blurb {
-    width: <?php 
-                                            
-
-                                            switch ($blurbs_by_row) {
-                                                case 5:
-                                                    echo '15%;';
-                                                    break;
-                                                case 4:
-                                                    echo '23%;';
-                                                    break;
-                                                case 3:
-                                                    echo '30%;';
-                                                    break;
-                                                
-                                                default:
-                                                    echo '23%;';
-                                            }
-                                            
-                                            ?>
+    width: <?php switch ($blurbs_by_row) {
+		case 6:
+			return '15%;';
+			break;
+		case 5:
+			return '17%;';
+			break;
+		case 4:
+			return '23%;';
+			break;
+		case 3:
+			return '30%;';
+			break;
+		
+		default:
+			return '23%;';
+	}?>;
+    max-width: <?php switch ($blurbs_by_row) {
+		case 6:
+			return '15%;';
+			break;
+		case 5:
+			return '17%;';
+			break;
+		case 4:
+			return '23%;';
+			break;
+		case 3:
+			return '30%;';
+			break;
+		
+		default:
+			return '23%;';
+	}?>;
 }
                                 
 
@@ -519,28 +557,40 @@ $k = 0;
 										.blurbs-<?php echo $k; ?> .usp-item {
                                             display: flex;
                                             justify-content: flex-start;
-                                            max-width: <?php 
-                                                                             
-                                            switch ($blurbs_by_row) {
-                                                case 6:
-                                                    echo '15%;';
-                                                    break;
-                                                case 5:
-                                                    echo '17%;';
-                                                    break;
-                                                case 4:
-                                                    echo '23%;';
-                                                    break;
-                                                case 3:
-                                                    echo '30%;';
-                                                    break;
-                                                
-                                                default:
-                                                    echo '23%;';
-                                            }
-                                            
-                                            ?>
-                                         
+                                            width: <?php switch ($blurbs_by_row) {
+                                                            case 6:
+                                                                return '15%;';
+                                                                break;
+                                                            case 5:
+                                                                return '17%;';
+                                                                break;
+                                                            case 4:
+                                                                return '23%;';
+                                                                break;
+                                                            case 3:
+                                                                return '30%;';
+                                                                break;
+                                                            
+                                                            default:
+                                                                return '23%;';
+                                                        }?>;
+                                            max-width: <?php switch ($blurbs_by_row) {
+                                                            case 6:
+                                                                return '15%;';
+                                                                break;
+                                                            case 5:
+                                                                return '17%;';
+                                                                break;
+                                                            case 4:
+                                                                return '23%;';
+                                                                break;
+                                                            case 3:
+                                                                return '30%;';
+                                                                break;
+                                                            
+                                                            default:
+                                                                return '23%;';
+                                                        }?>;
 										}
 
                                       
