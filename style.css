@@ -2814,8 +2814,9 @@ blockquote {
 			padding: 10px;
 		}
 
-		.blurb_type_2_container .blurb {
-			max-width: 45%;
+		.blurbs .blurb {
+			max-width: 45% !important;
+			width: 45% !important;
 		}
 
 		.flip_cards .flip-card {
@@ -3016,8 +3017,9 @@ blockquote {
 			margin-top: 50px;
 		}
 
-		.blurbs-type-1 .blurb {
+		.blurbs .blurb {
 			max-width: 50% !important;
+			width: 50% !important;
 		}
 
 		.blurbs-type-1 .separator {
