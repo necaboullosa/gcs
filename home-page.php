@@ -636,7 +636,7 @@ if($featured_img_url) {
                                 <div style="background-image: url('<?php the_post_thumbnail_url('medium'); ?>')">
                                     <div class="guide colour">
 
-                                        <h5><?php the_title(); ?></h5>
+                                        <h5><?php echo mb_strimwidth(get_the_title(), 0, 60, '...'); ?></h5>
                                         <a href="<?php the_permalink(); ?>">
                                             <div class="button">Click to read <img src="<?php echo get_template_directory_uri(); ?>/img/arrow-button.png"></div>
                                         </a>
