@@ -844,7 +844,7 @@ $k = 0;
                                 <div class="<?php echo 'guide-' . $i; ?>" style="background-image: url('<?php the_post_thumbnail_url('medium'); ?>')">
                                     <div class="guide colour">
 
-                                        <h5><?php the_title(); ?></h5>
+                                        <h5><?php echo mb_strimwidth(get_the_title(), 0, 60, '...'); ?></h5>
                                         <a href="<?php the_permalink(); ?>">
                                             <div class="button"><?php $read_more_global_button_text = get_field('read_more_global_button_text', 'option'); 
                             if ($read_more_global_button_text) {
