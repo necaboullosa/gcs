@@ -3116,6 +3116,10 @@ blockquote {
     color: #00b4c5;
 }
 
+#consent_button {
+	color: white !important;
+}
+
 ._form_53 button, ._form_53 button {
 	margin-top: 1em;
 }

@@ -166,7 +166,7 @@ if($enable_our_commitment) { ?>
 </div><!-- #page -->
 
  <?php if(ICL_LANGUAGE_CODE=='en'): ?>
-                     <div class="cookieconsent" id="cookieconsent" style="position:fixed;padding:20px;left:0;bottom:0;background-color:#1955a6;color:#FFF;text-align:center;width:100%;z-index:9999999; display: none;">
+                     <div class="cookieconsent" id="cookieconsent" style="position:fixed;padding:20px;left:0;bottom:0;background-color:#1955a6;color:#FFF;text-align:center;width:100%;z-index:99999999999; display: none;">
 			We use cookies to ensure that we give you the best experience on our website. Our <a href="https://www.globalcitizensolutions.com/terms-conditions/">Terms and Coditions</a> 
 			<a href="#" id="consent_button" class="button" onclick="event.preventDefault(); acceptConsent();">I Agree</a>
 		</div>
