@@ -1011,7 +1011,7 @@ $k = 0;
                                                 "text": "<?php $answer = get_sub_field('answer'); 
 
                                                 $answer = preg_replace('/(<[^>]+) style=".*?"/i', '$1', $answer);
-                                                str_replace('"', "'" , $answer)
+                                                str_replace('"', "'" , $answer);
 
                                                 /* $answer = preg_replace('style="font-weight: 400;"', '', $answer);
                                                 $answer = preg_replace(';', '', $answer); 
