@@ -111,6 +111,14 @@ $k = 0;
                 .form-container {
                     height: 100%;
                 }
+
+                .image_and_form img {
+                    width: 100%;
+                }
+
+                .image_and_form  ._form-content{
+                    min-height: 450px;
+                }
             </style>
 
             <div class="image_and_form  space ">

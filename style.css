@@ -3171,3 +3171,8 @@ blockquote {
 	
 
 }
+
+#referral_table td, #referral_table tr, #referral_table {
+	border-width: 0px !important;
+}
+
