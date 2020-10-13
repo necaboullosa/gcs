@@ -118,17 +118,13 @@ if(!get_field('disable_header')) {
 	$postid = get_the_ID();
 
 
-	$covid_notice_categories = get_field('covid_notice_copy', 'options'); //category
+	$covid_notice_categories = get_field('covid_notice_copy', 'options'); 
 
-	?>
+	$current_category_id = get_the_category($postid);
+	$in_array = in_array($current_category_id , $covid_notice_categories);
 
 
-
-	
-	
-<?php
-
-	if($covid_notice AND !($postid === 10633)) {
+	if($covid_notice AND !($postid === 10633) AND $in_array) {
 		?>
 			<div class="container ">
 				<div class="sitewide-notice">
