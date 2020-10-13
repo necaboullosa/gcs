@@ -14,10 +14,19 @@ $k = 0;
 
                 <?php if( get_row_layout() == 'text-visual_editor' ):                                       
                     $header = get_field('header');
+                    $post_id_test = get_the_ID();
+                    
+                    if($post_id_test == 18476) {
+                        var_dump($header);
+                    }
                     if (strlen($header) < 2 ) { ?>
                                 <!-- visual editor --> 
 
-                    <h2 class="section-header sm-red-line"> <?php the_sub_field('header'); }?> </h2>
+                    <h2 class="section-header sm-red-line"> <?php the_sub_field('header'); 
+                
+                    }?> </h2>
+
+
                     <?php $visual_editor_content = get_sub_field('text-visual_editor'); 
                             echo $visual_editor_content;
                     ?>
