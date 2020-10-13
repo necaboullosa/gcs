@@ -107,12 +107,12 @@ $k = 0;
                 <?php $image_on_the_right = get_sub_field('image_on_the_right');                
                 if(!$image_on_the_right) { ?>
                 <div class="image-container">
-                    <img class="img-stack-top-left stack-bottom" data-aos="fade-right" src="<?php $image_1 = get_sub_field('image_1'); echo $image_1; ?>" alt="<?php $header = get_sub_field('header'); echo $header; ?>">
+                    <img class="img-stack-top-left stack-bottom" data-aos="fade-right" src="<?php $image = get_sub_field('image'); echo $image_1; ?>">
                 </div>
                     <?php } ?>
                 <div class="text-container" data-aos="fade-up">
                   
-                    <?php $form = get_sub_field('ac_form'); echo $form; ?>
+                    <?php $form = get_sub_field('ac_form'); echo do_shortcode($form); ?>
 
 
                 </div>
@@ -124,7 +124,7 @@ $k = 0;
                     ?>
                 <div class="image-container">
 
-                    <img class="img-stack-top-left stack-bottom" data-aos="fade-left" src="<?php $image_1 = get_sub_field('image_1'); echo $image_1; ?>" alt="<?php $header = get_sub_field('header'); echo $header; ?>">
+                    <img class="img-stack-top-left stack-bottom" data-aos="fade-left" src="<?php $image = get_sub_field('image_1'); echo $image; ?>">
 
                 </div>
 
