@@ -13,16 +13,14 @@ $k = 0;
             <div class="container entry-content container row-<?php echo $k ?>">
 
                 <?php if( get_row_layout() == 'text-visual_editor' ):                                       
-                    $header = get_field('header');
+                    $header = get_sub_field('header');
                     $post_id_test = get_the_ID();
                     
-                    
-                    if (strlen($header) > 2 AND !empty($header)) { ?>
-                                <!-- visual editor --> 
-
-                    <h2 class="section-header sm-red-line"> <?php the_sub_field('header'); 
-                
-                    ?> </h2> <?php } ?>
+                    if (strlen($header) > 2 AND !empty($header)) { ?>             
+                        <h2 class="section-header sm-red-line"> 
+                            <?php the_sub_field('header'); ?> 
+                        </h2> 
+                    <?php } ?>
 
 
                     <?php $visual_editor_content = get_sub_field('text-visual_editor'); 
