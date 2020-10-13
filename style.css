@@ -3109,7 +3109,9 @@ blockquote {
 }
 
 
-
+._error-inner {
+	color: #e0013f !important;
+}
 
 
 #cookieconsent a {
