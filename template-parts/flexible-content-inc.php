@@ -107,7 +107,7 @@ $k = 0;
                 <?php $image_on_the_right = get_sub_field('image_on_the_right');                
                 if(!$image_on_the_right) { ?>
                 <div class="image-container">
-                    <img class="img-stack-top-left stack-bottom" data-aos="fade-right" src="<?php $image = get_sub_field('image'); echo $image_1; ?>">
+                    <img class="img-stack-top-left stack-bottom" data-aos="fade-right" src="<?php $image = get_sub_field('image'); echo $image; ?>">
                 </div>
                     <?php } ?>
                 <div class="text-container" data-aos="fade-up">
