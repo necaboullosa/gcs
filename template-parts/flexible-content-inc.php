@@ -16,10 +16,8 @@ $k = 0;
                     $header = get_field('header');
                     $post_id_test = get_the_ID();
                     
-                    if($post_id_test == 18476) {
-                        var_dump($header);
-                    }
-                    if (!is_null($header)) { ?>
+                    
+                    if (strlen($header) > 2 ) { ?>
                                 <!-- visual editor --> 
 
                     <h2 class="section-header sm-red-line"> <?php the_sub_field('header'); 
