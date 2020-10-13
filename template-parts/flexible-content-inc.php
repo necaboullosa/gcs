@@ -22,7 +22,7 @@ $k = 0;
 
                     <h2 class="section-header sm-red-line"> <?php the_sub_field('header'); 
                 
-                    }?> </h2>
+                    ?> </h2> <?php } ?>
 
 
                     <?php $visual_editor_content = get_sub_field('text-visual_editor'); 
@@ -118,6 +118,10 @@ $k = 0;
 
                 .image_and_form  ._form-content{
                     min-height: 450px;
+                }
+
+                .image_and_form {
+                 background-color: rgb(25, 85, 166);
                 }
             </style>
 
