@@ -19,7 +19,7 @@ $k = 0;
                     if($post_id_test == 18476) {
                         var_dump($header);
                     }
-                    if (strlen($header) < 2 ) { ?>
+                    if (!empty($header) < 2 ) { ?>
                                 <!-- visual editor --> 
 
                     <h2 class="section-header sm-red-line"> <?php the_sub_field('header'); 
