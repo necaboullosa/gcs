@@ -120,10 +120,14 @@ if(!get_field('disable_header')) {
 
 	$covid_notice_categories = get_field('covid_notice_copy', 'options'); //category
 
+	?>
+
+<!-- <?php var_dump($covid_notice_categories); ?> --> 
+
 
 	
 	
-
+<?php
 
 	if($covid_notice AND !($postid === 10633)) {
 		?>
