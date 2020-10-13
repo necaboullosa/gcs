@@ -17,7 +17,7 @@ $k = 0;
                     $post_id_test = get_the_ID();
                     
                     
-                    if (strlen($header) > 2 ) { ?>
+                    if (strlen($header) > 2 AND !empty($header)) { ?>
                                 <!-- visual editor --> 
 
                     <h2 class="section-header sm-red-line"> <?php the_sub_field('header'); 
