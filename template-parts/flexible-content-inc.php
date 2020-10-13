@@ -123,6 +123,16 @@ $k = 0;
                 .image_and_form {
                  background-color: rgb(25, 85, 166);
                 }
+                @media (max-width: 900px) {
+                    .image_and_form {
+                        flex-direction: column;
+                    }
+
+                    .image_and_form > div {
+                        width: 100%;
+                    }
+
+                }
             </style>
 
             <div class="image_and_form  space ">
