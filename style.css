@@ -2995,7 +2995,7 @@ blockquote {
 		
 
 		.flip_cards .flip-card {
-			max-width: 100%;
+			max-width: 100% !important;
 		}
 
 		.map-section {

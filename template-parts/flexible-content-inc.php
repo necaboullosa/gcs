@@ -91,6 +91,52 @@ $k = 0;
             </div>
             <?php $k++; ?>
 
+             <!-- END Text and Image --> 
+
+
+
+
+             <?php elseif( get_row_layout() == 'image_and_form' ):  ?>    
+            <!-- Text and Image --> 
+                                 
+                   
+                    
+
+            <div class="image_and_form  space ">
+
+                <?php $image_on_the_right = get_sub_field('image_on_the_right');                
+                if(!$image_on_the_right) { ?>
+                <div class="image-container">
+                    <?php $sub_header = get_sub_field('sub_header'); if($sub_header) {?>  <h3 class="section-sub-header hidden-sub-header"><?php echo $sub_header; }?></h3>
+                    <img class="img-stack-top-left stack-bottom" data-aos="fade-right" src="<?php $image_1 = get_sub_field('image_1'); echo $image_1; ?>" alt="<?php $header = get_sub_field('header'); echo $header; ?>">
+                </div>
+                    <?php } ?>
+                <div class="text-container" data-aos="fade-up">
+                  
+                    <?php $text = get_sub_field('ac_form'); echo $form; ?>
+
+
+                </div>
+
+
+                <?php $image_on_the_right = get_sub_field('image_on_the_right');
+                
+                if($image_on_the_right) {
+                    ?>
+                <div class="image-container">
+                    <?php $sub_header = get_sub_field('sub_header'); if($sub_header) {?>  <h3 class="section-sub-header hidden-sub-header"><?php echo $sub_header; }?></h3>
+
+                    <img class="img-stack-top-left stack-bottom" data-aos="fade-left" src="<?php $image_1 = get_sub_field('image_1'); echo $image_1; ?>" alt="<?php $header = get_sub_field('header'); echo $header; ?>">
+
+                </div>
+
+                    <?php
+                }
+                ?>
+
+            </div>
+            <?php $k++; ?>
+
              <!-- Text and Image --> 
 
 
