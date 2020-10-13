@@ -99,18 +99,29 @@ $k = 0;
              <?php elseif( get_row_layout() == 'image_and_form' ):  ?>    
             <!-- Text and Image --> 
                                  
-                   
-                    
+            <style>
+                .image_and_form {
+                    display: flex;
+                }
+
+                .image_and_form > div {
+                    width: 50%;
+                }
+
+                .form-container {
+                    height: 100%;
+                }
+            </style>
 
             <div class="image_and_form  space ">
 
                 <?php $image_on_the_right = get_sub_field('image_on_the_right');                
                 if(!$image_on_the_right) { ?>
-                <div class="image-container">
+                <div class="image-container" data-aos="fade-up">
                     <img class="img-stack-top-left stack-bottom" data-aos="fade-right" src="<?php $image = get_sub_field('image'); echo $image; ?>">
                 </div>
                     <?php } ?>
-                <div class="text-container" data-aos="fade-up">
+                <div class="form-container" data-aos="fade-up">
                   
                     <?php $form = get_sub_field('ac_form'); echo do_shortcode($form); ?>
 
@@ -122,7 +133,7 @@ $k = 0;
                 
                 if($image_on_the_right) {
                     ?>
-                <div class="image-container">
+                <div class="image-container" data-aos="fade-up">
 
                     <img class="img-stack-top-left stack-bottom" data-aos="fade-left" src="<?php $image = get_sub_field('image_1'); echo $image; ?>">
 
