@@ -122,7 +122,6 @@ if(!get_field('disable_header')) {
 
 	?>
 
- <?php var_dump($covid_notice_categories); ?> 
 
 
 	
