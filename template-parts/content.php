@@ -194,7 +194,7 @@ include( $stylesheet_root . '/template-parts/flexible-content-inc.php' );
 			} ?>
 </article><!-- #post-<?php the_ID(); ?> -->
 <style>
-#referral_table h3, #referral_table h4, #referral_table p, #referral_table strong, #referral_table span, #referral_table td {<br />
+#referral_table h3, #referral_table h4, #referral_table p, #referral_table strong, #referral_table span, #referral_table td {
 text-align: center !important;
 } 
 #referral_table, #referral_table td, #referral_table tr {
