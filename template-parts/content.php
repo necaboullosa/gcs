@@ -127,11 +127,17 @@ if(!get_field('disable_header')) {
 	$in_array = null;
 
 	foreach ($current_category_id as $category) {
-		$category = (array) $category;
-		if($in_array == null) {
 
+
+		$category = (array) $category;
+
+		$i = 0;
+
+		if($in_array == null) {
+			if ($i == 0) {
+				var_dump($category);
+			}
 			$catid = $category['Cat_ID'];
-			var_dump($catid);
 			$in_array = array_search($catid, $covid_notice_categories);
 		}
 	}
