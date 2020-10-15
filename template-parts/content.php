@@ -120,6 +120,8 @@ if(!get_field('disable_header')) {
 
 	$covid_notice_categories = get_field('covid_notice_copy', 'options'); 
 
+
+
 	$current_category_id = get_the_category($postid);
 	$in_array = array_search($current_category_id , $covid_notice_categories);
 
@@ -201,3 +203,9 @@ text-align: center !important;
 border: 0px solid white !important;
 }
 </style>
+
+
+<script>
+
+console.log('<?php var_dump($covid_notice_categories);?>');
+</script>
