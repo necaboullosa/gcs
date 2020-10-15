@@ -121,7 +121,7 @@ if(!get_field('disable_header')) {
 	$covid_notice_categories = get_field('covid_notice_copy', 'options'); 
 
 	$current_category_id = get_the_category($postid);
-	$in_array = in_array($current_category_id , $covid_notice_categories);
+	$in_array = array_search($current_category_id , $covid_notice_categories);
 
 
 	if($covid_notice AND !($postid === 10633) AND $in_array) {
