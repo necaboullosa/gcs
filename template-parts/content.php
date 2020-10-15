@@ -128,10 +128,14 @@ if(!get_field('disable_header')) {
 
 	foreach ($current_category_id as $category) {
 
+
+		$category = (array) $category;
+
+
 		
 		if($in_array == null) {
 
-			$catid = $category->Cat_ID;
+			$catid = $category['Cat_ID'];
 			echo $catid;
 			$in_array = array_search($catid, $covid_notice_categories);
 		}
