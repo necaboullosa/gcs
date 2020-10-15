@@ -213,3 +213,9 @@ border: 0px solid white !important;
 </style>
 
 
+<script>
+
+console.log('<?php var_dump($current_category_id); ?>');
+
+
+</script>
