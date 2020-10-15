@@ -128,7 +128,7 @@ if(!get_field('disable_header')) {
 
 	foreach ($current_category_id as $category) {
 
-		var_dump($category);
+		
 		if($in_array == null) {
 
 			$catid = $category->Cat_ID;
