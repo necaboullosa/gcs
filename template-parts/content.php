@@ -123,7 +123,15 @@ if(!get_field('disable_header')) {
 
 
 	$current_category_id = get_the_category($postid);
-	$in_array = array_search($current_category_id , $covid_notice_categories);
+
+	$in_array = null;
+
+	foreach ($current_category_id as $category) {
+		if($in_array == null) {
+			$in_array = array_search($category, $covid_notice_categories);
+		}
+	}
+	
 
 
 	if($covid_notice AND !($postid === 10633) AND $in_array) {
@@ -205,7 +213,3 @@ border: 0px solid white !important;
 </style>
 
 
-<script>
-
-console.log('<?php var_dump($covid_notice_categories);?>');
-</script>
