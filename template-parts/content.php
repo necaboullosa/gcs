@@ -122,7 +122,8 @@ if(!get_field('disable_header')) {
 
 
 
-	$current_category_id = get_the_category($postid);
+	$current_category_id = wp_get_post_categories( get_the_ID(), array( 'fields' => 'ids' ) );
+
 
 	$in_array = null;
 
