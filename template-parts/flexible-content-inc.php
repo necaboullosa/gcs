@@ -509,6 +509,10 @@ $k = 0;
                             min-height: 10em;
                         }
 
+                        .cta-block-style-4 .container {
+                            display: flex;
+                        }
+
                     </style>                 
                    <?php 
                         
@@ -583,7 +587,14 @@ $k = 0;
                             </style>
 
                             <div id="cta-block-<?php echo $k; ?>" class="cta-block cta-block-style-4" >
-                                <?php echo $text; echo $button_text; echo $button_url; echo $background_image; ?>
+                                <div class="container">
+                                    <p><?php echo $text; ?> </p> 
+                                    <a href="<?php echo $button_url; ?>" target="_blank">
+                                        <div class="button">
+                                            <?php echo $button_text;?> 
+                                        </div>
+                                    </a>
+                                </div>
                             </div>
                                 <?php
                                 break;
