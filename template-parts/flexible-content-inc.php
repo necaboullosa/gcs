@@ -502,7 +502,12 @@ $k = 0;
                             case '3': ?>
                                 
                             <div id="cta-block-<?php echo $k; ?>" class="cta-block cta-block-style-3">
-                                <?php echo $text; echo $button_text; echo $button_url; echo $background_image; ?>
+                                <p><?php echo $text; ?> </p> 
+                                <a href="<?php echo $button_url; ?>" target="_blank">
+                                    <div class="button">
+                                        <?php echo $button_text;?> 
+                                    </div>
+                                </a>
                             </div>
                                 <?php break;
 

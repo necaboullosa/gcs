@@ -2087,7 +2087,7 @@ _::-webkit-full-page-media, _:future, :root .teal {
   .wrapper .carousel .container .carousel-list .active {
 	align-self: center;
 	display: block;
-	max-height: 260px;
+	max-height: 280px;
   }
   .wrapper .carousel .container .carousel-indicator {
 	width: 100%;
@@ -2989,6 +2989,7 @@ blockquote {
 
 		.guides > div {
 			width: 90%;
+			max-width: 90% !important;
 
 			margin-bottom: 2em;
 		}
