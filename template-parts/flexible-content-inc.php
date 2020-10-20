@@ -493,9 +493,20 @@ $k = 0;
                         justify-content: space-between;
                         padding: 1em 2em;
                         color: white; 
-                        min-height: 10em;
+                       
                         
                         
+                        }
+
+                        .cta-block-style-4 {
+                            margin: 1em 0px;
+                            background: #007AC1;
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            padding: 1em 2em;
+                            color: white; 
+                            min-height: 10em;
                         }
 
                     </style>                 
@@ -546,13 +557,7 @@ $k = 0;
 
                             case '3': ?>
 
-                            <style>
-                                .cta-block-<?php echo $k; ?> {
-                                background-image: url('<?php echo $background_image; ?>');
-                                background-color: #007ac1;
-                                background-blend-mode: multiply;
-                                }
-                            </style>
+                            
                                 
                             <div id="cta-block-<?php echo $k; ?>" class="cta-block cta-block-style-3">
                                 <div class="container">
@@ -569,7 +574,13 @@ $k = 0;
                             case '4': ?>
 
                           
-
+                            <style>
+                                .cta-block-<?php echo $k; ?> {
+                                background-image: url('<?php echo $background_image; ?>');
+                                background-color: #007ac1;
+                                background-blend-mode: multiply;
+                                }
+                            </style>
 
                             <div id="cta-block-<?php echo $k; ?>" class="cta-block cta-block-style-4" >
                                 <?php echo $text; echo $button_text; echo $button_url; echo $background_image; ?>
