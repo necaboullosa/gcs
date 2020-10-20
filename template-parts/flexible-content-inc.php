@@ -449,6 +449,97 @@ $k = 0;
                             </div>
                         <?php endif; ?>
                         <?php $k++; ?>
+
+            
+            <?php elseif( get_row_layout() == 'cta_block' ):  ?>
+                            <!-- cta main block --> 
+                                     
+                   <?php 
+                        
+                        $style = get_sub_field('style'); 
+
+                        $text = get_sub_field('text');
+
+                        $button_text = get_sub_field('button_text');
+
+                        $button_url = get_sub_field('button_url');
+
+                        $background_image = get_sub_field('background_image');
+                   
+                        switch ($style) {
+                            case '1':?>
+
+                            <div id="cta-block-<?php echo $k; ?>" class="cta-block cta-block-style-1">
+                                <?php echo $text; echo $button_text; echo $button_url; echo $background_image; ?>
+                            </div>
+                                
+
+                                <?php break;
+                            case '2': ?>
+                                
+                            <div id="cta-block-<?php echo $k; ?>" class="cta-block cta-block-style-2">
+                                <?php echo $text; echo $button_text; echo $button_url; echo $background_image; ?>
+                            </div>
+
+                                <?php break;
+
+                            case '3': ?>
+                                
+                            <div id="cta-block-<?php echo $k; ?>" class="cta-block cta-block-style-3">
+                                <?php echo $text; echo $button_text; echo $button_url; echo $background_image; ?>
+                            </div>
+                                <?php break;
+
+                            case '4': ?>
+
+                            <div id="cta-block-<?php echo $k; ?>" class="cta-block cta-block-style-4">
+                                <?php echo $text; echo $button_text; echo $button_url; echo $background_image; ?>
+                            </div>
+                                <?php
+                                break;
+                            
+                            case '5': ?>
+                            
+                            <div id="cta-block-<?php echo $k; ?>" class="cta-block cta-block-style-5">
+                                <?php echo $text; echo $button_text; echo $button_url; echo $background_image; ?>
+                            </div>
+
+                                <?php
+                                break;
+
+                            case '6': ?>
+                        
+                            <div id="cta-block-<?php echo $k; ?>" class="cta-block cta-block-style-6">
+                                <?php echo $text; echo $button_text; echo $button_url; echo $background_image; ?>
+                            </div>
+                                <?php
+                                break;
+
+
+                            case '7': ?>
+                    
+                            <div id="cta-block-<?php echo $k; ?>" class="cta-block cta-block-style-7">
+                                <?php echo $text; echo $button_text; echo $button_url; echo $background_image; ?>
+                            </div>
+                                <?php
+                                break;
+                            
+                            default:
+                                echo 'something went wrong with the style selection.';
+                                break;
+                        }
+
+
+
+                   ?>
+
+                    
+
+                   <?php $k++; ?>
+                    <!-- cta main block --> 
+
+            
+
             <!-- END blurbs type 1 -->
 
 
