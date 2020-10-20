@@ -509,8 +509,9 @@ $k = 0;
                             min-height: 10em;
                         }
 
-                        .cta-block-style-4 .container {
+                        .cta-block-style-3 .container, .cta-block-style-4 .container {
                             display: flex;
+                            justify-content: space-between;
                         }
 
                     </style>                 
