@@ -527,6 +527,8 @@ $k = 0;
                         $button_url = get_sub_field('button_url');
 
                         $background_image = get_sub_field('background_image');
+
+                        $header_text_left = get_sub_field('header_text_left');
                    
                         switch ($style) {
                             case '1':?>
@@ -637,6 +639,11 @@ $k = 0;
                                     flex-direction: column;
                                     justify-content: center;
                                 }
+
+                                .cta-block-style-6, .cta-block-style-7 {
+                                    border-radius: 20px;
+                                    border: 1px solid #007ac1;
+                                }
                             </style>
                             
                             <div id="cta-block-<?php echo $k; ?>" class="cta-block cta-block-style-5">
@@ -661,7 +668,18 @@ $k = 0;
                             case '6': ?>
                         
                             <div id="cta-block-<?php echo $k; ?>" class="cta-block cta-block-style-6">
-                                <?php echo $text; echo $button_text; echo $button_url; echo $background_image; ?>
+                                <div class="blue">
+                                    <h2 class="section-header"><?php echo  $header_text_left; ?></h2>
+                                
+                                </div>
+                                <div class="img">
+                                    <p><?php echo $text;?></p> 
+                                    <a href="<?php echo $button_url; ?>" target="_blank">
+                                        <div class="button">
+                                            <?php echo $button_text;?> 
+                                        </div>
+                                    </a>
+                                </div>
                             </div>
                                 <?php
                                 break;
