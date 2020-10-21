@@ -454,48 +454,46 @@ $k = 0;
             <?php elseif( get_row_layout() == 'cta_block' ):  ?>
                             <!-- cta main block --> 
                     <style>
-                    .cta-block-style-1 {
-                        margin: 1em auto;
-                        background: #007AC1;
-                        display: flex;
-                        align-items: center;
-                        justify-content: space-between;
-                        padding: 1em 2em;
-                        color: white; 
-                        width: 1080px;
-                        max-width: 90%;
-                        
-                        
+                        .cta-block-style-1 {
+                            margin: 1em auto;
+                            background: #007AC1;
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            padding: 1em 2em;
+                            color: white; 
+                            width: 1080px;
+                            max-width: 90%;  
                         }
 
 
                         .cta-block p {
-                        color: white; 
-                        font-size: 1.2em !important; 
-                        margin: 0px 0px;
+                            color: white; 
+                            font-size: 1.2em !important; 
+                            margin: 0px 0px;
                         }
 
 
                         .cta-block-style-2 {
-                        background: #00B4C5;
-                        display: flex;
-                        align-items: center;
-                        justify-content: space-between;
-                        padding: 1em 2em;
-                        color: white;         }
+                            background: #00B4C5;
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            padding: 1em 2em;
+                            color: white;
+                            width: 1080px;
+                            max-width: 90%;         
+                        }
 
 
                         .cta-block-style-3 {
-                        margin: 1em 0px;
-                        background: #007AC1;
-                        display: flex;
-                        align-items: center;
-                        justify-content: space-between;
-                        padding: 1em 2em;
-                        color: white; 
-                       
-                        
-                        
+                            margin: 1em 0px;
+                            background: #007AC1;
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            padding: 1em 2em;
+                            color: white; 
                         }
 
                         .cta-block-style-4 {
@@ -580,10 +578,11 @@ $k = 0;
 
                           
                             <style>
-                                .cta-block-<?php echo $k; ?> {
+                                #cta-block-<?php echo $k; ?> {
                                 background-image: url('<?php echo $background_image; ?>');
                                 background-color: #007ac1;
                                 background-blend-mode: multiply;
+                                background-size: cover;
                                 }
                             </style>
 
@@ -601,9 +600,35 @@ $k = 0;
                                 break;
                             
                             case '5': ?>
+
+
+                            <style>
+                                #cta-block-<?php echo $k; ?> .img{
+                                background-image: url('<?php echo $background_image; ?>');
+                                background-color: #007ac1;
+                                background-blend-mode: multiply;
+                                background-size: cover;
+                                }
+
+                                .cta-block-style-5 > div{
+                                    width: 50%;
+                                }
+                            </style>
                             
                             <div id="cta-block-<?php echo $k; ?>" class="cta-block cta-block-style-5">
-                                <?php echo $text; echo $button_text; echo $button_url; echo $background_image; ?>
+                                <div class="blue">
+
+                                    <p><?php echo $text;?></p> 
+                                    <a href="<?php echo $button_url; ?>" target="_blank">
+                                        <div class="button">
+                                            <?php echo $button_text;?> 
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="img">
+                                
+                                </div>
+                                <?php echo $background_image; ?>
                             </div>
 
                                 <?php
