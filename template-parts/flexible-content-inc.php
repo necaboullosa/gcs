@@ -603,11 +603,18 @@ $k = 0;
 
 
                             <style>
+
+                                #cta-block-<?php echo $k; ?> {
+                                    display: flex;
+                                width: 100%;
+                                }
+                                
                                 #cta-block-<?php echo $k; ?> .img{
                                 background-image: url('<?php echo $background_image; ?>');
                                 background-color: #007ac1;
                                 background-blend-mode: multiply;
                                 background-size: cover;
+
                                 }
 
                                 .cta-block-style-5 > div{
