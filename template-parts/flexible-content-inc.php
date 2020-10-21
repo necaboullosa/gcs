@@ -648,6 +648,13 @@ $k = 0;
                                     border-radius: 20px;
                                     border: 1px solid #007ac1;
                                 }
+
+                                .cta-block-style-5 .blue {
+                                    padding-left: 86px;
+                                    display: flex;
+                                    justify-content: center;
+                                    flex-direction: column;
+                                }
                             </style>
                             
                             <div id="cta-block-<?php echo $k; ?>" class="cta-block cta-block-style-5">
