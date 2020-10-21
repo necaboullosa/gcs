@@ -767,7 +767,6 @@ $k = 0;
                             }
 
                             .cta-block-style-7 .blue {
-                            background-color:   #007AC1;
                             border-radius: 20px;
                             height: 10em;
                             display: flex;
@@ -794,8 +793,8 @@ $k = 0;
 
                             #cta-block-<?php echo $k; ?> .blue {
                                 background-image: url('<?php echo $background_image; ?>');
-                                background-color: #007ac1;
-                                background-blend-mode: multiply;
+                                
+                               
                                 background-size: cover;
 
                                 }
@@ -804,7 +803,7 @@ $k = 0;
                     
                             <div id="cta-block-<?php echo $k; ?>" class="cta-block cta-block-style-7">
                                 <div class="blue">
-                                
+
                                 </div>
                                 <div class="white">
                                     <p><?php echo $text;?></p> 
