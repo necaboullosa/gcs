@@ -606,7 +606,7 @@ $k = 0;
 
                                 #cta-block-<?php echo $k; ?> {
                                     display: flex;
-                                width: 100%;
+                                    width: 100%;
                                 }
                                 
                                 #cta-block-<?php echo $k; ?> .img{
@@ -619,6 +619,10 @@ $k = 0;
 
                                 .cta-block-style-5 > div{
                                     width: 50%;
+                                }
+
+                                .cta-block-style-5 .blue {
+                                    background:   #007AC1;
                                 }
                             </style>
                             
@@ -635,7 +639,7 @@ $k = 0;
                                 <div class="img">
                                 
                                 </div>
-                                <?php echo $background_image; ?>
+                                
                             </div>
 
                                 <?php
