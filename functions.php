@@ -274,7 +274,15 @@ add_image_size( 'custom-size', 300, 200 ); // 220 pixels wide by 180 pixels tall
 add_image_size( 'custom-size', 300, 208 ); // 220 pixels wide by 180 pixels tall, soft proportional crop mode
 
 
-
+function general_admin_notice(){
+    global $pagenow;
+    if ( $pagenow == 'edit-tags.php' ) {
+         echo '<div class="notice notice-warning ">
+             <p>If you are adding new categories, make sure to include them in the pop-up maker targetting.</p>
+         </div>';
+    }
+}
+add_action('admin_notices', 'general_admin_notice');
 
 
 

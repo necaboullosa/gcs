@@ -495,6 +495,7 @@ $k = 0;
                             justify-content: space-between;
                             padding: 1em 2em;
                             color: white; 
+                            min-height: 10em;
                         }
 
                         .cta-block-style-4 {
@@ -512,6 +513,7 @@ $k = 0;
                             display: flex;
                             justify-content: space-between;
                         }
+
 
                     </style>                 
                    <?php 
@@ -624,6 +626,16 @@ $k = 0;
 
                                 .cta-block-style-5 .blue {
                                     background:   #007AC1;
+                                }
+
+
+                                .cta-block-style-5 {
+                                    min-height: 10em;
+                                    background: #007ac1;
+                                    padding-left: 86px;
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: center;
                                 }
                             </style>
                             
