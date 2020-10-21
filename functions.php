@@ -277,8 +277,8 @@ add_image_size( 'custom-size', 300, 208 ); // 220 pixels wide by 180 pixels tall
 function general_admin_notice(){
     global $pagenow;
     if ( $pagenow == 'edit-tags.php' ) {
-         echo '<div class="notice notice-warning ">
-             <p>If you are adding new categories, make sure to include them in the pop-up maker targetting.</p>
+         echo '<div class="notice notice-error ">
+             <p>If you are adding new categories, make sure to include them in the pop-up maker targetting. Otherwise, the buttonizer will not work.</p>
          </div>';
     }
 }
