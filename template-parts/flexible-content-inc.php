@@ -634,10 +634,14 @@ $k = 0;
                                 .cta-block-style-5 {
                                     min-height: 10em;
                                     background: #007ac1;
-                                    padding-left: 86px;
+                                    
                                     display: flex;
-                                    flex-direction: column;
+                                    flex-direction: row;
                                     justify-content: center;
+                                }
+
+                                .cta-block-style-5 .blue {
+                                    padding-left: 86px;
                                 }
 
                                 .cta-block-style-6, .cta-block-style-7 {
