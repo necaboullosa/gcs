@@ -670,9 +670,8 @@ $k = 0;
                             <div id="cta-block-<?php echo $k; ?>" class="cta-block cta-block-style-6">
                                 <div class="blue">
                                     <h2 class="section-header"><?php echo  $header_text_left; ?></h2>
-                                
                                 </div>
-                                <div class="img">
+                                <div class="white">
                                     <p><?php echo $text;?></p> 
                                     <a href="<?php echo $button_url; ?>" target="_blank">
                                         <div class="button">
