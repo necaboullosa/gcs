@@ -482,7 +482,8 @@ $k = 0;
                             padding: 1em 2em;
                             color: white;
                             width: 1080px;
-                            max-width: 90%;         
+                            max-width: 90%; 
+                            margin: 0 auto;        
                         }
 
 
