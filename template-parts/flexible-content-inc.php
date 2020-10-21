@@ -698,6 +698,14 @@ $k = 0;
                             border-radius: 20px;
                             
                             }
+                            .cta-block-style-6 .blue h2:after {
+                                content: ' ';
+                                display: block;
+                                margin-top: 20px;
+                                max-width: 25px;
+                                border: 4px solid #d23252;
+                            }
+                           
 
                             .cta-block-style-6 .white {
                             padding: 2em;
@@ -739,9 +747,73 @@ $k = 0;
 
 
                             case '7': ?>
+
+
+<style>
+                            .cta-block-style-7 {
+                            margin: 1em 0px;
+                            
+                            display: flex;
+                            flex-direction: row;
+                            align-items: center;
+                            justify-content: space-between;
+                            color: white; 
+                            min-height: 10em;
+                            
+                            
+                            }
+                            .cta-block-style-7 > div {
+                            width: 50%;
+                            }
+
+                            .cta-block-style-7 .blue {
+                            background-color:   #007AC1;
+                            border-radius: 20px;
+                            height: 10em;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            }
+
+                            
+                           
+                           
+
+                            .cta-block-style-7 .white {
+                            padding: 2em;
+                            }
+
+
+                            .cta-block-style-7 .white p {
+                            color:  #007AC1;
+                            }
+
+                            .cta-block-style-7 .white .button {
+                            margin-top: 1em;
+                            }
+
+                            #cta-block-<?php echo $k; ?> .blue {
+                                background-image: url('<?php echo $background_image; ?>');
+                                background-color: #007ac1;
+                                background-blend-mode: multiply;
+                                background-size: cover;
+
+                                }
+                            </style>
+                        
                     
                             <div id="cta-block-<?php echo $k; ?>" class="cta-block cta-block-style-7">
-                                <?php echo $text; echo $button_text; echo $button_url; echo $background_image; ?>
+                                <div class="blue">
+                                
+                                </div>
+                                <div class="white">
+                                    <p><?php echo $text;?></p> 
+                                    <a href="<?php echo $button_url; ?>" target="_blank">
+                                        <div class="button">
+                                            <?php echo $button_text;?> 
+                                        </div>
+                                    </a>
+                                </div>
                             </div>
                                 <?php
                                 break;
