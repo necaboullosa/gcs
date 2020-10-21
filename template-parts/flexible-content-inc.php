@@ -666,6 +666,60 @@ $k = 0;
                                 break;
 
                             case '6': ?>
+
+                            <style>
+                            .cta-block-style-6 {
+                            margin: 1em 0px;
+                            
+                            display: flex;
+                            flex-direction: row;
+                            align-items: center;
+                            justify-content: space-between;
+                            color: white; 
+                            min-height: 10em;
+                            
+                            
+                            }
+                            .cta-block-style-6 > div {
+                            width: 50%;
+                            }
+
+                            .cta-block-style-6 .blue {
+                            background-color:   #007AC1;
+                            border-radius: 20px;
+                            height: 10em;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            }
+
+                            .cta-block-style-6 .blue h2 {
+                            color: white !important;
+                            border-radius: 20px;
+                            
+                            }
+
+                            .cta-block-style-6 .white {
+                            padding: 2em;
+                            }
+
+
+                            .cta-block-style-6 .white p {
+                            color:  #007AC1;
+                            }
+
+                            .cta-block-style-6 .white .button {
+                            margin-top: 1em;
+                            }
+
+                            #cta-block-<?php echo $k; ?> .blue {
+                                background-image: url('<?php echo $background_image; ?>');
+                                background-color: #007ac1;
+                                background-blend-mode: multiply;
+                                background-size: cover;
+
+                                }
+                            </style>
                         
                             <div id="cta-block-<?php echo $k; ?>" class="cta-block cta-block-style-6">
                                 <div class="blue">
