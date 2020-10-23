@@ -137,10 +137,6 @@ if(!get_field('disable_header')) {
 		}
 	}
 
-	
-	
-
-
 	if($covid_notice AND !($postid === 10633) AND $in_array) {
 		?>
 			<div class="container ">
@@ -151,6 +147,12 @@ if(!get_field('disable_header')) {
 			</div>
 		<?php
 	}?>
+
+<?php
+if ( function_exists('yoast_breadcrumb') ) {
+  yoast_breadcrumb( '<p id="breadcrumbs" class="container">','</p>' );
+}
+?>
 	
 	
 
