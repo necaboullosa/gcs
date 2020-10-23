@@ -111,42 +111,7 @@ if(!get_field('disable_header')) {
 
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-<?php 
-	$covid_notice = get_field('covid_notice', 'options');
 
-
-	$postid = get_the_ID();
-
-
-	$covid_notice_categories = get_field('covid_notice_copy', 'options'); 
-
-
-
-	$current_category_id = wp_get_post_categories( get_the_ID(), array( 'fields' => 'ids' ) );
-
-
-	$in_array = null;
-
-	foreach($covid_notice_categories as $covid_notice_category) {
-		$current_category_id = (array) $current_category_id;
-
-		if($in_array == null) {
-			
-			
-			$in_array = array_search($covid_notice_category, $current_category_id);
-		}
-	}
-
-	if($covid_notice AND !($postid === 10633) AND $in_array) {
-		?>
-			<div class="container ">
-				<div class="sitewide-notice">
-					<?php echo do_shortcode($covid_notice); ?>
-				</div>
-				
-			</div>
-		<?php
-	}?>
 
 <!-- new notice --> 
 
