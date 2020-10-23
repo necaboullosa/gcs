@@ -119,7 +119,7 @@ if(!get_field('disable_header')) {
 
 $postid1 = get_the_ID();
 
-$current_category_id_1 = wp_get_post_categories( get_the_ID(), array( 'fields' => 'ids' ) );
+$current_category_id = wp_get_post_categories( get_the_ID(), array( 'fields' => 'ids' ) );
 
 if( have_rows('new_covid_notice', 'options') ):
 
@@ -132,12 +132,12 @@ if( have_rows('new_covid_notice', 'options') ):
 		
 		
 		foreach($covid_notice_categories as $covid_notice_category) {
-			$current_category_id1 = (array) $current_category_id1;
+			$current_category_id = (array) $current_category_id;
 	
 			if($in_array == null) {
 				
 				
-				$in_array = array_search($covid_notice_category, $current_category_id1);
+				$in_array = array_search($covid_notice_category, $current_category_id);
 			}
 		}
 
