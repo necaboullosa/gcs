@@ -148,6 +148,64 @@ if(!get_field('disable_header')) {
 		<?php
 	}?>
 
+<!-- new notice --> 
+
+<?php 
+
+$postid = get_the_ID();
+
+$current_category_id = wp_get_post_categories( get_the_ID(), array( 'fields' => 'ids' ) );
+
+if( have_rows('new_covid_notice', 'options') ):
+
+    while( have_rows('new_covid_notice', 'options') ) : the_row();
+		$in_array = null;
+		$covid_notice = get_sub_field('shortcode', 'options');
+		$covid_notice_categories = get_sub_field('categories', 'options');
+		$exclude_notice = get_sub_field('exclude_notice', 'options');
+		
+		foreach($covid_notice_categories as $covid_notice_category) {
+			$current_category_id = (array) $current_category_id;
+	
+			if($in_array == null) {
+				
+				
+				$in_array = array_search($covid_notice_category, $current_category_id);
+			}
+		}
+
+
+		if($covid_notice AND !($postid === $exclude_notice) AND $in_array) {
+			?>
+				<div class="container ">
+					<div class="sitewide-notice">
+						<?php echo do_shortcode($covid_notice); ?>
+					</div>
+					
+				</div>
+			<?php
+		}
+       
+    endwhile;
+
+
+endif;
+?>
+
+
+
+	
+
+
+
+
+	
+
+
+<!-- END new notice --> 
+
+
+
 <?php
 if ( function_exists('yoast_breadcrumb') ) {
   yoast_breadcrumb( '<p id="breadcrumbs" class="container">','</p>' );
