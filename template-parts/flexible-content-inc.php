@@ -292,10 +292,10 @@ $k = 0;
             function ExistsKey($index, $array) 
             { 
                 if (array_key_exists($index, $array)){ 
-                    echo true;
+                    return true;
                 } 
                 else{ 
-                    echo false; 
+                    return false; 
                 } 
             } 
 
