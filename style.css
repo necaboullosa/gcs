@@ -3181,3 +3181,33 @@ blockquote {
 	margin-top: 1em;
 	font-style: italic;
   }
+
+
+  .cta-block-style-5 .button {
+	margin-top: 1em;
+  }
+  
+  .cta-block-style-6 .white p {
+	font-size: 1.8em !important;
+  }
+  
+  .cta-block-style-7 .white p {
+	font-size: 1.8em !important;
+  }
+  
+  .cta-block-style-6 .white {
+	padding: 2em
+  }
+  
+  .cta-block-style-6 .blue {
+	padding: 2em;
+	height: 100%;
+  }
+  
+  .cta-block-style-6 .section-header {
+	font-size: 2em !important;
+  }
+  
+  .cta-block-style-7 .blue {
+	min-height: 12em;
+  }  
