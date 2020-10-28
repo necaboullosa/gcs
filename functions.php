@@ -285,5 +285,6 @@ function general_admin_notice(){
 add_action('admin_notices', 'general_admin_notice');
 
 
+include('custom-shortcodes.php');
 
 
